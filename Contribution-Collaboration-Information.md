@@ -9,7 +9,7 @@
 - Individuals submit changes to the main repository using the Gerrit “git review” process. (See: Contribution/collaboration steps)
 
 ## Initial setup 
-(Assuming a somewhat standard environment, such as that provided by the MediaWiki Vagrant setup):
+(Assuming a somewhat standard environment, such as that provided by the MediaWiki Vagrant setup)
 - Set up Gerrit and Git Review as described here: https://www.mediawiki.org/wiki/Gerrit/Tutorial, with a few minor changes:
 -- Use the “upstream” remote to refer to the main MediaWiki/extension repository, rather than “origin”. As such, any references to “origin” should probably be replaced with “upstream”
 -- Most importantly, instead of “git config --global gitreview.remote origin”, use “git config --global gitreview.remote upstream”.
