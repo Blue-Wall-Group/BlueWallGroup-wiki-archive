@@ -54,8 +54,9 @@ If properly set up, you should get matching output with the given commands:
 - Submit to Gerrit for review
 
 See (Using “upstream” rather than “origin”):
-https://www.mediawiki.org/wiki/Gerrit/Tutorial#How_to_submit_a_patch
 
-https://www.mediawiki.org/wiki/Gerrit/Tutorial#Other_common_situations 
+[https://www.mediawiki.org/wiki/Gerrit/Tutorial#How_to_submit_a_patch](https://www.mediawiki.org/wiki/Gerrit/Tutorial#How_to_submit_a_patch)
+
+[https://www.mediawiki.org/wiki/Gerrit/Tutorial#Other_common_situations ](https://www.mediawiki.org/wiki/Gerrit/Tutorial#Other_common_situations )
 
 
