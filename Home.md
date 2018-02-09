@@ -1,0 +1,69 @@
+
+
+
+
+                           <h1 align="center"> Software Process Documentation </h1>
+
+                           <h2 align="center"> Team: Blue Wall Group </h2>
+
+                           <h3 align="center"> Members: </h3> 
+
+                           <p align="center"> Jesse Buck </p>
+                           <p align="center"> Daniel Collier </p>
+                           <p align="center"> Michael Cornacchio </p>
+                           <p align="center"> Hunter Hobbs </p>
+                           <p align="center"> Jaziel Pauda </P>
+
+**Overview:**
+This wiki provides an overview of the Blue Wall Group’s senior project. Including the group’s vision and mission statements, team organization and communications, SDLCM, tools being utilized, and the professional standards the team will uphold.
+
+**Vision Statement:**
+Transition from students into professional software developers with knowledge and experience with respect to open-source projects, agile practices, and collaboration with large external teams. 
+
+**Mission Statement:**
+Contribute to the MediaWiki Accessibility project in a way that enhances the accessibility of MediaWiki for its large user base; while utilizing industry standard project management and version control tools, processes, and best practices.
+
+**Team Organization:**
+Team members will not have set roles, but will rather rotate Scrum agile roles as needed after each sprint.
+
+**Team Communication:**
+Internal team communication will happen in two different ways face-to-face communication during class periods, and scheduled meetings, as well as messaging utilizing Slack.
+Communication with the MediaWiki development teams will be coordinated and  will take place over the project’s (MediaWiki) standard communication protocols like mailing lists, IRC channels, discussion boards on Phabricator, and discourse.
+
+
+**SDLCM:**
+The software development life cycle model the Blue Wall Group will utilize is Scrum Agile.
+
+	**Release Planning:**
+	There will be 6 major releases through the development cycle, each marked by a presentation, in which we will 
+        address the entire class and present the most important information relating to the current release. 
+	
+        **Release Schedule:**
+        <ul> <li> Presentation 1: start date: 1/30/2018 ; end date:  2/08/2018 </li>
+	     <li> Presentation 2: start date: 2/08/2018 ; end date: 3/01/2018 </li>
+	     <li> Presentation 3: start date: 3/01/2018 ; end date: 3/22/2018 </li>
+	     <li> Presentation 4: start date: 3/22/2018 ; end date: 4/12/2018 </li>
+	     <li> Presentation 5: start date: 4/12/2018 ; end date: 5/03/2018 </li>
+	     <li> Presentation 6: TBD (probably finals week)
+        </ul>
+
+**Sprint Planning:**
+Each release will consist of the work of several week-long sprints. The sprints will take place from Thursday to Thursday, with sprint planning taking place the Tuesday before the start of the sprint during class time. The work scheduled for each sprint will be broken down into user stories that will be assigned story points. Furthermore, each user story will be broken down into specific tasks that will be estimated in hours needed to complete. The first sprint will begin 2/01/2018 and the final sprint will begin 4/26/2018.
+
+**Tools:**
+Blue Wall Group will be utilizing MediaWiki-Vagrant as the development environment, more info can be found at <a href="https://www.mediawiki.org/wiki/How_to_become_a_MediaWiki_hacker#Set_up_your_development_environment"> Setting up your development environment </a>
+
+Slack for internal communication: bluewallgroup.slack.com
+CA Agile Central will be utilized as the project management tool, and provide project metrics.
+
+The group’s work flow will consist of multiple Github repositories. 
+<< insert Jesse’s write up here >>>
+
+**Standards:**
+The group will uphold certain standards during development. These standards are mostly developed by MediaWiki to ensure all contributors provide high quality code, and conform to specific accessibility requirements. Links to the standards can be found below:
+
+<a href="https://www.mediawiki.org/wiki/Accessibility_guide_for_developers"> Accessibility Guide for Developers </a>
+<a href="https://www.mediawiki.org/wiki/Manual:Coding_conventions/PHP"> PHP Coding Conventions </a>
+<a href="https://www.mediawiki.org/wiki/Manual:Coding_conventions/JavaScript"> JavaScript Coding Conventions </a>
+<a href="https://www.mediawiki.org/wiki/Gerrit/Code_review/Getting_reviews"> Gerrit: Getting Reviews </a>
+<a href="https://www.mediawiki.org/wiki/Manual:Pre-commit_checklist"> Pre Gerrit commit checklist </a>
