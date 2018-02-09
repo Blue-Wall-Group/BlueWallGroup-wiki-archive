@@ -20,7 +20,7 @@
 - Use “git remote add origin <team url>” to add the team’s repository as the new origin, where <team url> is the address for the team’s shared repository.
 Note: Some of this process may need to be repeated when switching to work on a new MediaWiki extension, or to/from the core MediaWiki module.
 
- 
+
 If properly set up, you should get matching output with the given commands:
 
 `git remote -v`
