@@ -53,10 +53,12 @@ If properly set up, you should get similar output from the following commands:
 - Rebase on upstream.
 - Submit to Gerrit for review
 
-See (Using “upstream” rather than “origin”):
+See:
 
 [https://www.mediawiki.org/wiki/Gerrit/Tutorial#How_to_submit_a_patch](https://www.mediawiki.org/wiki/Gerrit/Tutorial#How_to_submit_a_patch)
 
-[https://www.mediawiki.org/wiki/Gerrit/Tutorial#Other_common_situations ](https://www.mediawiki.org/wiki/Gerrit/Tutorial#Other_common_situations )
+[https://www.mediawiki.org/wiki/Gerrit/Tutorial#Other_common_situations](https://www.mediawiki.org/wiki/Gerrit/Tutorial#Other_common_situations)
+
+(Using “upstream” rather than “origin”)
 
 
