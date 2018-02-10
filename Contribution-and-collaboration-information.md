@@ -21,7 +21,7 @@
 Note: Some of this process may need to be repeated when switching to work on a new MediaWiki extension, or to/from the core MediaWiki module.
 
 
-If properly set up, you should get matching output with the given commands:
+If properly set up, you should get similar output from the following commands:
 
 `git remote -v`
 
