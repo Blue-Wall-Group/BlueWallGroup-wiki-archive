@@ -56,9 +56,6 @@ Blue Wall Group will be utilizing MediaWiki-Vagrant as the development environme
 Slack for internal communication: bluewallgroup.slack.com
 CA Agile Central will be utilized as the project management tool, and provide project metrics.
 
-The group’s work flow will consist of multiple Github repositories. 
-<< insert Jesse’s write up here >>>
-
 **Standards:**
 The group will uphold certain standards during development. These standards are mostly developed by MediaWiki to ensure all contributors provide high quality code, and conform to specific accessibility requirements. Links to the standards can be found below:
 
