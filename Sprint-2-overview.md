@@ -1,1 +1,24 @@
-Sprint
+*Sprint 1:* 2/08/2018 to 2/15/2018, 8 Points, 16 estimated hours.
+
+## User Stories
+- T70798 - Accesskey "alt-shift-i" in Chrome on Linux conflicts with native
+- Make project documentation available online
+- Sprint 2 team documentation
+- T88979 - Enforce labels for all interactive controls
+- Fix GitHub Wiki
+- T180890 - Research high contrast in Edge browser with VisualEditor, and attempt to repeat the issue on own system. Report findings
+
+
+## Retrospective
+
+### What we should continue doing:
+	
+
+### What should we start doing?
+
+### What should we stop doing?
+
+
+
+***
+
