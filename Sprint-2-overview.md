@@ -1,4 +1,4 @@
-*Sprint 1:* 2/08/2018 to 2/15/2018, 8 Points, 16 estimated hours.
+*Sprint 2:* 2/08/2018 to 2/15/2018, 8 Points, 16 estimated hours.
 
 ## User Stories
 - T70798 - Accesskey "alt-shift-i" in Chrome on Linux conflicts with native
