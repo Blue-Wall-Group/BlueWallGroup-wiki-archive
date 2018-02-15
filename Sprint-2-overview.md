@@ -19,6 +19,10 @@
 ## Review
 
 ### Accomplishments
+- Michael and Jesse completed US60. The team reviewed and moved to accept.
+- The team documented our process and updated our project notebook.
+- Jaziel reformated the team GitHub Wiki.
+- Daniel completed all tasks associated with US65. The team reviewed and moved to accept.
 
 ### Metrics
 
