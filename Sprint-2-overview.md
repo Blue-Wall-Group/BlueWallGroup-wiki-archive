@@ -4,7 +4,7 @@
 
 ### Goals
 
-## User Stories
+### User Stories
 - T70798 - Accesskey "alt-shift-i" in Chrome on Linux conflicts with native
 - Make project documentation available online
 - Sprint 2 team documentation
