@@ -50,7 +50,7 @@ The software development life cycle model the Blue Wall Group will utilize is Sc
 **Sprint Planning:**
 Each release will consist of the work of several week-long sprints. The sprints will take place from Thursday to Thursday, with sprint planning taking place the Tuesday before the start of the sprint during class time. The work scheduled for each sprint will be broken down into user stories that will be assigned story points. Furthermore, each user story will be broken down into specific tasks that will be estimated in hours needed to complete. The first sprint will begin 2/01/2018 and the final sprint will begin 4/26/2018.
 
-**Issue Acceptance**
+**Issue Acceptance:**
 Issues will be accepted only after a satisfying walkthrough with two other team members who did not directly work on the item.
 
 **Tools:**
