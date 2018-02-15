@@ -45,6 +45,7 @@
 
 ### Key Decisions
 
-* More detailed information will be tracked for each sprint on the wiki (see Jesse's template)
-* Presentations may/should cover information outside of progress (e.g. Accessibility).
-* Collective agreement to utilize Thursday-Tuesday time more effectively.
+- More detailed information will be tracked for each sprint on the wiki (see Jesse's template)
+- Presentations may/should cover information outside of progress (e.g. Accessibility).
+- Collective agreement to utilize Thursday-Tuesday time more effectively.
+- Issues will be accepted only after a satisfying walkthrough with two other team members who did not directly work on the item.
