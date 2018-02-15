@@ -2,7 +2,8 @@
 
 ## Planning
 
-### Goals
+### Goal
+"Get hands-on experience working on MediaWiki project for all team members"
 
 ### User Stories
 - T70798 - Accesskey "alt-shift-i" in Chrome on Linux conflicts with native
@@ -26,7 +27,8 @@
 
 ### Metrics
 
-### What we did vs. what we planned to do
+### Was our goal met?
+Yes, as all team members have obtained some level of experience working directly on the MediaWiki project.
 
 ***
 
