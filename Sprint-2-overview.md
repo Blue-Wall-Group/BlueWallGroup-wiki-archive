@@ -35,3 +35,12 @@
 ### What to continue doing
 
 ### Key decisions
+
+
+***
+
+### Key Decisions
+
+* More detailed information will be tracked for each sprint on the wiki (see Jesse's template)
+* Presentations may/should cover information outside of progress (e.g. Accessibility).
+* Collective agreement to utilize Thursday-Tuesday time more effectively.
