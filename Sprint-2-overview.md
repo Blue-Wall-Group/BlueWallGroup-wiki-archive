@@ -51,3 +51,4 @@ Yes, as all team members have obtained some level of experience working directly
 - Presentations may/should cover information outside of progress (e.g. Accessibility).
 - Collective agreement to utilize Thursday-Tuesday time more effectively.
 - Issues will be accepted only after a satisfying walkthrough with two other team members who did not directly work on the item.
+- Use CA Agile's "split" option on unfinished user stories.
