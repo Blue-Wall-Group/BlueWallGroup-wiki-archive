@@ -6,6 +6,11 @@
 - Semantic HTML Issue T161612
 - Configure Github environment
 
+##
+
+### Metrics
+![Burndown chart for sprint 1](http://chickencheetos.coffee/Pictures/IterationBurnDownSPrint1.png)
+![Cumulative flow chart for sprint 1](http://chickencheetos.coffee/Pictures/CumulativeFlowSprint1.png)
 
 ## Retrospective
 
