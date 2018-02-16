@@ -22,10 +22,8 @@ Sprint -: -/-/2018 to -/-/2018, - Points, - estimated hours.
 
 ## Retrospective
 
-### What should we stop doing
+### What went well
 
-### What we should start doing
-
-### What to continue doing
+### What to improve on
 
 ### Key decisions
