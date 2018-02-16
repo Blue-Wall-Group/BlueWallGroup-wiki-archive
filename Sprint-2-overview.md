@@ -26,6 +26,8 @@
 - Daniel completed all tasks associated with US65. The team reviewed and moved to accept.
 
 ### Metrics
+![Burndown chart for sprint 2](http://chickencheetos.coffee/Pictures/IterationBurndown.png)
+![Cumulative flow chart for sprint 2](http://chickencheetos.coffee/Pictures/CumulativeFlow.png)
 
 ### Was our goal met?
 Yes, as all team members have obtained some level of experience working directly on the MediaWiki project.
