@@ -34,14 +34,13 @@ Yes, as all team members have obtained some level of experience working directly
 
 ## Retrospective
 
-### What should we stop doing
+### What went well
+Documentation, familiarity with CA Agile, and task creation have all improved.  Communication with the existing MediaWiki team has also been fruitful
 
-### What we should start doing
-
-### What to continue doing
+### What to improve on
+We need to make better use of the time between Thursday and Tuesday, as well as "outside of class" time in general.  Additionally, we need to start scoping the issues we bring into each sprint more realistically. 
 
 ### Key decisions
-
 
 ***
 
