@@ -46,7 +46,7 @@ Blue Wall Group will be utilizing MediaWiki-Vagrant as the development environme
 Slack for internal communication: bluewallgroup.slack.com
 
 **Project Information**
-<a href="rally1.rallydev.com">CA Agile Central will be utilized as the project management tool, and provide project metrics.
+<a href="https://rally1.rallydev.com">CA Agile Central will be utilized as the project management tool, and provide project metrics.
 </a>
 
 **Standards:**
