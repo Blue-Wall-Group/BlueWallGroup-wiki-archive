@@ -46,8 +46,13 @@ Blue Wall Group will be utilizing MediaWiki-Vagrant as the development environme
 Slack for internal communication: bluewallgroup.slack.com
 
 **Project Information**
-<a href="https://rally1.rallydev.com">CA Agile Central will be utilized as the project management tool, and provide project metrics.
-</a>
+CA Agile Central will be utilized as the project management tool, and provide project metrics.
+CA Agile Central can be found <a href="https://rally1.rallydev.com">here</a>.
+CA Agile Central workflow:
+Current sprint status can be found in the "Iteration status page". The iteration status page contains the user stories
+the team is currently working on, as well effort estimation for each user story, in points for user stories, and hours
+needed to complete for sub-tasks for each user story.
+The product backlog can be found in the "Backlog" page. This page contains all backlog items(user stories and defects) prioritized by list order. 
 
 **Standards:**
 The group will uphold certain standards during development. These standards are mostly developed by MediaWiki to ensure all contributors provide high quality code, and conform to specific accessibility requirements. Links to the standards can be found below:
