@@ -7,7 +7,7 @@ The following is a list of behavior and accomplishments which we feel will resul
 * Stand-Ups 
     * Definition: 
                   Daily (in our case nightly) concise meeting wherein all team members briefly answer three 
-                  questions that keep the team collectively informed on individual team members' commitments.
+                  questions that keep the team collectively informed on individual team members' commitments.<br/>
                   Questions: 
                   * What did you do today? 
                   * What will you do tomorrow? 
