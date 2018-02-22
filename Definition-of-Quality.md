@@ -3,7 +3,7 @@ For this project we define product quality distinctly from process quality.  Bot
 
 The following is a list of behavior and accomplishments which we feel will result in a quality product/process.  Associated with each item is a rationale for its inclusion as well as our method for measuring its degree of success per Sprint.
 
-# Product Quality
+# Process Quality
 * Stand-Ups 
     * Definition:
     * Rationale:
@@ -41,7 +41,7 @@ The following is a list of behavior and accomplishments which we feel will resul
     * Rationale:
     * Measurement:
 
-# Process Quality
+# Product Quality
 * meet coding standards for MW 
     * Definition:
     * Rationale:
