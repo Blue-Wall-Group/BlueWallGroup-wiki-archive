@@ -5,7 +5,7 @@ The following is a list of behavior and accomplishments which we feel will resul
 
 # Product Quality
 * Stand-Ups 
-* * Definition:
+** Definition:
 * * Rationale:
 * * Measurement:
 * Product Owner - advocate for client
