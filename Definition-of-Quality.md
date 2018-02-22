@@ -19,3 +19,10 @@ The following is a list of behavior and accomplishments which we feel will resul
 
 
 # Process Quality
+* meet coding standards for MW 
+* Pass test suite & Jenkins acceptance tests. 
+* Acceptance criteria
+* * two reviewers other than developer
+* * document acceptance tests
+* Meet accessibility standards
+* Always have deliverable
