@@ -11,7 +11,7 @@ The following is a list of behavior and accomplishments which we feel will resul
                       - What did you do today?  
                       - What will you do tomorrow?  
                       - Are there any impediments in your way?
-    * Rationale:
+    * Rationale:  
     * Measurement:
 * Product Owner - advocate for
     * Definition:
