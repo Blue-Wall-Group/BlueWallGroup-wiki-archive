@@ -10,7 +10,7 @@ The following is a list of behavior and accomplishments which we feel will resul
                   questions that keep the team collectively informed on individual team members' commitments.<br/>
                   Questions: 
                       - What did you do today?  
-                      - What will you do tomorrow? 
+                      - What will you do tomorrow?  
                       - Are there any impediments in your way?
 
     * Rationale:
