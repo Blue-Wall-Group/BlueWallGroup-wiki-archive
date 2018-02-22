@@ -13,7 +13,7 @@ The following is a list of behavior and accomplishments which we feel will resul
                       - Are there any impediments in your way?
     * Rationale:
     * Measurement:
-* Product Owner - advocate for client
+* Product Owner - advocate for
     * Definition:
     * Rationale:
     * Measurement:
