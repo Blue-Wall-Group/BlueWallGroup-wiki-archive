@@ -8,10 +8,10 @@ The following is a list of behavior and accomplishments which we feel will resul
     * Definition: 
                   Daily (in our case nightly) concise meeting wherein all team members briefly answer three 
                   questions that keep the team collectively informed on individual team members' commitments.<br/>
-                  Questions: <br/>
-                      * * What did you do today?  
-                      * * What will you do tomorrow? <br/>
-                      * Are there any impediments in your way?<br/>
+                  Questions: 
+                      - What did you do today?  
+                      - What will you do tomorrow? 
+                      - Are there any impediments in your way?
 
     * Rationale:
     * Measurement:
