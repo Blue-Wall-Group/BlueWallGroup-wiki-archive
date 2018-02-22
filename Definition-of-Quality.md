@@ -5,24 +5,62 @@ The following is a list of behavior and accomplishments which we feel will resul
 
 # Product Quality
 * Stand-Ups 
+* * Definition:
+* * Rationale:
+* * Measurement:
 * Product Owner - advocate for client
+* * Definition:
+* * Rationale:
+* * Measurement:
 * Scrum Master - facilitate team progress
+* * Definition:
+* * Rationale:
+* * Measurement:
 * Planning/Review/Retro
+* * Definition:
+* * Rationale:
+* * Measurement:
 * Acceptance Critera
+* * Definition:
+* * Rationale:
+* * Measurement:
 * * 2 Reviewers other than developer
 * * Document acceptance tests
 * US prioritization (Rank) - documentation.
+* * Definition:
+* * Rationale:
+* * Measurement:
 * * Team definition of story point 
 * How US fo from BL -> SL
+* * Definition:
+* * Rationale:
+* * Measurement:
 * * current: what achieves sprint goal
 * Constant deliverable
-
+* * Definition:
+* * Rationale:
+* * Measurement:
 
 # Process Quality
 * meet coding standards for MW 
+* * Definition:
+* * Rationale:
+* * Measurement:
 * Pass test suite & Jenkins acceptance tests. 
+* * Definition:
+* * Rationale:
+* * Measurement:
 * Acceptance criteria
+* * Definition:
+* * Rationale:
+* * Measurement:
 * * two reviewers other than developer
 * * document acceptance tests
 * Meet accessibility standards
+* * Definition:
+* * Rationale:
+* * Measurement:
 * Always have deliverable
+* * Definition:
+* * Rationale:
+* * Measurement:
