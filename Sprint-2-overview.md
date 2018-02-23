@@ -30,8 +30,6 @@
 ### Was our goal met?
 Yes, as all team members have obtained some level of experience working directly on the MediaWiki project.
 
-***
-
 ## Retrospective
 
 ### What went well
