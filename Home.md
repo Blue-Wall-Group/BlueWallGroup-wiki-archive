@@ -1,9 +1,5 @@
-
-
-
-
 # **Blue Wall Group - Project Overview** 
- **Team Members:** Jesse Buck, Daniel Collier, Michael Cornacchio, Hunter Hobbs, Jaziel Pauda
+ Team Members: Jesse Buck, Daniel Collier, Michael Cornacchio, Hunter Hobbs, Jaziel Pauda
  ---
  
 
