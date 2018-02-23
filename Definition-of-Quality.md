@@ -11,13 +11,17 @@ The following is a list of behavior and accomplishments which we feel will resul
                       - What did you do today?  
                       - What will you do tomorrow?  
                       - Are there any impediments in your way?
-    * Rationale:  
-    * Measurement:
-* Product Owner - advocate for
+    * Rationale:  Stand-Up meetings are a core component of the Scrum framework.  We are attempting to adhere to the Scrum framework as closely as possible and recognize Stand-Ups as necessary for that effort. 
+    * Measurement: 
+                   High:
+                   Medium:
+                   Low:
+
+* Product Owner 
     * Definition:
     * Rationale:
     * Measurement:
-* Scrum Master - facilitate team progress
+* Scrum Master 
     * Definition:
     * Rationale:
     * Measurement:
