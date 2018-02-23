@@ -29,10 +29,10 @@ Sprint 3: 2/16/2018 to 2/23/2018, 12 Points, 26.25 estimated hours.
 - Completed and submitted patch set 4 for issue T161612.
 - Established quality metrics in terms of process and product. 
 - Submitted and got merged a patch for issue T175937
-- 
 ### Metrics
 
 ### What we did vs. what we planned to do
+We're confident that our goal was met.  However, looking back our goal did not encompass all of the subgoals we intended to complete this Sprint.  For instance, every team member had further experience working directly on the MediaWiki project.  Moving forward we need to encompass all of our intentions into the Sprint Goal.
 
 ***
 
