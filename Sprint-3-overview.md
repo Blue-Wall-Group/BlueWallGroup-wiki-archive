@@ -25,7 +25,11 @@ Sprint 3: 2/16/2018 to 2/23/2018, 12 Points, 26.25 estimated hours.
 ## Review
 
 ### Accomplishments
-
+- Started project notebook and added relevant artifacts for sprint 1 and sprint 2.
+- Completed and submitted patch set 4 for issue T161612.
+- Established quality metrics in terms of process and product. 
+- Submitted and got merged a patch for issue T175937
+- 
 ### Metrics
 
 ### What we did vs. what we planned to do
