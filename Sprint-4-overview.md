@@ -13,8 +13,6 @@ Product Owner: Hunter Hobbs
 
 ### Key decisions
 
-***
-
 ## Review
 
 ### Accomplishments
@@ -22,8 +20,6 @@ Product Owner: Hunter Hobbs
 ### Metrics
 
 ### What we did vs. what we planned to do
-
-***
 
 ## Retrospective
 
