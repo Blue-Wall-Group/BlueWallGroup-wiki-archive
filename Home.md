@@ -10,7 +10,7 @@ Team Members: Jesse Buck, Daniel Collier, Michael Cornacchio, Hunter Hobbs, Jazi
 * [Project Management](#project-management)
 * [Quality Assessment](#quality-assessment)
 * [Current Sprint Information](#current-sprint-information)
-* [Archived Sprint Documentation](#archived-sprint-documentation)
+* [Archived Sprint Documentation](#archived-sprint-information)
 
 ## **Vision Statement**  
 To transition from students into professional software developers with knowledge and experience with respect to open-source projects, agile practices, and collaboration with large external teams. 
