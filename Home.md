@@ -2,15 +2,15 @@
 Team Members: Jesse Buck, Daniel Collier, Michael Cornacchio, Hunter Hobbs, Jaziel Pauda
 
 ## **Contents**  
-* [Vision Statement](https://github.com/Blue-Wall-Group/mediawiki/wiki#vision-statement)
-* [Mission Statement](https://github.com/Blue-Wall-Group/mediawiki/wiki#mission-statement)
-* [Stakeholders & Objectives](#mission-statement)
-* Team Organization
-* Onboarding Information
-* Project Management
-* Quality Assessment
-* Current Sprint Information
-* Archived Sprint Documentation
+* [Vision Statement](#vision-statement)
+* [Mission Statement](#mission-statement)
+* [Stakeholders & Objectives](#stakeholders-&-objectives)
+* [Team Organization](#team-organization)
+* [Onboarding Information](#onboarding-information)
+* [Project Management](#project-management)
+* [Quality Assessment](#quality-assessment)
+* [Current Sprint Information](#current-sprint-information)
+* [Archived Sprint Documentation](#archived-sprint-documentation)
 
 ## **Vision Statement**  
 To transition from students into professional software developers with knowledge and experience with respect to open-source projects, agile practices, and collaboration with large external teams. 
