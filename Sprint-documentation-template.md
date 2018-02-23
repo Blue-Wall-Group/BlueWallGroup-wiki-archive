@@ -14,8 +14,6 @@ Product Owner:
 
 ### Key decisions
 
-***
-
 ## Review
 
 ### Accomplishments
@@ -23,8 +21,6 @@ Product Owner:
 ### Metrics
 
 ### What we did vs. what we planned to do
-
-***
 
 ## Retrospective
 
