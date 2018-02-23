@@ -39,7 +39,11 @@ We're confident that our goal was met.  However, looking back our goal did not e
 ## Retrospective
 
 ### What went well
-
+  Overall, our Sprint Backlog definition, selection, and commitment have improved noticeably.   
 ### What to improve on
-
+  The formalness of our process and our adherence to the Scrum framework both could use improvement.  More specifically, we need to adopt Scrum roles, producing deliverables, and maintain our backlog.
 ### Key decisions
+  Decided to adhere to Scrum more strictly.  These modifications include:
+  + Perform daily Stand-Ups
+  + Adopt Scrum roles that cycle between team members per Sprint
+  + Ensure iterative deliverables for each Sprint (both product and project)
