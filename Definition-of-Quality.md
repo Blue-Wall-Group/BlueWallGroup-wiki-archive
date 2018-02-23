@@ -73,8 +73,8 @@ The following is a list of behavior and accomplishments which we feel will resul
                    the artifact a developer is putting up for acceptance.
 
 * Meet accessibility standards
-    * Definition: Ensure that all artifact produced for users meet accessibility standards defined by MediaWiki, in order 
-                  to make this product (MediaWiki) accessible for ALL users.
+    * Definition: Ensure that all artifacts produced for users meet accessibility standards defined by MediaWiki, in order 
+                  to make the product (MediaWiki) accessible for ALL users.
     * Rationale: One of the goals established in this course is the contribution to an HFOSS project, working to make such 
                  a widely used product as MediaWiki more accessible to all users certainly qualifies as such a 
                  contribution.
@@ -85,7 +85,7 @@ The following is a list of behavior and accomplishments which we feel will resul
     * Definition: Have a potential deliverable ready at all times, that encompasses work being completed in the current 
                   sprint.
     * Rationale: Agile methodologies call for frequent and deliveries of product, as well as prioritizing having working 
-                 software that can be delivered.
-    * Measurement: State of deliverable will be measured half way through current sprint and at the end of current of 
+                 software that can be delivered at any point of an iteration.
+    * Measurement: State of deliverable will be measured half way through current sprint and at the end of current 
                    sprint. State of deliverable will be graded against goal of current sprint, to determine if the 
                    deliverable provides best possible value in terms of what the team wanted to accomplish for the sprint.
