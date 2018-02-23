@@ -25,9 +25,16 @@ The following is a list of behavior and accomplishments which we feel will resul
   work on next.
 * * Ensuring the Development Team understands items in the Product Backlog to the level needed.
 * Scrum Master 
-    * Definition:
-    * Rationale:
-    * Measurement:
+    * Definition: The Scrum Master (SM) serves as the primary facilitator of the Scrum team. More specifically, the SM is responsible for "making sure a Scrum team lives by the values and practices of Scrum." 
+    * Rationale: The SM can be considered a necessary balancing force to the PO: a "Process Owner" who's responsible for the team's performance.   
+    * Measurement: The team can assess the SM's overall performance by considering their performance on individual items including: 
+* * Ensuring that goals, scope, and product domain are understood by everyone on the Scrum Team as well as possible.
+* * Finding techniques for effective Product Backlog management.
+* * Helping the Scrum Team understand the need for clear and concise Product Backlog items.
+* * Understanding product planning in an empirical environment.
+* * Ensuring the Product Owner knows how to arrange the Product Backlog to maximize value.
+* * Understanding and practicing agility.
+* * Facilitating Scrum events as requested or needed.
 * Planning/Review/Retro
     * Definition:
     * Rationale:
