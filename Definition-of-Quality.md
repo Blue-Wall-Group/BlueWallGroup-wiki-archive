@@ -65,7 +65,7 @@ The following is a list of behavior and accomplishments which we feel will resul
 
 * Acceptance criteria
     * Definition: All accepted artifacts must meet or exceed previously set and documented acceptance criteria. Acceptance 
-                  criteria for all artifacts needed to be produced will be set during sprint planning.
+                  criteria for all needed artifacts will be set during sprint planning.
     * Rationale: Acceptance criteria help measured the degree of "done" and correctness of any artifacts produced. 
                  Furthermore, it helps developers create valuable and high quality artifacts.
     * Measurement: The correctness and quality of all artifacts will be measured against the acceptance criteria 
