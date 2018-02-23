@@ -2,9 +2,9 @@
 Team Members: Jesse Buck, Daniel Collier, Michael Cornacchio, Hunter Hobbs, Jaziel Pauda
 
 ## **Contents**  
-* Vision Statement
-* Mission Statement
-* Stakeholders & Objectives
+* [Vision Statement](https://github.com/Blue-Wall-Group/mediawiki/wiki#vision-statement)
+* [Mission Statement](https://github.com/Blue-Wall-Group/mediawiki/wiki#mission-statement)
+* [Stakeholders & Objectives](#mission-statement)
 * Team Organization
 * Onboarding Information
 * Project Management
