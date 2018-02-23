@@ -21,7 +21,7 @@ Contribute to the MediaWiki Accessibility project in a way that enhances the acc
 ## **Stakeholders & Objectives**
 **The team:** Grow in effectiveness and familiarity in software engineering processes and practices.
 **Individual team members:**  Transition from students to professional software engineers. And contribute the community of an HFOSS project in a positive way.  
-**Dr. Jody Paul:** <PROBABLY ABOUT PROCESS AND QUALITY ASK HIM AND FINALIZE THIS>  
+**Dr. Jody Paul:** \<PROBABLY ABOUT PROCESS AND QUALITY ASK HIM AND FINALIZE THIS\>  
 **Future contributors joining the project:** Obtain a project that includes quality documentation and onboarding materials that make it easy to join the project and start contributing quickly.  
 **MediaWiki users with accessibility needs:** Receive a product with multiple enhancements that make all of its features more accessible to ALL users.  
 **MediaWiki average users:** Receive a stable product that is not affected by bug fixes/enhancements.  
