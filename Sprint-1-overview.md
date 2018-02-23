@@ -32,7 +32,3 @@
 
 - Stop doing items that aren't documented
 - Estimating story points individually.
-
-
-***
-
