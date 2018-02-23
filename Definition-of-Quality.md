@@ -58,7 +58,7 @@ The following is a list of behavior and accomplishments which we feel will resul
 * Pass test suite & Jenkins acceptance tests. 
     * Definition: Submitted patches should pass initial verification tests as well as post-merge tests, administered with 
                   Jenkins on Gerrit.
-    * Rationale: Test suites run by Jenkins are the main way to prove submitted code behaves correctly, and can be 
+    * Rationale: Test suites run by Jenkins are the main way to prove submitted code behave correctly, and can be 
                  integrated into existing code base. Thus, all submitted patches must pass all test suites in order to be 
                  merged into code base.
     * Measurement: No submitted patches should get rejected because they fail to pass acceptance and integration tests.
