@@ -19,13 +19,13 @@ To transition from students into professional software developers with knowledge
 Contribute to the MediaWiki Accessibility project in a way that enhances the accessibility of MediaWiki for its large user base; while utilizing industry standard project management and version control tools, processes, and best practices.
 
 ## **Stakeholders & Objectives**
-**The team:**  
-**Individual team members:**  
-**Dr. Jody Paul:**  
-**Future contributors joining the project:**  
-**MediaWiki users with accessibility needs:**  
-**MediaWiki average users:**  
-**MediaWiki developers & maintainers:**
+**The team:** Grow in effectiveness and familiarity in software engineering processes and practices.
+**Individual team members:**  Transition from students to professional software engineers. And contribute the community of an HFOSS project in a positive way.
+**Dr. Jody Paul:** <PROBABLY ABOUT PROCESS AND QUALITY ASK HIM AND FINALIZE THIS>
+**Future contributors joining the project:** Obtain a project that includes quality documentation and onboarding materials that make it easy to join the project and start contributing quickly.
+**MediaWiki users with accessibility needs:** Receive a product with multiple enhancements that make all of its features more accessible to ALL users.
+**MediaWiki average users:** Receive a stable product that is not affected by bug fixes/enhancements. 
+**MediaWiki developers & maintainers:** Receive contributions that meet coding standards, behave correctly, and that can be integrated into the existing project.
 
 
 ## **Team Organization**
