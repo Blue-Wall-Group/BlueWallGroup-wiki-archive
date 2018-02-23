@@ -52,7 +52,7 @@ The following is a list of behavior and accomplishments which we feel will resul
                   MediaWiki Accessibility sub-project. Links to coding standards can be found under the "Standards" 
                   section of the "home" page of the Wiki.
     * Rationale: All MediaWiki contributors are expected to adhere to conventions established by the project in order to 
-                 maintain the quality and maintainability of the code base.
+                 maintain and improve the quality and maintainability of the code base.
     * Measurement: No patches submitted by the team during the current sprint get rejected because of violations to the 
                    coding standards.
 * Pass test suite & Jenkins acceptance tests. 
