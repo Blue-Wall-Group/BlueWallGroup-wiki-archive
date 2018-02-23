@@ -8,7 +8,6 @@ Team Members: Jesse Buck, Daniel Collier, Michael Cornacchio, Hunter Hobbs, Jazi
 * Mission Statement
 * Stakeholders & Objectives
 * Team Organization
-* Team Communication
 * Onboarding Information
 * Project Management
 
