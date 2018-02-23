@@ -18,12 +18,12 @@ The following is a list of behavior and accomplishments which we feel will resul
     * Definition: The Product Owner (PO) is intended to communicate their vision of the product to the the Scrum team.  More specifically, the PO is "responsible for maximizing the value of the product."  In our implementation of Scrum a developer will be chosen each Sprint to serve as the PO in addition to their normal duties. 
     * Rationale: Like the Stand-Ups, the PO is a crucial element of any Scrum implementation.  Without the Product Owner, the team lacks an highly accessible and accountable individual to ensure the team is working on valuable requirements. 
     * Measurement: As each Sprint comes to a close, the team can assess how well the PO performed their duties of: 
-**Clearly expressing Product Backlog items.
-**Ordering the items in the Product Backlog to best achieve goals and missions.
-**Optimizing the value of the work the Development Team performs.
-**Ensuring that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum Team will 
+* * Clearly expressing Product Backlog items.
+* * Ordering the items in the Product Backlog to best achieve goals and missions.
+* * Optimizing the value of the work the Development Team performs.
+* * Ensuring that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum Team will 
   work on next.
-**Ensuring the Development Team understands items in the Product Backlog to the level needed.
+* * Ensuring the Development Team understands items in the Product Backlog to the level needed.
 * Scrum Master 
     * Definition:
     * Rationale:
