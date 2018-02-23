@@ -69,8 +69,8 @@ The following is a list of behavior and accomplishments which we feel will resul
     * Rationale: Acceptance criteria help measured the degree of "done" and correctness of any artifacts produced. 
                  Furthermore, it helps developers create valuable and high quality artifacts.
     * Measurement: The correctness and quality of all artifacts will be measured against the acceptance criteria 
-                   established. This evaluation will happen as structured walkthrough where at least two reviewers asses 
-                   the artifact a developer is putting for acceptance.
+                   established. This evaluation will happen as structured walkthroughs where at least two reviewers asses 
+                   the artifact a developer is putting up for acceptance.
 
 * Meet accessibility standards
     * Definition: Ensure that all artifact produced for users meet accessibility standards defined by MediaWiki, in order 
