@@ -15,8 +15,6 @@
 
 ### Key decisions
 
-***
-
 ## Review
 
 ### Accomplishments
@@ -43,8 +41,6 @@ Documentation, familiarity with CA Agile, and task creation have all improved.  
 We need to make better use of the time between Thursday and Tuesday, as well as "outside of class" time in general.  Additionally, we need to start scoping the issues we bring into each sprint more realistically. 
 
 ### Key decisions
-
-***
 
 ### Key Decisions
 
