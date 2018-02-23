@@ -58,13 +58,13 @@ Communication with the MediaWiki development community happens in several differ
 
 2. General information about the MediaWiki software and project overview can be found [here](https://www.mediawiki.org/wiki/Accessibility_guide_for_developers).  
 
-3. To learn more about accessibility, a guide for developers can be fourd [here](https://www.mediawiki.org/wiki/Accessibility_guide_for_developers).  
+3. To learn more about accessibility, a guide for developers can be found [here](https://www.mediawiki.org/wiki/Accessibility_guide_for_developers).  
 
-4. New contributors to the project can learn about setting up a MW development evironment [here](https://www.mediawiki.org/wiki/How_to_become_a_MediaWiki_hacker#Set_up_your_development_environment).  
+4. New contributors to the project can learn about setting up an MW development environment [here](https://www.mediawiki.org/wiki/How_to_become_a_MediaWiki_hacker#Set_up_your_development_environment).  
 
 5. MediaWiki uses Git -> Git-Review -> Gerrit for code patch submission, review and merge requests. A tutorial on the MediaWiki code review workflow can be found [here](https://www.mediawiki.org/wiki/Gerrit/Tutorial).  
 
-6. A useful pre-gerrit commit checklist can be found [here](https://www.mediawiki.org/wiki/Manual:Pre-commit_checklist).  
+6. A useful pre-Gerrit commit checklist can be found [here](https://www.mediawiki.org/wiki/Manual:Pre-commit_checklist).  
 
 7. MediaWiki PHP coding conventions are found [here](https://www.mediawiki.org/wiki/Manual:Coding_conventions/PHP).  
 
@@ -79,13 +79,13 @@ Our product backlog can be found on the ***backlog*** page and our current sprin
 
 **CA Agile Central workflow:** 
  
-The ***backlog*** page contains a list of all backlog items (user stories and defects) prioritiezed by list order. All backlog items that currently have associated tasks can also be veiwd on this page by expandind the item. CA Agile Central tracks progress and provides a way for us to compare our planned effort to our actual effort spent.  
+The ***backlog*** page contains a list of all backlog items (user stories and defects) prioritized by list order. All backlog items that currently have associated tasks can also be viewed on this page by expanding the item. CA Agile Central tracks progress and provides a way for us to compare our planned effort to our actual effort spent.  
 
 THe ***Iteration Status*** page contains the user stories the team is currently working on, as well effort estimation for each user story, in points for user stories, and hours needed to complete for sub-tasks for each user story. This page also contains metrics for the current sprint.
 
 ## **Quality Assessment**
 
-Quality vehicals, assessment workflow and metric information can be found [here](https://github.com/Blue-Wall-Group/mediawiki/wiki/Definition-of-Quality).
+Quality vehicles, assessment workflow and metric information can be found [here](https://github.com/Blue-Wall-Group/mediawiki/wiki/Definition-of-Quality).
 
 ## **Current Sprint Information**
 
