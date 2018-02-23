@@ -2,9 +2,9 @@ Sprint -: -/-/2018 to -/-/2018, - Points, - estimated hours.
 
 ## Roles
 
-Scrum Master: Jaziel Pauda
+Scrum Master: 
 
-Product Owner: Hunter Hobbs
+Product Owner: 
 
 ## Planning
 
