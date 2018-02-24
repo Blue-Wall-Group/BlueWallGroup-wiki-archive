@@ -11,5 +11,5 @@ Notes:
 Priority will be indicated by order in Product Backlog.  
 Any optional fields can be safely deleted with their headings.  
 Phabricator link is only required when a Phabricator issue is used.  
-Story expression may also appear as the user story title in CA Agile but may appear in the description for clarity.  
+A story expression may also appear as the user story title in CA Agile.  
 User story titles in CA Agile have a character limit of 256 and may need to be shortened.  
