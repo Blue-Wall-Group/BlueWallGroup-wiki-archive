@@ -15,4 +15,4 @@ A story expression may also appear as the user story title in CA Agile.
 User story titles in CA Agile have a character limit of 256 and may need to be shortened.  
 User story protocol of this type may be subject to slight changes due to style preference.  
 Estimated story points consist of Fibonacci-like numbers, such as: 1, 3, 5, 8, etc.  
-Estimated times to develop may be put in terms of sprint-lengths when trying to avoid actual intervals.
+Estimated times to develop may be in terms of sprint-lengths when avoiding actual intervals.
