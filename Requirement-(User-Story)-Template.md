@@ -16,8 +16,9 @@ A user story expression should also appear as the user story title in CA Agile.
 User story titles in CA Agile have a character limit of 256 and may need to be cut off.  
 Estimated story points consist of Fibonacci-like numbers, such as: 1, 3, 5, 8, etc.  
 Estimated times to develop may be in terms of sprint-lengths when avoiding actual intervals.  
-  
-  
+
+***
+
 CA Agile Color Code (under consideration):  
 Blue: represents an issue from Phabricator which has seen next to no debate over its relevance or method of implementation.  
     In a nutshell: "the cooled and calm issue that few have disagreed with, blue like a peaceful lake"  
