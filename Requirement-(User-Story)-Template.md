@@ -1,11 +1,11 @@
 Expression: As a _, I want _ so that _.  
-Acceptance Criteria: <HERE>.  
-Phabricator Link: <WHEN APPLICABLE>  
-Estimated Story Points: <HERE>. <WHY>.  
+Acceptance Criteria: \<HERE\>.  
+Phabricator Link: \<WHEN APPLICABLE\>  
+Estimated Story Points: \<HERE\>. \<WHY\>.  
 
-Estimated Time to Develop: <OPTIONAL>. <WHY>.  
+Estimated Time to Develop: \<OPTIONAL\>. \<WHY\>.  
 
-Other Side Notes From The Story Editor/Author (<EDITOR/AUTHOR NAME HERE>): <OPTIONAL>.  
+Other Side Notes From The Story Editor/Author (\<EDITOR/AUTHOR NAME HERE\>): \<OPTIONAL\>.  
 
 Notes:  
 Priority will be indicated by order in Product Backlog.  
