@@ -1,3 +1,13 @@
+User Story Expression: As a __ I want __ so that __.  
+Acceptance Criteria:  
+[Phabricator Link if Applicable]:  
+Estimate in Story Points:  
+
+Note: Priority will be indicated by order in Product Backlog.
+
+***
+
+(Alternative template, under consideration):  
 Expression: As a _, I want _ so that _.  
 Acceptance Criteria: \<HERE\>.  
 Phabricator Link: \<WHEN APPLICABLE\>  
