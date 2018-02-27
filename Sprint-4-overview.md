@@ -11,7 +11,13 @@ Product Owner: Hunter Hobbs
 
 ### User stories
 
-### Key decisions
+### Key decisions  
+- Remove user stories from backlog that are not product related (i.e. documentation, presentations, etc.)
+- Deliver project notebook at the end of each sprint (Scrum master will oversee)
+- Deliver product at the end of each sprint (Product owner will oversee)
+- Divide notebook by topic rather than sprint
+- Use original, default color coding for user stories
+- Use original user story format
 
 ## Review
 
