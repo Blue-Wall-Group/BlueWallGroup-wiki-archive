@@ -1,4 +1,4 @@
-Sprint -: 2/27/2018 to 3/02/2018, - Points, - estimated hours.
+Sprint -: -/-/2018 to -/-/2018, - Points, - estimated hours.
 
 ## Roles
 Scrum Master: Jaziel Pauda
@@ -8,8 +8,8 @@ Product Owner: Hunter Hobbs
 ## Planning
 
 ### Goals
-- Focus on completing a release that includes the product, the project notebook, and a second presentation.
-### User stories
+
+### User Stories
 
 ### Key decisions  
 - Remove user stories from backlog that are not product related (i.e. documentation, presentations, etc.)
