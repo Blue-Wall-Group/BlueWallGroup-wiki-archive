@@ -21,7 +21,7 @@ Estimated times to develop may be in terms of sprint-lengths when avoiding actua
 
 ***
 
-**CA Agile Color Code** (Proposed, decided against for now):  
+**CA Agile user story color code** (Proposed, decided against for now):  
 
 Blue: represents an issue from Phabricator which has seen next to no debate over its relevance or method of implementation.  
     In a nutshell: "the cooled and calm issue that few have disagreed with, blue like a peaceful lake"  
