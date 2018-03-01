@@ -6,18 +6,18 @@
 - Individuals clone the team’s repository
 - Individuals push and pull changes from shared repository to share in-progress work.
 - Individuals pull changes from the main repository as a means to update the shared repository, or before submitting changes to the main repository.
-- Individuals submit changes to the main repository using the Gerrit “git review” process.
+- Individuals submit changes to the main repository using the Gerrit `git review` process.
 
 ## Initial setup  
 (The following assumes a somewhat standard environment, such as that provided by the MediaWiki Vagrant setup.)
 - Set up Gerrit and Git Review as described here: https://www.mediawiki.org/wiki/Gerrit/Tutorial, with a few minor changes:
-    - Use the `upstream` remote to refer to the main MediaWiki/extension repository, rather than `origin`. As such, any references to `origin` should probably be replaced with `upstream`
-    - Most importantly, use:  
+    - Use the `upstream` remote to refer to the main MediaWiki/extension repository, rather than `origin`. As such, any references to `origin` should be replaced with `upstream`
+    - Primarily, use:  
     `git config --global gitreview.remote upstream`  
     Instead of:  
     `git config --global gitreview.remote origin`
 
-- If `git remote -v` already shows “origin” as pointing to the main repository (such as in the Vagrant setup), use “git remote rename origin upstream”. 
+- If `git remote -v` already shows `origin` as pointing to the main repository (such as in the Vagrant setup), use `git remote rename origin upstream`. 
     - Otherwise, use `git remote add upstream <main-url>`, where `<main-url>` is the address for the main MediaWiki/extension repository.
 
 - Use `git remote add origin <team-url>` to add the team’s repository as the new origin, where `<team-url>` is the address for the team’s shared repository.
