@@ -93,7 +93,7 @@ Our product backlog can be found on the ***backlog*** page and our current sprin
  
 The ***backlog*** page contains a list of all backlog items (user stories and defects) prioritized by list order. All backlog items that currently have associated tasks can also be viewed on this page by expanding the item. CA Agile Central tracks progress and provides a way for us to compare our planned effort to our actual effort spent.  
 
-THe ***Iteration Status*** page contains the user stories the team is currently working on, as well effort estimation for each user story, in points for user stories, and hours needed to complete for sub-tasks for each user story. This page also contains metrics for the current sprint.
+The ***Iteration Status*** page contains the user stories the team is currently working on, as well effort estimation for each user story, in points for user stories, and hours needed to complete for sub-tasks for each user story. This page also contains metrics for the current sprint.
 
 ## **Quality Assessment**
 
