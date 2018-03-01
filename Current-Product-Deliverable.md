@@ -42,7 +42,7 @@ _Changes:_
 ```diff 
 -   this.$copyButton = $( '<a>' )
 +   this.$copyButton = $( '<button>' )
-+	    .attr( 'aria-label', mw.msg( +'multimediaviewer-reuse-copy-embed' ) )
++       .attr( 'aria-label', mw.msg( +'multimediaviewer-reuse-copy-embed' ) )
 ```
 
 * mmv.ui.reuse.embed.less:
@@ -97,6 +97,44 @@ _Changes:_
 _Description:_ Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions.
 
 _Work Performed:_
+
+_Changes:_
+
+* flow_block_topic_moderate_post.handlebars.php:
+```diff
+-   '.$sp.' <div class="flow-post-content mw-parser-output">
++   '.$sp.' <article class="flow-post-content mw-parser-output">
+    ⋮
+-   '.$sp.' </div>
++   '.$sp.' </article>
+```
+
+* flow_block_topic_moderate_topic.handlebars.php:
+```diff
+-   '.$sp.'    <div class="flow-post-content mw-parser-output">
++   '.$sp.'    <article class="flow-post-content mw-parser-output">
+    ⋮
+-   '.$sp.'    </div>
++   '.$sp.'    </article>
+```
+
+* flow_post.handlebars.php:
+```diff
+-   '.$sp.'    <div class="flow-post-content mw-parser-output">
++   '.$sp.'    <article class="flow-post-content mw-parser-output">
+    ⋮
+-   '.$sp.'    </div>
++   '.$sp.'    </article>
+```
+
+* flow_post_inner.partial.handlebars:
+```diff
+-   <div class="flow-post-content mw-parser-output">
++   <article class="flow-post-content mw-parser-output">
+    ⋮
+-   </div>
++   </article>
+```
 
 [Issue T175937 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T175937)
 
