@@ -64,7 +64,7 @@ Communication with the MediaWiki development community happens in several differ
 
 **If you are new or unfamiliar with the project, you will want to familiarize yourself with several items:**  
 
-1. The Blue Wall Group's team contribution and collaboration information can be found [here](https://github.com/Blue-Wall-Group/mediawiki/wiki/Contribution-and-collaboration-information).  
+1. The Blue Wall Group's team contribution and collaboration information can be found [here](https://github.com/Blue-Wall-Group/mediawiki/wiki/Contribution-and-Collaboration-Guide).  
 
 2. General information about the MediaWiki software and project overview can be found [here](https://www.mediawiki.org/wiki/Accessibility_guide_for_developers).  
 
