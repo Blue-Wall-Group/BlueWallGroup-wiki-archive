@@ -21,7 +21,7 @@ _Description:_ This issue focused on a MediaWiki extensions called Multimedia Vi
 
 _Work performed:_ We went through each JavaScript file in the Multimedia Viewer directory and looked for button elements that were tagged improperly. In some cases, the `<a>` tags were able to just be replaced with `<button>` tags. In the case of the `copyButton`, we added an `aria-label` attribute with a value of “copy text” that was output via the MW-messages API.  We needed to fix some of the button styling in the associated CSS files as well. 
 
-This issue is not completely resolved yet. We are currently working on patchset 5. The history of our changes and patchsets, as well as the maintainer review and continuous integration test results can be view on the Gerrit web interface.
+This issue is not completely resolved yet. We are currently working on patchset 5. The history of our changes and patchsets, as well as the maintainer review and continuous integration test results can be viewed on the Gerrit web interface.
 
 _Changes:_
 
