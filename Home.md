@@ -5,8 +5,10 @@ Team Members: Jesse Buck, Daniel Collier, Michael Cornacchio, Hunter Hobbs, Jazi
 * [Vision Statement](#vision-statement)
 * [Mission Statement](#mission-statement)
 * [Stakeholders & Objectives](#stakeholders--objectives)
+* [Current Product Deliverable](#current-product-deliverable)
 * [Team Organization](#team-organization)
 * [Onboarding Information](#onboarding-information)
+* [Current Project Notebook](#current-project-notebook)
 * [Project Management](#project-management)
 * [Quality Assessment](#quality-assessment)
 * [Current Sprint Information](#current-sprint-information)
@@ -32,6 +34,8 @@ Contribute to the MediaWiki Accessibility project in a way that enhances the acc
 **MediaWiki average users:** Receive a stable product that is not affected by bug fixes/enhancements.  
   
 **MediaWiki developers & maintainers:** Receive contributions that meet coding standards, behave correctly, and that can be integrated into the existing project.  
+
+## **Current Product Deliverable**
 
 
 ## **Team Organization**
@@ -75,6 +79,8 @@ Communication with the MediaWiki development community happens in several differ
 7. MediaWiki PHP coding conventions are found [here](https://www.mediawiki.org/wiki/Manual:Coding_conventions/PHP).  
 
 8. MediaWiki JavaScript coding conventions are found [here](https://www.mediawiki.org/wiki/Manual:Coding_conventions/JavaScript).
+
+## **Current Project Notebook**
 
 
 ## **Project Management**
