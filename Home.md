@@ -49,7 +49,7 @@ We practice the Scrum Agile methodology by focusing on the following principles:
 * Constant communication with stakeholders
 * Designated Scrum Master (rotating each sprint)
 * Designated Product Owner (rotating each sprint)
-* Always have a working deliverable
+* Always have a deliverable product.
 
  
 ### **Team Communication:**  
