@@ -96,7 +96,7 @@ _Changes:_
 
 _Description:_ Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN html standards.
 
-_Work Performed: The work started with verifying the issue author was correct that the '<div>' tags specified should become '<article>' tags by going over W3 and MDN standards. After this, the '<div>' tags that needed to be changed were identified by searching for the tags that had the CSS classes "flow-post-content" and "mw-parser-output". Then, the identified tags were changed to '<article>' tags, templates were compiled, and finally the changes were tested using PHPUnit.
+_Work Performed:_ The work started with verifying the issue author was correct that the `<div>` tags specified should become `<article>` tags by going over W3 and MDN standards. After this, the `<div>` tags that needed to be changed were identified by searching for the tags that had the CSS classes "flow-post-content" and "mw-parser-output". Then, the identified tags were changed to `<article>` tags, templates were compiled, and finally the changes were tested using PHPUnit.
 
 _Changes:_
 
