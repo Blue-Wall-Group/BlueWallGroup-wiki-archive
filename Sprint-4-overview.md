@@ -1,4 +1,4 @@
-Sprint -: -/-/2018 to -/-/2018, - Points, - estimated hours.
+Sprint -: 3/2/2018 to 3/9/2018, 9 Points, - estimated hours.
 
 ## Roles
 Scrum Master: Jaziel Pauda
