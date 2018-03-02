@@ -8,7 +8,7 @@ Product Owner: Hunter Hobbs
 ## Planning
 
 ### Goals
-Focus on making a deliverable enhancement to Gerrit for review and possible acceptance. More merges!
+Focus on making a deliverable enhancement to Gerrit for review and possible acceptance. As a team, we would like to accomplish having two commits merged.
 
 ### User Stories
 - As a maintainer, I would like Issue T161612 patch set 5 to output button text per reviewer comments on Gerrit so that this patch follows MW organizational standards.  
