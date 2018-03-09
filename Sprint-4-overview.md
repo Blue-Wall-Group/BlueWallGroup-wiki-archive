@@ -20,17 +20,26 @@ Focus on making a deliverable enhancement to Gerrit for review and possible acce
 - Focus on merging two patches this sprint.
 
 ## Review
-
 ### Accomplishments
-
+- Submitted two patches to Gerrit for review (US 4 & 51).
+- Completed research phase for US 62, refer to US 118.
+- Established accurate user story point estimation for all user stories in the product backlog.
+- Reduced product backlog to only user stories worth pursing.
 ### Metrics
 
 ### What we did vs. what we planned to do
-
+- Met sprint goal, refer to "accomplishments".
 ## Retrospective
 
 ### What went well
-
+- Planning poker helped get to very accurate estimations for user story complexity.
+- Picked an appropriate sprint velocity.
+- Product owner incorporation into the process really improved the product backlog.
+- Having a scrum master that facilitated events helped the team with the process.
 ### What to improve on
-
+- Try to structure in-class work more efficiently.
+- Product owner should look through accessibility work-board and add appropriate issues to product backlog.
+- Start researching how to collect data and assemble metrics for metrics.
 ### Key decisions
+- None, only key decision was made at beginning of sprint.
+- Start researching and gathering metrics for product.
