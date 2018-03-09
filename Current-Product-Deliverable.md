@@ -146,7 +146,7 @@ _Changes:_
 
 ### Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility
 
-_Description:_
+_Description:_ In the QuizGame extension, several `<h1>` elements were nested within eachother. For accessibility and semantics, some of the nested elements needed to be changed into `<h2>`'s.
 
 _Work Performed:_
 
