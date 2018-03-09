@@ -11,6 +11,8 @@ Product Owner: Jesse Buck
 ### Goals
 - Demonstrate to product users that the team's quality metrics practices maximize product quality.
 ### User stories
+  - US127: "As a user, I want WCAG level AA conformant color contrast on certain elements of the WikiStats page, so that I can see the those elements more clearly."
+  - US128: "As a user, I want WCAG level AA conformant color contrast on the WikiStats page search bar placeholder, so that I can see the those elements more clearly." 
 
 ### Key decisions
 
