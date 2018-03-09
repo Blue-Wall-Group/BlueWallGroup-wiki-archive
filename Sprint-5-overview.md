@@ -1,10 +1,10 @@
-Sprint -: -/-/2018 to -/-/2018, - Points, - estimated hours.
+Sprint -: 3/09/2018 to 3/16/2018, - Points, - estimated hours.
 
 ## Roles
 
-Scrum Master: 
+Scrum Master: Michael Cornacchio
 
-Product Owner: 
+Product Owner: Jesse Buck
 
 ## Planning
 
