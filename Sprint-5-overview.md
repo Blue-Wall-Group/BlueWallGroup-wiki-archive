@@ -15,7 +15,8 @@ Product Owner: Jesse Buck
   - US128: "As a user, I want WCAG level AA conformant color contrast on the WikiStats page search bar placeholder, so that I can see the those elements more clearly." 
 
 ### Key decisions
-
+* Update Project Notebook with JP’s changes. 
+* Update quality metrics descriptions. 
 ## Review
 
 ### Accomplishments
