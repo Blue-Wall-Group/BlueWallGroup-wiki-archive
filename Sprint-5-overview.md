@@ -15,7 +15,8 @@ Product Owner: Jesse Buck
   - US128: "As a user, I want WCAG level AA conformant color contrast on the WikiStats page search bar placeholder, so that I can see the those elements more clearly." 
 
 ### Key decisions
-
+  - Standups from Sunday to Thursday night
+  - Product Owner role switches at end of Sprint Planning 
 ## Review
 
 ### Accomplishments
