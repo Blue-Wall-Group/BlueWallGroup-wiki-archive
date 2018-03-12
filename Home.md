@@ -101,9 +101,9 @@ Quality vehicles, assessment workflow and metric information can be found [here]
 
 ## **Current Sprint Information**
 
-We are currently working on ***Sprint 4***. More details including a list of sprint log items, burndown charts, and cumulative flow charts can be found by following the [link](https://rally1.rallydev.com) to our CA Agile Central project management tool and navigating to the ***Iteration Status*** page.  
+We are currently working on ***Sprint 5***. More details including a list of sprint log items, burndown charts, and cumulative flow charts can be found by following the [link](https://rally1.rallydev.com) to our CA Agile Central project management tool and navigating to the ***Iteration Status*** page.  
 
-***Sprint 4*** planning documentation can be found [here](https://github.com/Blue-Wall-Group/mediawiki/wiki/Sprint-4-overview).
+***Sprint 5*** planning documentation can be found [here](https://github.com/Blue-Wall-Group/mediawiki/wiki/Sprint-5-overview).
 
 ## **Archived Sprint Information**
 
@@ -112,4 +112,5 @@ We are currently working on ***Sprint 4***. More details including a list of spr
 * [Sprint 1](https://github.com/Blue-Wall-Group/mediawiki/wiki/Sprint-1-overview) (02/01/2018 - 02/08/2018)
 * [Sprint 2](https://github.com/Blue-Wall-Group/mediawiki/wiki/Sprint-2-overview) (02/08/2018 - 02/15/2018)
 * [Sprint 3](https://github.com/Blue-Wall-Group/mediawiki/wiki/Sprint-3-overview) (02/16/2018 - 02/23/2018)
+* [Sprint 4](https://github.com/Blue-Wall-Group/mediawiki/wiki/Sprint-4-overview) (03/02/2018 - 03/09/2018)
 
