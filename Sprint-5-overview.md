@@ -34,5 +34,7 @@ Product Owner: Jesse Buck
   - Division of team labor. 
 
 ### What to improve on
+  - Maintaining focus on Sprint Goal, and potentially define Goal in terms of Milestones. 
+  - Need to produce Quality Metric artifacts that provide value. 
 
 ### Key decisions
