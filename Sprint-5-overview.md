@@ -20,10 +20,12 @@ Product Owner: Jesse Buck
 ## Review
 
 ### Accomplishments
+  Completed User Stories selected for this Sprint.
 
 ### Metrics
 
 ### What we did vs. what we planned to do
+   Completed selected User Stories, but lost sight of overarching Sprint goal. 
 
 ## Retrospective
 
