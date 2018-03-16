@@ -30,6 +30,8 @@ Product Owner: Jesse Buck
 ## Retrospective
 
 ### What went well
+  - Coordination between team members.
+  - Division of team labor. 
 
 ### What to improve on
 
