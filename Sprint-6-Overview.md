@@ -9,6 +9,7 @@ Product Owner:
 ## Planning
 
 ### Goals
+- Resolve existing MediaWiki reviewer concerns
 
 ### User stories
 
