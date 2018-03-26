@@ -2,9 +2,9 @@ Sprint -: 3/25/2018 to 3/30/2018, 7 Points, - estimated hours.
 
 ## Roles
 
-Scrum Master: 
+Scrum Master: Hunter Hobbs
 
-Product Owner: 
+Product Owner: Daniel Collier
 
 ## Planning
 
