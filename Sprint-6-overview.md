@@ -23,7 +23,8 @@ Product Owner: Daniel Collier
 - Completed and accepted US133, US134, & US136.
 
 ### Metrics
-- Michael will update graphs for sprints without.
+![](http://chickencheetos.coffee/Pictures/Sprint6_IterationBurndown.png)
+![](http://chickencheetos.coffee/Pictures/Sprint6_CumulativeFlow.png)
 
 ### What we did vs. what we planned to do
 - We selected good user stories that were in alignment with our sprint goal and we completed/accepted those US'.
