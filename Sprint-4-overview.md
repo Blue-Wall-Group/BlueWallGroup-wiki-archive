@@ -26,7 +26,8 @@ Focus on making a deliverable enhancement to Gerrit for review and possible acce
 - Established accurate user story point estimation for all user stories in the product backlog.
 - Reduced product backlog to only user stories worth pursing.
 ### Metrics
-
+![](http://chickencheetos.coffee/Pictures/Sprint4_Iteration_Burndown.png)
+![](http://chickencheetos.coffee/Pictures/Sprint4_CumulativeFlow.png)
 ### What we did vs. what we planned to do
 - Met sprint goal, refer to "accomplishments".
 ## Retrospective
