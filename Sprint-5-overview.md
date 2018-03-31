@@ -23,7 +23,8 @@ Product Owner: Jesse Buck
   Completed User Stories selected for this Sprint.
 
 ### Metrics
-
+![](http://chickencheetos.coffee/Pictures/Sprint5_Iteration_Burndown.png)
+![](http://chickencheetos.coffee/Pictures/Sprint5_CumulativeFlow.png)
 ### What we did vs. what we planned to do
    Completed selected User Stories, but lost sight of overarching Sprint goal. 
 
