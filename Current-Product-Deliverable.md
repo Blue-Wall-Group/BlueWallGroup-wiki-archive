@@ -253,9 +253,48 @@ _Changes:_
 
 _Description:_ 
 
-_Work Performed:_ 
+_Work Performed:_ Changed several elements to use colors from the WikimediaUI Base color palette. Changed text using the "subdued" class, the color of text and links within the footer area, and the background color of the footer area. Although not explicitly mentioned in T185533, the metrics buttons within the Detail view was also changed.
 
 _Changes:_
+* App.vue:
+```diff
+.ui.attached.footer.segment {
+-   background-color: #3B3B3B;
+-   color: #AAAAAA;
++   background-color: #54595d;
++   color: #fff;
+}
+```
+
+* BottomFooter.vue:
+```diff
+-   a, a:visited { color: #888; }
++   a, a:visited { color: #eaf3ff; }
+```
+
+* MetricWidget.vue:
+```diff
+    .subdued {
+-       color: #9b9b9b;
++       color: #72777d;
+    }
+```
+
+* Detail.vue:
+```diff
+    ui.line.label {
+-       color: #9b9b9b!important;
++       color: #54595d!important;
+    }
+```
+
+* GraphPanel.vue:
+```diff
+    .graph.panel h2.header .subdued {
+-       color: #777;
++       color: #72777d;
+    }
+```
 
 ***
 
