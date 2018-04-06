@@ -304,12 +304,6 @@ _Description:_ The WikiStats 2.0 search placeholder did not comply with WCAG AA 
 
 _Work Performed:_ Replaced "4 space" indentation with tab indentation as identified by the stylelinter.  Used class hierarchy to identify placeholder rather than unique identifier.  As well as various other slight formatting changes.       
 
-
-Changed dde to reduce stylelint errors and so that
-placeholder met WCAG AA compliance.  Stylelint flagged
-id selector so placeholder was referenced by class.
-This change only partially fixed Bug T185533.
-
 _Changes:_
 ```diff
 @@ -15,7 +15,7 @@
