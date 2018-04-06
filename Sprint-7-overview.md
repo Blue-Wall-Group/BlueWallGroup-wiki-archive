@@ -20,6 +20,7 @@ Product Owner: Jaziel Pauda
 ### Key decisions
 - The team will contribute to the MediaWiki community by creating some issues on the workboard.
 - The team will participate in "open-office-hours" in attempt to get all queued submissions reviewed.
+- Daniel will work on Presentation 5.
 
 ## Review
 
