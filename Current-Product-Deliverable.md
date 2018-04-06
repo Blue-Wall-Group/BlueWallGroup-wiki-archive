@@ -246,3 +246,23 @@ _Changes:_
 [Issue T156450 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T156450)
 
 [Issue T156450 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/416887/)
+
+***
+
+### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)
+
+_Description:_ 
+
+_Work Performed:_ 
+
+_Changes:_
+
+***
+
+### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 2: Search placeholder)
+
+_Description:_ 
+
+_Work Performed:_ 
+
+_Changes:_
