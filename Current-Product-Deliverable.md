@@ -305,3 +305,180 @@ _Description:_
 _Work Performed:_ 
 
 _Changes:_
+```diff
+@@ -15,7 +15,7 @@
+ 
+         <div class="ui search">
+             <div class="ui icon input">
+-                <input id="topicSearch" class="prompt" type="text" v-model="searchDisplay"
++                <input class="prompt" type="search" v-model="searchDisplay"
+                     placeholder="Search or Browse questions and pick one to see answers"
+                     @blur="onBlur"
+                     @keyup.enter="select"
+@@ -49,7 +49,6 @@
+ import _ from '../lodash-custom-bundle';
+ import config from '../config'
+ import SearchResults from './widgets/SearchResults';
+-
+ 
+ export default {
+     name: 'topic-explorer',
+@@ -124,95 +123,97 @@
+ 
+ <style scoped>
+ .animateable {
+-    transition: all .4s;
++	transition: all 0.4s;
+ }
+ .slide.transition.container {
+-    position: relative;
+-    height: 43px;
+-    margin: -2px -32px 0 -24px;
++	position: relative;
++	height: 43px;
++	margin: -2px -32px 0 -24px;
+ }
+ .slide.transition.animateable.container.down {
+-    height: 87px;
++	height: 87px;
+ }
+ .slide.transition.container > div {
+-    position: absolute;
++	position: absolute;
+ }
+ .animateable.topic.searcher {
+-    top: -84px;
++	top: -84px;
+ }
+ .animateable.topic.searcher.down {
+-    top: 0;
++	top: 0;
+ }
+ 
+-.xui.grey.corner.button, .ui.grey.inverted.segment {
+-    background-color: #72777d!important;
++.xui.grey.corner.button,
++.ui.grey.inverted.segment {
++	background-color: #72777d !important;
+ }
+ .xui.corner.button {
+-    display: inline-block;
+-    text-align: center!important;
+-    line-height: 40px;
+-    margin: 0;
+-    width: 163px;
+-    height: 40px;
+-    border-radius: 0 0 3px 0;
+-    background-color: #72777d;
+-    cursor: pointer;
++	display: inline-block;
++	text-align: center !important;
++	line-height: 40px;
++	margin: 0;
++	width: 163px;
++	height: 40px;
++	border-radius: 0 0 3px 0;
++	background-color: #72777d;
++	cursor: pointer;
+ 
+-    font-family: Lato;
+-    font-size: 16px;
+-    font-weight: 900;
+-    text-align: left;
+-    color: #ffffff;
++	font-family: 'Lato';
++	font-size: 16px;
++	font-weight: 900;
++	color: #fff;
+ }
+ .xui.link {
+-    float: right;
+-    margin: -20px -30px 0 0;
+-    padding: 30px;
+-    cursor: pointer;
++	float: right;
++	margin: -20px -30px 0 0;
++	padding: 30px;
++	cursor: pointer;
+ }
+ .ui.inverted.segment {
+-    width: 100%;
+-    height: 84px;
+-    padding: 20px 30px;
+-    margin: 0;
+-    border-radius: 0;
+-    font-size: 16px;
+-    font-weight: 900;
+-    color: #ffffff;
++	width: 100%;
++	height: 84px;
++	padding: 20px 30px;
++	margin: 0;
++	border-radius: 0;
++	font-size: 16px;
++	font-weight: 900;
++	color: #fff;
++}
++
++.ui.search .ui.input input::-webkit-input-placeholder {
++	color: #555;
++}
++
++.ui.search .ui.input input::-ms-input-placeholder {
++	color: #555;
++}
++
++.ui.search .ui.input input::-moz-placeholder {
++	color: #555;
++	opacity: 1;
+ }
+ 
+ .ui.search {
+-    display: inline-block;
+-    width: 79%;
+-    margin-left: 10px;
+-    margin-right: 6px;
++	display: inline-block;
++	width: 79%;
++	margin-left: 10px;
++	margin-right: 6px;
+ }
+ .ui.search .ui.input {
+-    width: 100%;
++	width: 100%;
+ }
+ .ui.inverted.segment .ui.search .ui.input input {
+-    height: 35px;
+-    border-radius: 0.28571429rem;
++	height: 35px;
++	border-radius: 0.28571429rem;
+ }
+ 
+-.dropdown.button { width: 70%; margin-left: 10px; }
++.dropdown.button {
++	width: 70%;
++	margin-left: 10px;
++}
+ .ui.blue.button {
+-    background-color: #3366cc!important;
+-    width: 78px;
+-}
+-
+-#topicSearch::-webkit-input-placeholder {
+-    color: #555555;
+-}
+-
+-#topicSearch::-ms-input-placeholder {
+-    color: #555555;
+-}
+-
+-
+-#topicSearch::-moz-placeholder {
+-    color: #555555;
+-    opacity: 1;
++	background-color: #36c !important;
++	width: 78px;
+ }
+ 
+ </style>
+```
