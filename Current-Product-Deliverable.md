@@ -616,4 +616,6 @@ _Changes:_
 
 ***
 ### Issue T146966 - Add label to Options dialog > Categories input fields
+
+_Description:_ This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of the this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfill user tasks. Furthermore, this addition was necessary to improve the experience of user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 ***
