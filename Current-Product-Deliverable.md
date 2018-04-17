@@ -509,6 +509,13 @@ _Changes:_
  </style>
 ```
 
+_Results:_ 
+Placeholder contrast before:
+![](https://imgur.com/yf7RVhO)
+
+Placeholder contrast after:
+![](https://imgur.com/ztt7vnJ)
+
 ***
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)
