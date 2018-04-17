@@ -509,6 +509,8 @@ _Changes:_
  </style>
 ```
 
+_Results:_
+![](https://i.imgur.com/yf7RVhO.png)
 ***
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)
