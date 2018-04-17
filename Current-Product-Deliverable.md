@@ -613,3 +613,7 @@ _Changes:_
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 ```
+
+***
+### Issue T146966 - Add label to Options dialog > Categories input fields
+***
