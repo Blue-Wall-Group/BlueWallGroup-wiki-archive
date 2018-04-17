@@ -1,17 +1,23 @@
 # MediaWiki Accessibility Product Deliverable
-### Version: 1.0.0
 
-**The Blue Wall Group:**
-    Jesse Buck
-    Jaziel Pauda
-    Michael Cornacchio
-    Daniel Collier
-    Hunter Hobbs
+**The Blue Wall Group:**  
+    Jesse Buck  
+    Daniel Collier  
+    Michael Cornacchio  
+    Hunter Hobbs  
+    Jaziel Pauda  
 
-Date: 03/08/2018
+**Date:** 04/17/2018
 
 **Abstract:** This document is meant to organize all contributions and enhancements made to the
 MediaWiki Accessibility HFOSS project. Bellow, you will find a list of issues and defects that our team worked on throughout the Spring 18’ semester in CS4260 – Software Engineering Practices. For each issue, there is listed a description with a link to the issue on the MediaWiki Accessibility work board – Phabricator, a link to the patch submission review site (Gerrit) where a maintainer reviews, resubmissions, continuous integration test results and merges can be viewed. Code differences between patch versions or the main trunk can be viewed from the Gerrit web interface as well. If a patch submission was accepted and merged, then a link to the commit history for the MediaWiki trunk will also be provided. Contributing to this open source software project was part of our senior capstone project at Metropolitan State University of Denver.
+
+**Contents:**
+- [Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
+- [Issue T175937 - Flow could use article tags](#issue-t175937---flow-could-use-article-tags)
+- [Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility](#issue-t156450---quizgame-specialquestiongamehome-should-order-headings-correctly-for-semantics-and-accessibility)
+- [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-1-subdued-classes-and-footer-area)
+- [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 2: Search placeholder)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-2-search-placeholder)
 
 ***
 
