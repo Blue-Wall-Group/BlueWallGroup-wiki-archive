@@ -509,8 +509,14 @@ _Changes:_
  </style>
 ```
 
-_Results:_
-![](https://i.imgur.com/yf7RVhO.png)
+_Results:_ 
+
+**Before contrast modification**
+![](https://i.imgur.com/yf7RVhO.png) 
+
+**After contrast modification** 
+![](https://i.imgur.com/ztt7vnJ.png)
+
 ***
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)
