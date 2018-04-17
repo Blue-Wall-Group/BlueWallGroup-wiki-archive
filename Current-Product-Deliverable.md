@@ -306,24 +306,16 @@ _Work Performed:_ Replaced "4 space" indentation with tab indentation as identif
 
 _Changes:_
 ```diff
-@@ -15,7 +15,7 @@
+@@ -18,7 +18,7 @@
  
          <div class="ui search">
              <div class="ui icon input">
--                <input id="topicSearch" class="prompt" type="text" v-model="searchDisplay"
+-                <input class="prompt" type="text" v-model="searchDisplay"
 +                <input class="prompt" type="search" v-model="searchDisplay"
                      placeholder="Search or Browse questions and pick one to see answers"
                      @blur="onBlur"
                      @keyup.enter="select"
-@@ -49,7 +49,6 @@
- import _ from '../lodash-custom-bundle';
- import config from '../config'
- import SearchResults from './widgets/SearchResults';
--
- 
- export default {
-     name: 'topic-explorer',
-@@ -124,95 +123,97 @@
+@@ -122,105 +122,122 @@
  
  <style scoped>
  .animateable {
@@ -389,16 +381,11 @@ _Changes:_
 +	font-family: 'Lato';
 +	font-size: 16px;
 +	font-weight: 900;
++	text-align: left;
 +	color: #fff;
  }
  .xui.link {
--    float: right;
--    margin: -20px -30px 0 0;
--    padding: 30px;
 -    cursor: pointer;
-+	float: right;
-+	margin: -20px -30px 0 0;
-+	padding: 30px;
 +	cursor: pointer;
  }
  .ui.inverted.segment {
@@ -462,23 +449,60 @@ _Changes:_
  .ui.blue.button {
 -    background-color: #3366cc!important;
 -    width: 78px;
--}
--
--#topicSearch::-webkit-input-placeholder {
--    color: #555555;
--}
--
--#topicSearch::-ms-input-placeholder {
--    color: #555555;
--}
--
--
--#topicSearch::-moz-placeholder {
--    color: #555555;
--    opacity: 1;
 +	background-color: #36c !important;
 +	width: 78px;
  }
  
+-@media(max-width: 450px) {
+-    .xui.grey.corner.button {
+-        width: 100vw;
+-        margin-left: -1px;
+-        border-radius: 0;
+-    }
+-    .slide.transition.container {
+-        margin: 0;
+-    }
+-    .xui.link {
+-        margin: 0;
+-        padding: 0;
+-    }
++@media ( max-width: 450px ) {
++	.xui.grey.corner.button {
++		width: 100vw;
++		margin-left: -1px;
++		border-radius: 0;
++	}
++	.slide.transition.container {
++		margin: 0;
++	}
++	.xui.link {
++		margin: 0;
++		padding: 0;
++	}
+ }
+ 
+-@media(max-width: 1000px) {
+-    .ui.segment.topic.searcher {
+-        padding: 10px;
+-    }
+-    .xui.link {
+-        display: inline-block;
+-        margin-bottom: 10px;
+-    }
+-    .topic.searcher .ui.search {
+-        width: 97%;
+-    }
++@media ( max-width: 1000px ) {
++	.ui.segment.topic.searcher {
++		padding: 10px;
++	}
++	.xui.link {
++		display: inline-block;
++		margin-bottom: 10px;
++	}
++	.topic.searcher .ui.search {
++		width: 97%;
++	}
+ }
  </style>
 ```
