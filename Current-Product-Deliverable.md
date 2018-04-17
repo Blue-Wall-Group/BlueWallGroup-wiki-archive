@@ -28,67 +28,155 @@ _Work performed:_ We went through each JavaScript file in the Multimedia Viewer 
 
 This issue is not completely resolved yet. We are currently working on patchset 5. The history of our changes and patchsets, as well as the maintainer review and continuous integration test results can be viewed on the Gerrit web interface.
 
-_Changes (outdated):_
-
-* mmv.ui.download.pane.js:
+_Changes:_
+* resources/mmv/mmv.bootstrap.less:
 ```diff
--   this.$attributionCopy = this.$copyButton = $( '<a>' )
-+   this.$attributionCopy = this.$copyButton = $( '<button>' )
-+       .attr( 'aria-label', mw.msg( 'multimediaviewer-download-attribution-copy' ) )
+@@ -58,3 +58,12 @@
+ 		}
+ 	}
+ }
++
++.mw-mmv-button {
++	background-color: transparent;
++	min-width: 0;
++	border: 0;
++	padding: 0;
++	overflow-x: hidden;
++	text-indent: -9999em;
++}
 ```
 
-* mmv.ui.permission.js:
+* resources/mmv/ui/mmv.ui.download.pane.js:
 ```diff
--   this.$close = $( '<div>' )
-+   this.$close = $( '<button>' )
+@@ -198,8 +198,8 @@
+ 			)
+ 			.appendTo( this.$attributionSection );
+ 		this.attributionInput = attributionInput;
+-		this.$attributionCopy = this.$copyButton = $( '<a>' )
+-			.addClass( 'mw-mmv-dialog-copy' )
++		this.$attributionCopy = this.$copyButton = $( '<button>' )
++			.addClass( 'mw-ui-button mw-mmv-button mw-mmv-dialog-copy' )
+ 			.click( function () {
+ 				// Select the text, and then try to copy the text.
+ 				// If the copy fails or is not supported, continue as if nothing had happened.
+@@ -216,6 +216,7 @@
+ 				}
+ 			} )
+ 			.prop( 'title', mw.msg( 'multimediaviewer-download-attribution-copy' ) )
++			.text( mw.msg( 'multimediaviewer-download-attribution-copy' ) )
+ 			.tipsy( {
+ 				delayIn: mw.config.get( 'wgMultimediaViewer' ).tooltipDelay,
+ 				gravity: this.correctEW( 'se' )
 ```
 
-* mmv.ui.reuse.embed.js:
+* resources/mmv/ui/mmv.ui.permission.js:
 ```diff
--   this.$copyButton = $( '<a>' )
-+   this.$copyButton = $( '<button>' )
-+       .attr( 'aria-label', mw.msg( +'multimediaviewer-reuse-copy-embed' ) )
+@@ -96,7 +96,7 @@
+ 		 * "Close" button (does not actually close the box, just makes it smaller).
+ 		 * @property {jQuery}
+ 		 */
+-		this.$close = $( '<div>' )
++		this.$close = $( '<button>' )
+ 			.addClass( 'mw-mmv-permission-close' )
+ 			.on( 'click', function () {
+ 				permission.shrink();
 ```
 
-* mmv.ui.reuse.embed.less:
+* resources/mmv/ui/mmv.ui.reuse.embed.js:
 ```diff
--   width: 1em;
--   height: 1em;
--   margin: 10px 0.5em 20px 0;
--   padding: 0 0 0 5px;
-+   width: 1.5em;
-+   height: 1.5em;
-+   margin: 10px 0.7em 20px 0.7em;
-+   border: 0;
-+   background-color: transparent;
+@@ -141,8 +141,8 @@
+ 			mw.mmv.actionLogger.log( 'embed-wikitext-copied' );
+ 		} );
+ 
+-		this.$copyButton = $( '<a>' )
+-			.addClass( 'mw-mmv-dialog-copy' )
++		this.$copyButton = $( '<button>' )
++			.addClass( 'mw-mmv-button mw-mmv-dialog-copy' )
+ 			.click( function () {
+ 				// Select the text, and then try to copy the text.
+ 				// If the copy fails or is not supported, continue as if nothing had happened.
+@@ -159,6 +159,7 @@
+ 				}
+ 			} )
+ 			.prop( 'title', mw.msg( 'multimediaviewer-reuse-copy-embed' ) )
++			.text( mw.msg( 'multimediaviewer-reuse-copy-embed' ) )
+ 			.tipsy( {
+ 				delayIn: mw.config.get( 'wgMultimediaViewer' ).tooltipDelay,
+ 				gravity: this.correctEW( 'se' )
 ```
 
-* mmv.ui.reuse.share.js:
+* resources/mmv/ui/mmv.ui.reuse.embed.less
 ```diff
--    this.$copyButton = $( '<a>' )
-+    this.$copyButton = $( '<button>' )
-+       .attr( 'aria-label', mw.msg( 'multimediaviewer-reuse-copy-share' ) )
+@@ -37,10 +37,9 @@
+ 
+ 	.mw-mmv-dialog-copy {
+ 		float: right;
+-		width: 1em;
+-		height: 1em;
+-		margin: 10px 0.5em 20px 0;
+-		padding: 0 0 0 5px;
++		width: 1.5em;
++		height: 1.5em;
++		margin: 10px 0.75em 20px 0.75em;
+ 	}
+ }
+ ```
+
+* resources/mmv/ui/mmv.ui.reuse.share.js:
+```diff
+@@ -67,8 +67,8 @@
+ 				mw.mmv.actionLogger.log( 'share-page' );
+ 			} );
+ 
+-		this.$copyButton = $( '<a>' )
+-			.addClass( 'mw-mmv-dialog-copy' )
++		this.$copyButton = $( '<button>' )
++			.addClass( 'mw-mmv-button mw-mmv-dialog-copy' )
+ 			.click( function () {
+ 				// Select the text, and then try to copy the text.
+ 				// If the copy fails or is not supported, continue as if nothing had happened.
+@@ -85,6 +85,7 @@
+ 				}
+ 			} )
+ 			.prop( 'title', mw.msg( 'multimediaviewer-reuse-copy-share' ) )
++			.text( mw.msg( 'multimediaviewer-reuse-copy-share' ) )
+ 			.tipsy( {
+ 				delayIn: mw.config.get( 'wgMultimediaViewer' ).tooltipDelay,
+ 				gravity: this.correctEW( 'se' )
 ```
 
-* mmv.ui.reuse.share.less:
+* resources/mmv/ui/mmv.ui.reuse.share.less:
 ```diff
--   width: 1.5em;
--   height: 1.5em;
-+   width: 2em;
-+   height: 2em;
--   margin: 8px 0.5em 8px 0;
--   padding: 0 0 0 5px;
-+   margin: 8px 0.5em 8px 0.5em;
-+   border: 0;
-+   background-color: transparent;
-```
+@@ -18,13 +18,12 @@
+ 	.mw-mmv-dialog-copy {
+ 		// style rules based on .mw-mmv-share-page-link
+ 		float: right;
+-		width: 1.5em;
+-		height: 1.5em;
++		width: 2em;
++		height: 2em;
+ 		// position approximately to the middle - probably fragile but couldn't find a better way as
+ 		// the height of OOUI input widget has both em and px parts and not possible to calculate
+ 		// exactly
+-		margin: 8px 0.5em 8px 0;
+-		padding: 0 0 0 5px;
++		margin: 8px 0.5em;
+ 	}
+ }
+ ```
 
-* mmv.ui.stripeButtons.js:
+* resources/mmv/ui/mmv.ui.stripeButtons.js:
 ```diff
--   .prependTo( this.$buttonContainer );
-+   .prependTo( this.$buttonContainer )
-+   .attr( 'role', 'button' )
-+   .attr( 'tabindex', '0' );
+@@ -59,7 +59,8 @@
+ 		$button = $( '<a>' )
+ 			.addClass( 'mw-mmv-stripe-button empty ' + cssClass )
+ 			// elements are right-floated so we use prepend instead of append to keep the order
+-			.prependTo( this.$buttonContainer );
++			.prependTo( this.$buttonContainer )
++			.attr( 'tabindex', '0' );
+ 
+ 		return $button;
+ 	};
 ```
 
 [Issue T161612 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T161612)
@@ -108,40 +196,68 @@ _Work Performed:_ The work started with verifying the issue author was correct t
 
 _Changes:_
 
-* flow_block_topic_moderate_post.handlebars.php:
+* handlebars/compiled/flow_block_topic_moderate_post.handlebars.php:
 ```diff
--   '.$sp.' <div class="flow-post-content mw-parser-output">
-+   '.$sp.' <article class="flow-post-content mw-parser-output">
-    ⋮
--   '.$sp.' </div>
-+   '.$sp.' </article>
+@@ -159,9 +159,9 @@
+ '.$sp.''.((LCRun3::ifvar($cx, ((isset($in['isModerated']) && is_array($in)) ? $in['isModerated'] : null))) ? '		<div class="flow-moderated-post-content">
+ '.$sp.''.LCRun3::p($cx, 'flow_post_moderation_state', array(array($in),array()), '			').'		</div>
+ '.$sp.'' : '').'
+-'.$sp.'	<div class="flow-post-content mw-parser-output">
++'.$sp.'	<article class="flow-post-content mw-parser-output">
+ '.$sp.'		'.LCRun3::ch($cx, 'escapeContent', array(array(((isset($in['content']['format']) && is_array($in['content'])) ? $in['content']['format'] : null),((isset($in['content']['content']) && is_array($in['content'])) ? $in['content']['content'] : null)),array()), 'encq').'
+-'.$sp.'	</div>
++'.$sp.'	</article>
+ '.$sp.'
+ '.$sp.''.LCRun3::p($cx, 'flow_post_meta_actions', array(array($in),array()), '	').''.LCRun3::p($cx, 'flow_post_actions', array(array($in),array()), '	').'</div>
+ ';},'flow_anon_warning' => function ($cx, $in, $sp) {return ''.$sp.'<div class="flow-anon-warning">
 ```
 
-* flow_block_topic_moderate_topic.handlebars.php:
+* handlebars/compiled/flow_block_topic_moderate_topic.handlebars.php:
 ```diff
--   '.$sp.'    <div class="flow-post-content mw-parser-output">
-+   '.$sp.'    <article class="flow-post-content mw-parser-output">
-    ⋮
--   '.$sp.'    </div>
-+   '.$sp.'    </article>
+@@ -159,9 +159,9 @@
+ '.$sp.''.((LCRun3::ifvar($cx, ((isset($in['isModerated']) && is_array($in)) ? $in['isModerated'] : null))) ? '		<div class="flow-moderated-post-content">
+ '.$sp.''.LCRun3::p($cx, 'flow_post_moderation_state', array(array($in),array()), '			').'		</div>
+ '.$sp.'' : '').'
+-'.$sp.'	<div class="flow-post-content mw-parser-output">
++'.$sp.'	<article class="flow-post-content mw-parser-output">
+ '.$sp.'		'.LCRun3::ch($cx, 'escapeContent', array(array(((isset($in['content']['format']) && is_array($in['content'])) ? $in['content']['format'] : null),((isset($in['content']['content']) && is_array($in['content'])) ? $in['content']['content'] : null)),array()), 'encq').'
+-'.$sp.'	</div>
++'.$sp.'	</article>
+ '.$sp.'
+ '.$sp.''.LCRun3::p($cx, 'flow_post_meta_actions', array(array($in),array()), '	').''.LCRun3::p($cx, 'flow_post_actions', array(array($in),array()), '	').'</div>
+ ';},'flow_anon_warning' => function ($cx, $in, $sp) {return ''.$sp.'<div class="flow-anon-warning">
 ```
 
-* flow_post.handlebars.php:
+* handlebars/compiled/flow_post.handlebars.php:
 ```diff
--   '.$sp.'    <div class="flow-post-content mw-parser-output">
-+   '.$sp.'    <article class="flow-post-content mw-parser-output">
-    ⋮
--   '.$sp.'    </div>
-+   '.$sp.'    </article>
+@@ -137,9 +137,9 @@
+ '.$sp.''.((LCRun3::ifvar($cx, ((isset($in['isModerated']) && is_array($in)) ? $in['isModerated'] : null))) ? '		<div class="flow-moderated-post-content">
+ '.$sp.''.LCRun3::p($cx, 'flow_post_moderation_state', array(array($in),array()), '			').'		</div>
+ '.$sp.'' : '').'
+-'.$sp.'	<div class="flow-post-content mw-parser-output">
++'.$sp.'	<article class="flow-post-content mw-parser-output">
+ '.$sp.'		'.LCRun3::ch($cx, 'escapeContent', array(array(((isset($in['content']['format']) && is_array($in['content'])) ? $in['content']['format'] : null),((isset($in['content']['content']) && is_array($in['content'])) ? $in['content']['content'] : null)),array()), 'encq').'
+-'.$sp.'	</div>
++'.$sp.'	</article>
+ '.$sp.'
+ '.$sp.''.LCRun3::p($cx, 'flow_post_meta_actions', array(array($in),array()), '	').''.LCRun3::p($cx, 'flow_post_actions', array(array($in),array()), '	').'</div>
+ ';},'flow_anon_warning' => function ($cx, $in, $sp) {return ''.$sp.'<div class="flow-anon-warning">
 ```
 
-* flow_post_inner.partial.handlebars:
+* handlebars/flow_post_inner.partial.handlebars:
 ```diff
--   <div class="flow-post-content mw-parser-output">
-+   <article class="flow-post-content mw-parser-output">
-    ⋮
--   </div>
-+   </article>
+@@ -11,9 +11,9 @@
+ 		</div>
+ 	{{/if}}
+ 
+-	<div class="flow-post-content mw-parser-output">
++	<article class="flow-post-content mw-parser-output">
+ 		{{escapeContent content.format content.content}}
+-	</div>
++	</article>
+ 
+ 	{{> flow_post_meta_actions}}
+ 	{{> flow_post_actions}}
 ```
 
 [Issue T175937 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T175937)
@@ -163,96 +279,171 @@ _Work Performed:_ The work started with determining if having multiple `<h2>` ta
 
 _Changes:_
 
-* SpecialQuizGameHome.php:
+* includes/specials/SpecialQuizGameHome.php:
 ```diff
--   <h1>' . $this->msg( 'quizgame-admin-flagged' )->text() . "</h1>
-+   <h2>' . $this->msg( 'quizgame-admin-flagged' )->text() . "</h2>
-    ⋮
--   <h1>" . $this->msg( 'quizgame-admin-protected' )->text() . "</h1>
-+   <h2>" . $this->msg( 'quizgame-admin-protected' )->text() . "</h2>
-    ⋮
--   <h1>' . $this->msg( 'quizgame-submitted-by' )->text() . "</h1>
-+   <h2>' . $this->msg( 'quizgame-submitted-by' )->text() . "</h2>
-    ⋮
--   <h1>" . $this->msg( 'quizgame-question' )->text() . "</h1>
-+   <h2>" . $this->msg( 'quizgame-question' )->text() . "</h2>
-    ⋮
--   <h1>" . $this->msg( 'quizgame-answers' )->text() . "</h1>
-+   <h2>" . $this->msg( 'quizgame-answers' )->text() . "</h2>
-    ⋮
--   <h1>" . $this->msg( 'quizgame-picture' )->text() . "</h1>
-+   <h2>" . $this->msg( 'quizgame-picture' )->text() . "</h2>
-    ⋮
--   <h1>" . $this->msg( 'quizgame-submitted-by' )->text() . "</h1>
-+   <h2>" . $this->msg( 'quizgame-submitted-by' )->text() . "</h2>
-    ⋮
--   <h1>' . $this->msg( 'quizgame-create-write-question' )->text() . '</h1>
-+   <h2>' . $this->msg( 'quizgame-create-write-question' )->text() . '</h2>
-    ⋮
--   <h1 class="write-answer">' . $this->msg( 'quizgame-create-write-answers' )->text() . '</h1>
-+   <h2 class="write-answer">' . $this->msg( 'quizgame-create-write-answers' )->text() . '</h2>
-    ⋮
--   <h1 style="margin-top:20px">' .
--       $this->msg( 'quizgame-create-add-picture' )->text() . '</h1>
-+   <h2 style="margin-top:20px">' .
-+       $this->msg( 'quizgame-create-add-picture' )->text() . '</h2>
+@@ -418,10 +418,10 @@
+ 						$this->msg( 'quizgame-admin-back' )->text() . '</a>
+ 				</div>
+ 
+-				<h1>' . $this->msg( 'quizgame-admin-flagged' )->text() . "</h1>
++				<h2>' . $this->msg( 'quizgame-admin-flagged' )->text() . "</h2>
+ 				{$flaggedQuestions}
+ 
+-				<h1>" . $this->msg( 'quizgame-admin-protected' )->text() . "</h1>
++				<h2>" . $this->msg( 'quizgame-admin-protected' )->text() . "</h2>
+ 				{$protectedQuestions}
+ 
+ 			</div>";
+@@ -671,7 +671,7 @@
+ 						'">
+ 
+ 						<div class="credit-box" id="creditBox">
+-							<h1>' . $this->msg( 'quizgame-submitted-by' )->text() . "</h1>
++							<h2>' . $this->msg( 'quizgame-submitted-by' )->text() . "</h2>
+ 
+ 							<div id=\"submitted-by-image\" class=\"submitted-by-image\">
+ 							<a href=\"{$user_title->getFullURL()}\">
+@@ -702,13 +702,13 @@
+ 
+ 						<div class=\"ajax-messages\" id=\"ajax-messages\" style=\"margin:20px 0px 15px 0px;\"></div>
+ 
+-						<h1>" . $this->msg( 'quizgame-question' )->text() . "</h1>
++						<h2>" . $this->msg( 'quizgame-question' )->text() . "</h2>
+ 						<input name=\"quizgame-question\" id=\"quizgame-question\" type=\"text\" value=\"" .
+ 							htmlspecialchars( $question['text'], ENT_QUOTES ) . "\" size=\"64\" />
+-						<h1>" . $this->msg( 'quizgame-answers' )->text() . "</h1>
++						<h2>" . $this->msg( 'quizgame-answers' )->text() . "</h2>
+ 						<div style=\"margin:10px 0px;\">" . $this->msg( 'quizgame-correct-answer-checked' )->text() . "</div>
+ 						{$quizOptions}
+-						<h1>" . $this->msg( 'quizgame-picture' )->text() . "</h1>
++						<h2>" . $this->msg( 'quizgame-picture' )->text() . "</h2>
+ 						<div class=\"quizgame-edit-picture\" id=\"quizgame-edit-picture\">
+ 							{$pictag}
+ 						</div>
+@@ -1170,7 +1170,7 @@
+ 						"</a>
+ 					</div>
+ 					<div class=\"credit-box\" id=\"creditBox\">
+-						<h1>" . $this->msg( 'quizgame-submitted-by' )->text() . "</h1>
++						<h2>" . $this->msg( 'quizgame-submitted-by' )->text() . "</h2>
+ 
+ 						<div id=\"submitted-by-image\" class=\"submitted-by-image\">
+ 							<a href=\"{$user_title->getFullURL()}\">
+@@ -1363,9 +1363,9 @@
+ 					htmlspecialchars( $this->getPageTitle()->getFullURL( 'questionGameAction=createGame' ) ) . '">
+ 				<div id="quiz-game-errors" style="color:red"></div>
+ 
+-				<h1>' . $this->msg( 'quizgame-create-write-question' )->text() . '</h1>
++				<h2>' . $this->msg( 'quizgame-create-write-question' )->text() . '</h2>
+ 				<input name="quizgame-question" id="quizgame-question" type="text" value="" size="64" />
+-				<h1 class="write-answer">' . $this->msg( 'quizgame-create-write-answers' )->text() . '</h1>
++				<h2 class="write-answer">' . $this->msg( 'quizgame-create-write-answers' )->text() . '</h2>
+ 				<span style="margin-top:10px;">' . $this->msg( 'quizgame-create-check-correct' )->text() . '</span>
+ 				<span style="display:none;" id="this-is-the-welcome-page"></span>';
+ 		// the span#this-is-the-welcome-page element is an epic hack for JS
+@@ -1389,8 +1389,8 @@
+ 
+ 			'</form>
+ 
+-			<h1 style="margin-top:20px">' .
+-				$this->msg( 'quizgame-create-add-picture' )->text() . '</h1>
++			<h2 style="margin-top:20px">' .
++				$this->msg( 'quizgame-create-add-picture' )->text() . '</h2>
+ 			<div id="quizgame-picture-upload">
+ 
+ 				<div id="real-form">
 ```
 
-* questiongame.css:
+* resources/css/questiongame.css:
 ```diff
--   .quizgame-edit-question h1 {
--       font-size: 16px;
--       font-weight: bold;
--       border-bottom: none;
--       color: #333;
--       margin: 20px 0 10px 0 !important;
--   }
-    ⋮
--   .quizgame-admin h1 {
--       font-size: 18px;
--       color: #333;
--       font-weight: bold;
--       margin: 0 0 20px 0 !important;
--   }
-    ⋮
--   .quizgame-flagged-item h1 {
--       font-size: 14px;
--       font-weight: bold;
--       color: #333;
--       margin: 0 0 10px 0 !important;
--   }
-    ⋮
--   .credit-box h1 {
--       border-bottom: none;
--       color: #333;
--       font-size: 16px;
--       font-weight: bold;
--       padding: 0;
--       margin: 0 0 10px !important;
--   }
-    ⋮
--   .create-message h1 {
--       font-size: 22px;
--       border-bottom: none;
--       font-weight: bold;
--       margin: 0 0 10px !important;
--   }
+@@ -28,14 +28,6 @@
+ 	padding: 0 0 0 2px;
+ }
+ 
+-.quizgame-edit-question h1 {
+-	font-size: 16px;
+-	font-weight: bold;
+-	border-bottom: none;
+-	color: #333;
+-	margin: 20px 0 10px 0 !important;
+-}
 -
--   .quizgame-create-form h1 {
--       color: #333;
--       font-size: 16px;
--       font-weight: bold;
--       border-bottom: none;
--       margin: 20px 0 15px 0 !important;
--   }
+ .quizgame-picture img {
+ 	border: 1px solid #dcdcdc;
+ 	padding: 3px;
+@@ -103,13 +95,6 @@
+ 	padding: 10px 0 0 0;
+ }
+ 
+-.quizgame-admin h1 {
+-	font-size: 18px;
+-	color: #333;
+-	font-weight: bold;
+-	margin: 0 0 20px 0 !important;
+-}
 -
--   h1.write-answer {
--       color: #333;
--       font-size: 16px;
--       margin: 20px 0 10px 0 !important;
--   }
+ .quizgame-admin-top-links {
+ 	margin: -10px 0 20px 0;
+ }
+@@ -124,13 +109,6 @@
+ 	margin: 0 0 20px 0;
+ 	padding: 0 0 20px 0;
+ 	width: 500px;
+-}
+-
+-.quizgame-flagged-item h1 {
+-	font-size: 14px;
+-	font-weight: bold;
+-	color: #333;
+-	margin: 0 0 10px 0 !important;
+ }
+ 
+ .quizgame-flagged-picture img {
+@@ -253,15 +231,6 @@
+ 	margin: 8px 0 0;
+ 	padding: 10px;
+ 	padding-bottom: 60px;
+-}
+-
+-.credit-box h1 {
+-	border-bottom: none;
+-	color: #333;
+-	font-size: 16px;
+-	font-weight: bold;
+-	padding: 0;
+-	margin: 0 0 10px !important;
+ }
+ 
+ .last-game {
+@@ -406,27 +375,6 @@
+ 	border: 1px solid #dcdcdc;
+ 	padding: 9px;
+ 	width: 500px;
+-}
+-
+-.create-message h1 {
+-	font-size: 22px;
+-	border-bottom: none;
+-	font-weight: bold;
+-	margin: 0 0 10px !important;
+-}
+-
+-.quizgame-create-form h1 {
+-	color: #333;
+-	font-size: 16px;
+-	font-weight: bold;
+-	border-bottom: none;
+-	margin: 20px 0 15px 0 !important;
+-}
+-
+-h1.write-answer {
+-	color: #333;
+-	font-size: 16px;
+-	margin: 20px 0 10px 0 !important;
+ }
+ 
+ .quizgame-answer-number {
 ```
-
 
 [Issue T156450 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T156450)
 
@@ -270,45 +461,76 @@ _Description:_
 _Work Performed:_ Changed several elements to use colors from the WikimediaUI Base color palette. Changed text using the "subdued" class, the color of text and links within the footer area, and the background color of the footer area. Although not explicitly mentioned in T185533, the metrics buttons within the Detail view was also changed.
 
 _Changes:_
-* App.vue:
+* src/App.vue
 ```diff
-.ui.attached.footer.segment {
--   background-color: #3B3B3B;
--   color: #AAAAAA;
-+   background-color: #54595d;
-+   color: #fff;
-}
+@@ -138,8 +138,8 @@
+     border-bottom: none;
+ }
+ .ui.attached.footer.segment {
+-    background-color: #3B3B3B;
+-    color: #AAAAAA;
++    background-color: #54595d;
++    color: #fff;
+     border: none;
+ }
+ ```
+ 
+* src/components/BottomFooter.vue:
+```diff
+@@ -32,6 +32,9 @@
+ </script>
+ 
+ <style scoped>
+-a, a:visited { color: #888; }
++a, a:visited {
++    color: #eaf3ff;
++    border-bottom: 1px dashed #eaf3ff;
++}
+ .ui.centered { font-size: 1.1em; }
+ </style>
 ```
 
-* BottomFooter.vue:
+* src/components/dashboard/MetricWidget.vue:
 ```diff
--   a, a:visited { color: #888; }
-+   a, a:visited { color: #eaf3ff; }
+@@ -322,6 +322,6 @@
+     margin: 4px 2px 2px 2px;
+ }
+ .subdued {
+-    color: #9b9b9b;
++    color: #72777d;
+ }
+ </style>
+ ```
+
+* src/components/detail/Detail.vue:
+```diff
+@@ -240,7 +240,7 @@
+     border: solid 2px #cdcdcd!important;
+     font-size: 13px;
+     font-weight: 500;
+-    color: #9b9b9b!important;
++    color: #54595d!important;
+     padding: 5px 9px;
+     cursor: pointer;
+ }
 ```
 
-* MetricWidget.vue:
+* src/components/detail/GraphPanel.vue:
 ```diff
-    .subdued {
--       color: #9b9b9b;
-+       color: #72777d;
-    }
+@@ -201,7 +201,6 @@
+ .graph.panel h2.header .subdued {
+     margin-left: 4px;
+     font-size: 18px;
+-    color: #777;
+     font-weight: 300;
+ }
+ .graph.panel .ui.right.floated.buttons {
 ```
 
-* Detail.vue:
-```diff
-    ui.line.label {
--       color: #9b9b9b!important;
-+       color: #54595d!important;
-    }
-```
+[Issue T185533 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T185533)
 
-* GraphPanel.vue:
-```diff
-    .graph.panel h2.header .subdued {
--       color: #777;
-+       color: #72777d;
-    }
-```
+[Issue T185533 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/419958/)
+
 
 ***
 
@@ -317,13 +539,12 @@ _Changes:_
 _Contributors:_
 * Michael Cornacchio
 
-_Description:_ The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.   
+_Description:_ 
 
-_Work Performed:_ Replaced "4 space" indentation with tab indentation as identified by the stylelinter.  Used class hierarchy to identify placeholder rather than unique identifier.  As well as various other slight formatting changes.       
+_Work Performed:_ 
 
 _Changes:_
-
-* TopicExplorer.vue
+* src/components/TopicExplorer.vue:
 ```diff
 @@ -18,7 +18,7 @@
  
@@ -642,6 +863,10 @@ _Changes:_
          <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 ```
 
+[Issue T185533 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T185533)
+
+[Issue T185533 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426848/)
+
 ***
 ### Issue T146966 - Add label to Options dialog > Categories input fields 
 
@@ -654,5 +879,84 @@ _Description:_ This issue revolved the improvement of the "Categories" dialog pa
 _Work Performed:_ The work performed on this contribution began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension. After this, the newly added message was defined by associating the message with the English text that would be displayed to the user in the 'en.json' file of the code base. The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports. The final step in the development of this contribution was utilizing MediaWiki OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget.
 
 _Changes:_
+
+* extension.json:
+```diff
+@@ -1693,6 +1693,7 @@
+ 				"visualeditor-categories-tool",
+ 				"visualeditor-dialog-meta-advancedsettings-label",
+ 				"visualeditor-dialog-meta-advancedsettings-section",
++				"visualeditor-dialog-meta-categories-addcategory-label",
+ 				"visualeditor-dialog-meta-categories-category",
+ 				"visualeditor-dialog-meta-categories-data-label",
+ 				"visualeditor-dialog-meta-categories-defaultsort-help",
+```
+
+* i18n/ve-mw/en.json:
+```diff
+@@ -151,6 +151,7 @@
+ 	"visualeditor-dialog-media-upload": "Upload",
+ 	"visualeditor-dialog-meta-advancedsettings-label": "Advanced settings",
+ 	"visualeditor-dialog-meta-advancedsettings-section": "Advanced settings",
++	"visualeditor-dialog-meta-categories-addcategory-label": "Add a category to this page",
+ 	"visualeditor-dialog-meta-categories-category": "Category",
+ 	"visualeditor-dialog-meta-categories-data-label": "Categories",
+ 	"visualeditor-dialog-meta-categories-defaultsort-help": "You can override how this page is sorted when displayed within a category by setting a different index to sort with instead. This is often used to make pages about people show by last name, but be named with their first name shown first.",
+```
+
+* i18n/ve-mw/qqq.json:
+```diff
+@@ -165,6 +165,7 @@
+ 	"visualeditor-dialog-media-upload": "Label for the upload button\n{{Identical|Upload}}",
+ 	"visualeditor-dialog-meta-advancedsettings-label": "Title for the advanced settings dialog section.\n{{Identical|Advanced settings}}",
+ 	"visualeditor-dialog-meta-advancedsettings-section": "Label for the advanced settings dialog section.\n{{Identical|Advanced settings}}",
++	"visualeditor-dialog-meta-categories-addcategory-label": "Label for field that adds a category to the page",
+ 	"visualeditor-dialog-meta-categories-category": "Title of popup for editing category options.\n{{Identical|Category}}",
+ 	"visualeditor-dialog-meta-categories-data-label": "Label for the categories sub-section.\n{{Identical|Category}}",
+ 	"visualeditor-dialog-meta-categories-defaultsort-help": "Message displayed as contextual help about the <nowiki>{{DEFAULTSORT:…}}</nowiki> control to editors in the page categories panel.",
+```
+
+* modules/ve-mw/ui/pages/ve.ui.MWCategoriesPage.js:
+```diff
+@@ -31,13 +31,25 @@
+ 		label: ve.msg( 'visualeditor-dialog-meta-categories-data-label' ),
+ 		icon: 'tag'
+ 	} );
++
+ 	this.categoryOptionsFieldset = new OO.ui.FieldsetLayout( {
+ 		label: ve.msg( 'visualeditor-dialog-meta-categories-options' ),
+ 		icon: 'advanced'
+ 	} );
++
+ 	this.categoryWidget = new ve.ui.MWCategoryWidget( {
+ 		$overlay: config.$overlay
+ 	} );
++
++	this.addCategory = new OO.ui.FieldLayout(
++		this.categoryWidget,
++		{
++			$overlay: config.$overlay,
++			align: 'top',
++			label: ve.msg( 'visualeditor-dialog-meta-categories-addcategory-label' )
++		}
++	);
++
+ 	this.defaultSortInput = new OO.ui.TextInputWidget( {
+ 		placeholder: this.fallbackDefaultSortKey
+ 	} );
+@@ -64,7 +76,7 @@
+ 	} );
+ 
+ 	// Initialization
+-	this.categoriesFieldset.$element.append( this.categoryWidget.$element );
++	this.categoriesFieldset.addItems( [ this.addCategory ] );
+ 	this.categoryOptionsFieldset.addItems( [ this.defaultSort ] );
+ 	this.$element.append( this.categoriesFieldset.$element, this.categoryOptionsFieldset.$element );
+ };
+```
+
+[Issue T146966 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T185533)
+
+[Issue T146966 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426139/)
 
 ***
