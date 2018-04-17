@@ -523,6 +523,93 @@ _Work Performed:_
 * Changed search header to a div.       
 
 _Changes:_
-```diff
 
+* TopNav.vue:
+```diff
+@@ -2,7 +2,7 @@
+ <div>
+     <router-link :to="{project: $store.state.project}">
+         <div class="wikititle ui left floated header">
+-            <img class="ui mini image" src="../../assets/Wikimedia-logo.svg">
++            <img class="ui mini image" alt="Wikimedia logo" src="../../assets/Wikimedia-logo.svg">
+             <span class="text">Wikimedia Statistics</span>
+         </div>
+     </router-link>
+```
+
+* TopicExplorer.vue:
+```diff
+@@ -18,7 +18,8 @@
+ 
+         <div class="ui search">
+             <div class="ui icon input">
+-                <input class="prompt" type="text" v-model="searchDisplay"
++				<label for="topicSearch">Search for a Question</label>
++                <input id="topicSearch" class="prompt" type="text" v-model="searchDisplay"
+                     placeholder="Search or Browse questions and pick one to see answers"
+                     @blur="onBlur"
+                     @keyup.enter="select"
+@@ -223,4 +224,9 @@
+         width: 97%;
+     }
+ }
++
++label[ for='topicSearch' ]
++{
++	display: none;
++}
+ </style>
+```
+
+* WikiSelector.vue:
+```diff
+@@ -2,7 +2,8 @@
+ <div>
+     <div class="ui search">
+         <div class="ui icon input">
+-            <input class="prompt" type="text" v-model="inputText"
++			<label for="wikiSearch">Search for a Wiki</label>
++            <input id="wikiSearch" class="prompt" type="text" v-model="inputText"
+                 ref="inputBox"
+                 :placeholder="placeholder"
+                 @click="open"
+@@ -344,4 +345,9 @@
+         margin-left: 1em;
+     }
+ }
++
++label[ for='wikiSearch' ]
++{
++	display: none;
++}
+ </style>
+```
+
+* Dashboard.vue:
+```diff
+@@ -1,10 +1,10 @@
+ <template>
+-<section class="widgets">
++<section class="widgets" role="main">
+     <div class="ui clearing basic top segment">
+         <h2 class="ui left floated header">Monthly overview</h2>
+-        <h5 class="ui right floated header wikiselector">
++        <div class="ui right floated header wikiselector">
+             <wiki-selector :single="true"></wiki-selector>
+-        </h5>
++        </div>
+     </div>
+     <div class="ui basic area segment"
+         v-for="a in areas"
+```
+
+* index.html:
+```diff
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html>
++<html lang="en">
+     <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 ```
