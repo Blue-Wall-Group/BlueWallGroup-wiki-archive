@@ -961,8 +961,16 @@ _Changes:_
  	this.categoryOptionsFieldset.addItems( [ this.defaultSort ] );
  	this.$element.append( this.categoriesFieldset.$element, this.categoryOptionsFieldset.$element );
  };
-```
+``` 
 
+_Results_:
+* Before adding category label:
+![](https://i.imgur.com/xEQpOnm.png) 
+
+* After adding category label:
+![](https://i.imgur.com/uxBiVlM.png)
+
+_Links:_
 [Issue T146966 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T185533)
 
 [Issue T146966 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426139/)
