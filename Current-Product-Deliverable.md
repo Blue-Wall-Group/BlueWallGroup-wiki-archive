@@ -16,6 +16,10 @@ MediaWiki Accessibility HFOSS project. Bellow, you will find a list of issues an
 ***
 
 ### Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic
+_Contributors:_
+* Hunter Hobbs
+* _Jaziel Pauda_
+* _Jesse Buck_
 
 _Description:_ This issue focused on a MediaWiki extensions called Multimedia Viewer. Some of the buttons that are part of the multimedia viewer were tagged in the HTML as `<div>` or `<a>` elements. The result of this is that if the button does not have a label attribute, then a screen reader does not have any textual information to provide content to the button for the user.
 
