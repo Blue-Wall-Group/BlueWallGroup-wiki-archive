@@ -506,3 +506,21 @@ _Changes:_
  }
  </style>
 ```
+
+***
+
+### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)
+
+_Description:_  A number of accessibility/markup issues were identified in the WikiStats2 extension beyond those already mentioned.
+
+_Work Performed:_ 
+* Added lang attribute to html element.  
+* Added labels to topic search input and Wiki search input.
+* Adeds alt tag for Wikimedia logo.
+* Added main ARIA label in App.vue.
+* Changed search header to a div.       
+
+_Changes:_
+```diff
+
+```
