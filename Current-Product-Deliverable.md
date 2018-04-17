@@ -507,14 +507,13 @@ _Changes:_
 +	}
  }
  </style>
-```
-
-_Results:_ 
-
-**Before contrast modification**
-![](https://i.imgur.com/yf7RVhO.png) 
-
-**After contrast modification** 
+``` 
+ 
+_Results:_  
+* Before contrast modification:
+![](https://i.imgur.com/yf7RVhO.png)  
+ 
+* After contrast modification:
 ![](https://i.imgur.com/ztt7vnJ.png)
 
 ***
