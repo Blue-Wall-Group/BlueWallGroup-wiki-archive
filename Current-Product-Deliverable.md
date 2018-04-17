@@ -516,7 +516,7 @@ _Description:_  A number of accessibility/markup issues were identified in the W
 _Work Performed:_ 
 * Added lang attribute to html element.  
 * Added labels to topic search input and Wiki search input.
-* Adeds alt tag for Wikimedia logo.
+* Added alt tag for Wikimedia logo.
 * Added main ARIA label in App.vue.
 * Changed search header to a div.       
 
