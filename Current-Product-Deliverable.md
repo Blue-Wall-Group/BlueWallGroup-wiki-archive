@@ -15,11 +15,12 @@ MediaWiki Accessibility HFOSS project. Bellow, you will find a list of issues an
 
 ***
 
-### Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic
+### Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic 
+
 _Contributors:_
 * Hunter Hobbs
-* _Jaziel Pauda_
-* _Jesse Buck_
+* Jaziel Pauda
+* Jesse Buck
 
 _Description:_ This issue focused on a MediaWiki extensions called Multimedia Viewer. Some of the buttons that are part of the multimedia viewer were tagged in the HTML as `<div>` or `<a>` elements. The result of this is that if the button does not have a label attribute, then a screen reader does not have any textual information to provide content to the button for the user.
 
@@ -96,7 +97,10 @@ _Changes (outdated):_
 
 ***
 
-### Issue T175937 - Flow could use article tags
+### Issue T175937 - Flow could use article tags 
+
+_Contributors:_
+* Jaziel Pauda
 
 _Description:_ Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN html standards.
 
@@ -148,7 +152,10 @@ _Changes:_
 
 ***
 
-### Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility
+### Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility 
+
+_Contributors:_
+* Jaziel Pauda
 
 _Description:_ In the QuizGame extension, several `<h1>` elements were present on a single page of the extension. For accessibility and semantics reasons, all of these `<h1>` tags needed to be changed into `<h2>`'s.
 
@@ -253,7 +260,10 @@ _Changes:_
 
 ***
 
-### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)
+### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area) 
+
+_Contributors:_
+* Jesse Buck
 
 _Description:_ 
 
@@ -302,7 +312,10 @@ _Changes:_
 
 ***
 
-### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 2: Search placeholder)
+### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 2: Search placeholder) 
+
+_Contributors:_
+* Michael Cornacchio
 
 _Description:_ The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.   
 
@@ -524,6 +537,10 @@ _Results:_
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)
 
+_Contributors:_
+* Jesse Buck
+* Michael Cornacchio
+
 _Description:_  A number of accessibility/markup issues were identified in the WikiStats2 extension beyond those already mentioned.
 
 _Work Performed:_ 
@@ -626,7 +643,11 @@ _Changes:_
 ```
 
 ***
-### Issue T146966 - Add label to Options dialog > Categories input fields
+### Issue T146966 - Add label to Options dialog > Categories input fields 
+
+_Contributors:_
+* Jaziel Pauda
+* Hunter Hobbs
 
 _Description:_ This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of the this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfill user tasks. Furthermore, this addition was necessary to improve the experience of user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
