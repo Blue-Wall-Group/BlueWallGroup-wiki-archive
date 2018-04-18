@@ -30,11 +30,11 @@ _Contributors:_
 * Jaziel Pauda
 * Jesse Buck
 
-_Description:_ This issue focused on a MediaWiki extensions called Multimedia Viewer. Some of the buttons that are part of the multimedia viewer were tagged in the HTML as `<div>` or `<a>` elements. The result of this is that if the button does not have a label attribute, then a screen reader does not have any textual information to provide content to the button for the user.
+_Description:_ Throughout the codebase of the MultiMedia Viewer extension, there are button-like interface elements that are tagged as `<div>` and `<a>` elements. This is not semantic and thus all button-like elements in MultiMedia Viewer need to be converted from `<div>` and `<a>` elements to `<button>` elements. As is, a screen reader will not receive any semantic content about the interactive element to provide to the user.
 
-_Work performed:_ We went through each JavaScript file in the Multimedia Viewer directory and looked for button elements that were tagged improperly. In some cases, the `<a>` tags were able to just be replaced with `<button>` tags. In the case of the `copyButton`, we added an `aria-label` attribute with a value of “copy text” that was output via the MW-messages API.  We needed to fix some of the button styling in the associated CSS files as well.
+_Work performed:_ We thoroughly inspected the codebase for all interactive button-like elements that were improperly tagged. The `<div>` in `permission.js` was easily converted to a `<button>`. The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. A message library was used for the label language translation. Some of the associated CSS files needed to be edited to keep the button-like elements styling the same as it was prior to converting the tags. In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
 
-This issue is not completely resolved yet. We are currently working on patchset 5. The history of our changes and patchsets, as well as the maintainer review and continuous integration test results can be viewed on the Gerrit web interface.
+This issue spanned nearly the whole semester. There was a total of 13 patchsets developed to resolve this issue. It was merged and deployed on April 16, 2018.
 
 _Changes:_
 * resources/mmv/mmv.bootstrap.less:
