@@ -34,7 +34,7 @@ _Description:_ Throughout the codebase of the MultiMedia Viewer extension, there
 
 _Work performed:_ We thoroughly inspected the codebase for all interactive button-like elements that were improperly tagged. The `<div>` in `permission.js` was easily converted to a `<button>`. The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. A message library was used for the label language translation. Some of the associated CSS files needed to be edited to keep the button-like elements styling the same as it was prior to converting the tags. In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
 
-This issue spanned nearly the whole semester. There was a total of 13 patchsets developed to resolve this issue. It was merged and deployed on April 16, 2018.
+_Outcome:_ This issue spanned nearly the whole semester. There was a total of 13 patchsets developed to resolve this issue. It was merged and deployed on April 16, 2018.
 
 _Changes:_
 * resources/mmv/mmv.bootstrap.less:
@@ -885,6 +885,8 @@ _Contributors:_
 _Description:_ This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of the this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfill user tasks. Furthermore, this addition was necessary to improve the experience of user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
 _Work Performed:_ The work performed on this contribution began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension. After this, the newly added message was defined by associating the message with the English text that would be displayed to the user in the 'en.json' file of the code base. The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports. The final step in the development of this contribution was utilizing MediaWiki OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget.
+
+_Outcome:_ This patch was merged and deployed on April 17, 2018. The issue was moved to `Done`.
 
 _Changes:_
 
