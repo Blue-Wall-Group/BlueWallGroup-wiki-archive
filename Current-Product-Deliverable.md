@@ -658,7 +658,11 @@ Changed several elements to use colors from the WikimediaUI Base color palette. 
 ### Resolving WikiStats2 searchbar placeholder contrast and linting issues. 
 
 #### Contributors:
-* Michael Cornacchio
+* Michael Cornacchio  
+
+#### Status:  
+
+#### Results:  
 
 #### Description:
 The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
@@ -666,7 +670,7 @@ The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requir
 #### Work performed:
 Replaced "4 space" indentation with tab indentation as identified by the stylelinter.  Used class hierarchy to identify placeholder rather than unique identifier.  As well as various other slight formatting changes.
  
-#### Changes:
+#### Code Changes:
 * src/components/TopicExplorer.vue:
 ```diff
 @@ -18,7 +18,7 @@
@@ -869,7 +873,8 @@ Replaced "4 space" indentation with tab indentation as identified by the styleli
  }
  </style>
 ``` 
- 
+#### Links: 
+
 _Results:_  
 * Before contrast modification:
 ![](https://i.imgur.com/yf7RVhO.png)  
