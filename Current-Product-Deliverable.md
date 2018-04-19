@@ -9,6 +9,29 @@
 
 **Abstract:** The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.               
 
+**Glossary:**
+  _Semantic_
+  _MMV_
+  _HTML_
+  _CSS_
+  _Focusable_
+  _UI_
+  _Patch Set_
+  _Accessibility_
+  _Placeholder_
+  _Element_
+  _Widget_
+  _Codebase_
+  _JS_
+  _W3_
+  _PHP Unit_
+  _Tags_
+  _Workboard_
+  _Markup_
+  _WCAAG_
+  _Attribute_
+  _ARIA_
+
 **Contents:**
 - [Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
 - [Issue T175937 - Flow could use article tags](#issue-t175937---flow-could-use-article-tags)
