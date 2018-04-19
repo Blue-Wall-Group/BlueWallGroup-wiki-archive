@@ -37,12 +37,12 @@ _Workboard:_
 
 #### Contents:
 - [Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
+- [Addition of label to input field in Visual Editor Categories page)
 - [Issue T175937 - Flow could use article tags](#issue-t175937---flow-could-use-article-tags)
 - [Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility](#issue-t156450---quizgame-specialquestiongamehome-should-order-headings-correctly-for-semantics-and-accessibility)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-1-subdued-classes-and-footer-area)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 2: Search placeholder)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-2-search-placeholder)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-3-remaining-concerns)
-- [Issue T146966 - Add label to Options dialog > Categories input fields](#issue-t146966---add-label-to-options-dialog-categories-input-fields)
 
 ***
 
