@@ -17,7 +17,7 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 - [Correcting `<div>` tags to `<article>` tags to comply with W3 and MDN HTML standards](#correcting-div-tags-to-article-tags-to-comply-with-w3-and-mdn-html-standards)
 - [Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility](#issue-t156450---quizgame-specialquestiongamehome-should-order-headings-correctly-for-semantics-and-accessibility)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-1-subdued-classes-and-footer-area)
-- [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 2: Search placeholder)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-2-search-placeholder)
+- [Resolving WikiStats2 searchbar placeholder contrast and linting issues.](#Resolving-WikiStats2-searchbar-placeholder-contrast-and-linting-issues.)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-3-remaining-concerns)
 
 ***
