@@ -37,7 +37,7 @@ _Workboard:_
 
 #### Contents:
 - [Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
-- [Addition of label to input field in Visual Editor Categories page]
+- [Addition of label to input field in Visual Editor Categories page](#addition-of-label-to-input-field-in-visual-editor-categories-page)
 - [Issue T175937 - Flow could use article tags](#issue-t175937---flow-could-use-article-tags)
 - [Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility](#issue-t156450---quizgame-specialquestiongamehome-should-order-headings-correctly-for-semantics-and-accessibility)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-1-subdued-classes-and-footer-area)
