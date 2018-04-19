@@ -9,7 +9,7 @@
 
 **Abstract:** The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.               
 
-**Glossary:**
+**Glossary:**  
 _ARIA:_  
 _Accessibility:_  
 _Attribute:_  
