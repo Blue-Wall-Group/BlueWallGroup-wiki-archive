@@ -200,14 +200,21 @@ This issue spanned nearly the whole semester. There was a total of 13 patchsets 
 * Jaziel Pauda
 * Hunter Hobbs
 
+#### Status:
+This contribution was accepted and merged on 4/17/2018 and was deployed on 4/24/2018.
+
+#### Results:
+* Before adding category label:
+![](https://i.imgur.com/xEQpOnm.png) 
+
+* After adding category label:
+![](https://i.imgur.com/uxBiVlM.png)
+
 #### Description:
 This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of the this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfill user tasks. Furthermore, this addition was necessary to improve the experience of user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
 #### Work performed:
 The work performed on this contribution began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension. After this, the newly added message was defined by associating the message with the English text that would be displayed to the user in the 'en.json' file of the code base. The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports. The final step in the development of this contribution was utilizing MediaWiki OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget.
-
-#### Outcome:
-This patch was merged and deployed on April 17, 2018. The issue was moved to `Done`.
 
 #### Changes:
 
@@ -284,19 +291,13 @@ This patch was merged and deployed on April 17, 2018. The issue was moved to `Do
  	this.categoryOptionsFieldset.addItems( [ this.defaultSort ] );
  	this.$element.append( this.categoriesFieldset.$element, this.categoryOptionsFieldset.$element );
  };
-``` 
-
-#### Results:
-* Before adding category label:
-![](https://i.imgur.com/xEQpOnm.png) 
-
-* After adding category label:
-![](https://i.imgur.com/uxBiVlM.png)
-
+```
 #### Links:
-[Issue T146966 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T185533)
+[Phabricator issue ticket](https://phabricator.wikimedia.org/T185533)
 
-[Issue T146966 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426139/)
+[Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426139/)
+
+[Phabricator overview of merge](https://google.com)
 
 ***
 
