@@ -297,11 +297,11 @@ The work performed on this contribution began with the addition of the new label
 
 [Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426139/)
 
-[Phabricator overview of merge](https://google.com)
+[Overview of merge on Phabricator](https://google.com)
 
 ***
 
-### Issue T175937 - Flow could use article tags 
+### Correcting 
 
 #### Contributors:
 * Jaziel Pauda
@@ -378,11 +378,11 @@ The work started with verifying the issue author was correct that the `<div>` ta
  	{{> flow_post_actions}}
 ```
 
-[Issue T175937 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T175937)
+[Phabricator issue ticket](https://phabricator.wikimedia.org/T175937)
 
-[Issue T175937 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/413091/)
+[Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/413091/)
 
-[Issue T175937 MediaWiki Phabricator merged commit](https://phabricator.wikimedia.org/rEFLWa703662e1c62c251ad1e83bf0b84715dfb5ff437)
+[Overview of merge on Phabricator](https://phabricator.wikimedia.org/rEFLWa703662e1c62c251ad1e83bf0b84715dfb5ff437)
 
 ***
 
