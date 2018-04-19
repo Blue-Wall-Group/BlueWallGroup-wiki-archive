@@ -399,6 +399,9 @@ The work started with verifying the issue author was correct that the `<div>` ta
 #### Contributors:
 * Jaziel Pauda
 
+#### Status:
+As of 4/19/2018 this contribution is awaiting further review so that it can be accepted and merged.
+
 #### Description:
 In the QuizGame extension, several `<h1>` elements were present on a single page of the extension. For accessibility and semantics reasons, all of these `<h1>` tags needed to be changed into `<h2>`'s.
 
@@ -573,9 +576,9 @@ The work started with determining if having multiple `<h2>` tags in one page was
  .quizgame-answer-number {
 ```
 
-[Issue T156450 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T156450)
+[Phabricator issue ticket](https://phabricator.wikimedia.org/T156450)
 
-[Issue T156450 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/416887/)
+[Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/416887/)
 
 ***
 
