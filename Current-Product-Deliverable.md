@@ -394,7 +394,7 @@ The work started with verifying the issue author was correct that the `<div>` ta
 
 ***
 
-### Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility 
+### Correcting HTML heading structure in QuizGame to address accessibility and sematic concerns
 
 #### Contributors:
 * Jaziel Pauda
