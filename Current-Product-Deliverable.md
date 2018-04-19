@@ -306,6 +306,9 @@ The work performed on this contribution began with the addition of the new label
 #### Contributors:
 * Jaziel Pauda
 
+#### Status:
+This contribution was accepted and merged on 2/21/2018 and deployed on 2/27/2018.
+
 #### Description:
 Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN html standards.
 
