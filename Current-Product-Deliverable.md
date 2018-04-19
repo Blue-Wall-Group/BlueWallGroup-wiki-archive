@@ -662,7 +662,12 @@ Changed several elements to use colors from the WikimediaUI Base color palette. 
 
 #### Status:  
 
-#### Results:  
+#### Results 
+Before contrast modification:
+![](https://i.imgur.com/yf7RVhO.png)  
+ 
+* After contrast modification:
+![](https://i.imgur.com/ztt7vnJ.png) 
 
 #### Description:
 The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
@@ -874,13 +879,6 @@ Replaced "4 space" indentation with tab indentation as identified by the styleli
  </style>
 ``` 
 #### Links: 
-
-_Results:_  
-* Before contrast modification:
-![](https://i.imgur.com/yf7RVhO.png)  
- 
-* After contrast modification:
-![](https://i.imgur.com/ztt7vnJ.png)
 
 ***
 
