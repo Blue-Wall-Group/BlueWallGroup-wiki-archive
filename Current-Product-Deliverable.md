@@ -10,30 +10,6 @@
 #### Abstract:
 The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.               
 
-#### Glossary:  
-_ARIA:_  
-_Accessibility:_  
-_Attribute:_  
-_CSS:_  
-_Codebase:_  
-_Element:_  
-_Focusable:_  
-_Gerrit:_  
-_HTML:_  
-_JS:_  
-_OO:_  
-_MMV:_  
-_Markup:_  
-_PHP Unit:_  
-_Patch Set:_  
-_Placeholder:_  
-_Semantic:_  
-_Tags:_  
-_UI:_  
-_W3:_  
-_WCAAG:_  
-_Widget:_  
-_Workboard:_  
 
 #### Contents:
 - [Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
@@ -1013,3 +989,28 @@ _Results:_
 
 [Issue T185533 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426848/)
 ***
+
+#### Glossary:  
+_ARIA:_  
+_Accessibility:_  
+_Attribute:_  
+_CSS:_  
+_Codebase:_  
+_Element:_  
+_Focusable:_  
+_Gerrit:_  
+_HTML:_  
+_JS:_  
+_OO:_  
+_MMV:_  
+_Markup:_  
+_PHP Unit:_  
+_Patch Set:_  
+_Placeholder:_  
+_Semantic:_  
+_Tags:_  
+_UI:_  
+_W3:_  
+_WCAAG:_  
+_Widget:_  
+_Workboard:_  
