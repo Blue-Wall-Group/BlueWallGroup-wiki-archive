@@ -1,15 +1,16 @@
 # MediaWiki Accessibility Product Deliverable
 
-**The Blue Wall Group:**  
+#### The Blue Wall Group:  
     Jesse Buck  
     Daniel Collier  
     Michael Cornacchio  
     Hunter Hobbs  
     Jaziel Pauda  
 
-**Abstract:** The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.               
+#### Abstract:
+The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.               
 
-**Glossary:**  
+#### Glossary:  
 _ARIA:_  
 _Accessibility:_  
 _Attribute:_  
@@ -34,7 +35,7 @@ _WCAAG:_
 _Widget:_  
 _Workboard:_  
 
-**Contents:**
+#### Contents:
 - [Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
 - [Issue T175937 - Flow could use article tags](#issue-t175937---flow-could-use-article-tags)
 - [Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility](#issue-t156450---quizgame-specialquestiongamehome-should-order-headings-correctly-for-semantics-and-accessibility)
@@ -47,18 +48,21 @@ _Workboard:_
 
 ### Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic 
 
-**Contributors:**
+#### Contributors:
 * Hunter Hobbs
 * Jaziel Pauda
 * Jesse Buck
 
-**Description:** Throughout the codebase of the MultiMedia Viewer extension, there are button-like interface elements that are tagged as `<div>` and `<a>` elements. This is not semantic and thus all button-like elements in MultiMedia Viewer need to be converted from `<div>` and `<a>` elements to `<button>` elements. As is, a screen reader will not receive any semantic content about the interactive element to provide to the user.
+#### Description:
+Throughout the codebase of the MultiMedia Viewer extension, there are button-like interface elements that are tagged as `<div>` and `<a>` elements. This is not semantic and thus all button-like elements in MultiMedia Viewer need to be converted from `<div>` and `<a>` elements to `<button>` elements. As is, a screen reader will not receive any semantic content about the interactive element to provide to the user.
 
-**Work performed:** We thoroughly inspected the codebase for all interactive button-like elements that were improperly tagged. The `<div>` in `permission.js` was easily converted to a `<button>`. The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. A message library was used for the label language translation. Some of the associated CSS files needed to be edited to keep the button-like elements styling the same as it was prior to converting the tags. In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
+#### Work performed:
+We thoroughly inspected the codebase for all interactive button-like elements that were improperly tagged. The `<div>` in `permission.js` was easily converted to a `<button>`. The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. A message library was used for the label language translation. Some of the associated CSS files needed to be edited to keep the button-like elements styling the same as it was prior to converting the tags. In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
 
-**Outcome:** This issue spanned nearly the whole semester. There was a total of 13 patchsets developed to resolve this issue. It was merged and deployed on April 16, 2018.
+#### Outcome:
+This issue spanned nearly the whole semester. There was a total of 13 patchsets developed to resolve this issue. It was merged and deployed on April 16, 2018.
 
-**Changes:**
+#### Changes:
 * resources/mmv/mmv.bootstrap.less:
 ```diff
 @@ -58,3 +58,12 @@
@@ -216,17 +220,20 @@ _Workboard:_
 ***
 ### Issue T146966 - Add label to Options dialog > Categories input fields 
 
-**Contributors:**
+#### Contributors:
 * Jaziel Pauda
 * Hunter Hobbs
 
-**Description:** This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of the this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfill user tasks. Furthermore, this addition was necessary to improve the experience of user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
+#### Description:
+This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of the this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfill user tasks. Furthermore, this addition was necessary to improve the experience of user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
-**Work performed:** The work performed on this contribution began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension. After this, the newly added message was defined by associating the message with the English text that would be displayed to the user in the 'en.json' file of the code base. The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports. The final step in the development of this contribution was utilizing MediaWiki OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget.
+#### Work performed:
+The work performed on this contribution began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension. After this, the newly added message was defined by associating the message with the English text that would be displayed to the user in the 'en.json' file of the code base. The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports. The final step in the development of this contribution was utilizing MediaWiki OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget.
 
-**Outcome:** This patch was merged and deployed on April 17, 2018. The issue was moved to `Done`.
+#### Outcome:
+This patch was merged and deployed on April 17, 2018. The issue was moved to `Done`.
 
-**Changes:**
+#### Changes:
 
 * extension.json:
 ```diff
@@ -303,14 +310,14 @@ _Workboard:_
  };
 ``` 
 
-**Results:**
+#### Results:
 * Before adding category label:
 ![](https://i.imgur.com/xEQpOnm.png) 
 
 * After adding category label:
 ![](https://i.imgur.com/uxBiVlM.png)
 
-**Links:**
+#### Links:
 [Issue T146966 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T185533)
 
 [Issue T146966 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426139/)
@@ -319,14 +326,16 @@ _Workboard:_
 
 ### Issue T175937 - Flow could use article tags 
 
-**Contributors:**
+#### Contributors:
 * Jaziel Pauda
 
-**Description:** Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN html standards.
+#### Description:
+Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN html standards.
 
-**Work performed:** The work started with verifying the issue author was correct that the `<div>` tags specified should become `<article>` tags by going over W3 and MDN standards. After this, the `<div>` tags that needed to be changed were identified by searching for the tags that had the CSS classes "flow-post-content" and "mw-parser-output". Then, the identified tags were changed to `<article>` tags, templates were compiled, and finally the changes were tested using PHPUnit.
+#### Work performed:
+The work started with verifying the issue author was correct that the `<div>` tags specified should become `<article>` tags by going over W3 and MDN standards. After this, the `<div>` tags that needed to be changed were identified by searching for the tags that had the CSS classes "flow-post-content" and "mw-parser-output". Then, the identified tags were changed to `<article>` tags, templates were compiled, and finally the changes were tested using PHPUnit.
 
-**Changes:**
+#### Changes:
 
 * handlebars/compiled/flow_block_topic_moderate_post.handlebars.php:
 ```diff
@@ -402,14 +411,16 @@ _Workboard:_
 
 ### Issue T156450 - QuizGame Special:QuestionGameHome should order headings correctly for semantics and accessibility 
 
-**Contributors:**
+#### Contributors:
 * Jaziel Pauda
 
-**Description:** In the QuizGame extension, several `<h1>` elements were present on a single page of the extension. For accessibility and semantics reasons, all of these `<h1>` tags needed to be changed into `<h2>`'s.
+#### Description:
+In the QuizGame extension, several `<h1>` elements were present on a single page of the extension. For accessibility and semantics reasons, all of these `<h1>` tags needed to be changed into `<h2>`'s.
 
-**Work performed:** The work started with determining if having multiple `<h2>` tags in one page was appropriate. After this, the specified heading tags were changed to `<h2>` tags and CSS classes with selectors for the `<h1>` tags were removed from the code base.
+#### Work performed:
+The work started with determining if having multiple `<h2>` tags in one page was appropriate. After this, the specified heading tags were changed to `<h2>` tags and CSS classes with selectors for the `<h1>` tags were removed from the code base.
 
-**Changes:**
+#### Changes:
 
 * includes/specials/SpecialQuizGameHome.php:
 ```diff
@@ -585,14 +596,15 @@ _Workboard:_
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area) 
 
-**Contributors:**
+#### Contributors:
 * Jesse Buck
 
-**Description:** 
+#### Description: 
 
-**Work performed:** Changed several elements to use colors from the WikimediaUI Base color palette. Changed text using the "subdued" class, the color of text and links within the footer area, and the background color of the footer area. Although not explicitly mentioned in T185533, the metrics buttons within the Detail view was also changed.
+#### Work performed:
+Changed several elements to use colors from the WikimediaUI Base color palette. Changed text using the "subdued" class, the color of text and links within the footer area, and the background color of the footer area. Although not explicitly mentioned in T185533, the metrics buttons within the Detail view was also changed.
 
-**Changes:**
+#### Changes:
 * src/App.vue
 ```diff
 @@ -138,8 +138,8 @@
@@ -668,14 +680,16 @@ _Workboard:_
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 2: Search placeholder) 
 
-**Contributors:**
+#### Contributors:
 * Michael Cornacchio
 
-**Description:** The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
+#### Description:
+The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
  
-**Work performed:** Replaced "4 space" indentation with tab indentation as identified by the stylelinter.  Used class hierarchy to identify placeholder rather than unique identifier.  As well as various other slight formatting changes.
+#### Work performed:
+Replaced "4 space" indentation with tab indentation as identified by the stylelinter.  Used class hierarchy to identify placeholder rather than unique identifier.  As well as various other slight formatting changes.
  
-**Changes:**
+#### Changes:
 * src/components/TopicExplorer.vue:
 ```diff
 @@ -18,7 +18,7 @@
@@ -890,20 +904,20 @@ _Results:_
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)
 
-**Contributors:**
+#### Contributors:
 * Jesse Buck
 * Michael Cornacchio
 
-**Description:**  A number of accessibility/markup issues were identified in the WikiStats2 extension beyond those already mentioned.
+#### Description:  A number of accessibility/markup issues were identified in the WikiStats2 extension beyond those already mentioned.
 
-**Work performed:** 
+#### Work performed: 
 * Added lang attribute to html element.  
 * Added labels to topic search input and Wiki search input.
 * Added alt tag for Wikimedia logo.
 * Added main ARIA label in App.vue.
 * Changed search header to a div.       
 
-**Changes:**
+#### Changes:
 
 * TopNav.vue:
 ```diff
