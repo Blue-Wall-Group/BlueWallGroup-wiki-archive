@@ -301,7 +301,7 @@ The work performed on this contribution began with the addition of the new label
 
 ***
 
-### Correcting 
+### Correcting `<div>` tags to `<article>` tags to comply with W3 and MDN HTML standards
 
 #### Contributors:
 * Jaziel Pauda
@@ -310,7 +310,7 @@ The work performed on this contribution began with the addition of the new label
 This contribution was accepted and merged on 2/21/2018 and deployed on 2/27/2018.
 
 #### Description:
-Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN html standards.
+Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN HTML standards.
 
 #### Work performed:
 The work started with verifying the issue author was correct that the `<div>` tags specified should become `<article>` tags by going over W3 and MDN standards. After this, the `<div>` tags that needed to be changed were identified by searching for the tags that had the CSS classes "flow-post-content" and "mw-parser-output". Then, the identified tags were changed to `<article>` tags, templates were compiled, and finally the changes were tested using PHPUnit.
