@@ -678,7 +678,7 @@ Changed several elements to use colors from the WikimediaUI Base color palette. 
 
 ***
 
-### Resolving WikiStat2 placeholder contrast and linting issues. 
+### Resolving WikiStats2 searchbar placeholder contrast and linting issues. 
 
 #### Contributors:
 * Michael Cornacchio
