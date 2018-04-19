@@ -678,7 +678,7 @@ Changed several elements to use colors from the WikimediaUI Base color palette. 
 
 ***
 
-### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 2: Search placeholder) 
+### Resolving WikiStat2 placeholder contrast and linting issues. 
 
 #### Contributors:
 * Michael Cornacchio
