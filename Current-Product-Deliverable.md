@@ -881,7 +881,10 @@ Replaced "4 space" indentation with tab indentation as identified by the styleli
  }
  </style>
 ``` 
+
 #### Links: 
+* Phabricator Issue: https://phabricator.wikimedia.org/T185533
+* Gerrit Submission Link: https://gerrit.wikimedia.org/r/#/c/426848/
 
 ***
 
