@@ -902,7 +902,7 @@ _Results:_
 
 ***
 
-### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)
+### Correcting minor markup issues in WikiStats2
 
 #### Contributors:
 * Jesse Buck
