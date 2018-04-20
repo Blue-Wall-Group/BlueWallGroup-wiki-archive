@@ -13,10 +13,10 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 
 #### Contents:
 - [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
-- [Addition of label to input field in Visual Editor Categories page](#addition-of-label-to-input-field-in-visual-editor-categories-page)
-- [Correcting `<div>` tags to `<article>` tags in Flow extension to comply with W3 and MDN HTML standards](#correcting-div-tags-to-article-tags-in-flow-extension-to-comply-with-w3-and-mdn-html-standards)
-- [Correcting HTML heading structure in QuizGame to address accessibility and semantic concerns](#correcting-html-heading-structure-in-quizgame-to-address-accessibility-and-semantic-concerns)
-- [Changing Wikistats 2.0 text and footer to use MediaWiki color palette and meet accessibility standards](#changing-wikistats-20-text-and-footer-to-use-mediawiki-color-palette-and-meet-accessibility-standards)
+- [Adding Label to Input Field in Visual Editor Categories page](#adding-label-to-input-field-in-visual-editor-categories-page)
+- [Correcting `<div>` tags to `<article>` tags in Flow Extension](#correcting-div-tags-to-article-tags-in-flow-extension)
+- [Correcting HTML Heading Structure in QuizGame Extension](#correcting-html-heading-structure-in-quizgame-extension)
+-[Integrating MediaWiki Color Palette into Wikistats 2.0](#integrating-mediawiki-color-palette-into-wikistats-20)
 - [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
 - [Correcting minor markup issues in Wikistats 2.0](#correcting-minor-markup-issues-in-wikistats-20)
 
@@ -207,7 +207,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/408577/)
 
 ***
-### Addition of label to input field in Visual Editor Categories page
+### Adding Label to Input Field in Visual Editor Categories page
 
 #### Contributors:
 * Jaziel Pauda
@@ -318,7 +318,7 @@ This issue revolved the improvement of the "Categories" dialog page in the Media
 
 ***
 
-### Correcting `<div>` tags to `<article>` tags in Flow extension to comply with W3 and MDN HTML standards
+### Correcting `<div>` tags to `<article>` tags in Flow Extension
 
 #### Contributors:
 * Jaziel Pauda
@@ -412,7 +412,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 
 ***
 
-### Correcting HTML heading structure in QuizGame to address accessibility and semantic concerns
+### Correcting HTML Heading Structure in QuizGame Extension
 
 #### Contributors:
 * Jaziel Pauda
@@ -608,7 +608,7 @@ As of 4/20/2018 this contribution is still awaiting further approval and has not
 
 ***
 
-### Changing Wikistats 2.0 text and footer to use MediaWiki color palette and meet accessibility standards
+### Integrating MediaWiki Color Palette into Wikistats 2.0
 
 #### Contributors:
 * Jesse Buck
