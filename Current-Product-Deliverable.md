@@ -1034,54 +1034,56 @@ The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requir
 ***
 
 #### Glossary:  
-ARIA: stands for Accessible Rich Internet Applications. A set of code attributes that defines ways to make web content and applications more accessible to people with disabilities.
+ARIA: stands for Accessible Rich Internet Applications. HTML attributes that define accessibility adjustments for web content and applications.
 
-Accessibility: methods (some say a philosophy) for creating content or applications which may be accessed comfortably by any individual person, regardless of disabled status.
+Accessibility: methods or a philosophy for creating content and applications which may be accessed comfortably by any individual.
 
-Attribute: a modifier added to certain elements (primarily in HTML) which adjust the appearance or function of the element to suite a specific task that the element would not be able to perform otherwise.
+Attribute: a modifier added to certain elements of HTML which adjust the appearance or function of an element to suite a specific action.
 
-CSS: stands for Cascading Style Sheets. A descriptive language which informs a piece of web content how it should appear when generated for users.
+CSS: stands for Cascading Style Sheets. A descriptive language which informs a piece of web content how it should appear when generated.
 
-Codebase: an established foundation of code which is often added to or altered with varying results.
+Codebase: an established foundation of code which should be added to or altered sparingly.
 
-Element: an item or visual representation of an item in some piece of code (primarily in HTML) which performs a certain function or encloses other functions as an overarching format descriptor. Is usually implemented via start and end tags.
+Deploy: to release an item of code for public consumption and scrutiny.
 
-Focusable: a quality of an element which may be navigated to via only the use the Tab key and has some visual indication that it has been selected (often via a blue-colored border, sound, or text-to-speech reading).
+Element: an item or visual representation of an item from some piece of HTML code which performs a certain function or encloses other functions.
 
-Gerrit: a code review platform based on the web which integrates with Git and allows for collaboration with team members on reviewing submitted code, complete with inline comments for differences (or difs) and tentative approval of viewed changes to merge.
+Focusable: a quality of a HTML element which allows users to navigate to them with only a keyboard and has some visual indication that it has been selected.
 
-HTML: stands for HyperText Markup Language. A web-based coding language which informs the functions of a web page, the information it accepts from users, and how any scripts may be run within the context of its own content.
+Gerrit: a web-based code review platform which integrates with Git and allows collaborative code review.
 
-JS: stands for JavaScript. A web-based language which allows for the programming of certain applications and the addition or manipulation of certain web page content.
+HTML: stands for HyperText Markup Language. A web-based coding language which describes the functions of a web page, information it accepts, and what scripts may be run.
 
-Markup: this is in reference to markup languages such as HTML and XML. It is a way of annotating a document in such a way that syntax is clearly distinguishable from content.
+JS: stands for JavaScript. A web-based scripting language which allows for programming certain applications and addition or manipulation of certain web page content.
+
+Markup: a way of annotating a document in such a way that syntax is clearly distinguishable from content.
 
 MDN: stands for Mozilla Developer Network. The official Mozilla website for development documentation of web standards and Mozilla projects.
 
-Merge: to integrate a new patch set from a source outside the codebase into that codebase.
+Merge: to integrate a new patch set from a source outside a codebase into that codebase.
 
-MMV: stands for MultiMediaViewer. An extension for the MediaWiki platform which enables video and audio playback on pages which include MMV libraries and functions.
+MMV: stands for MultiMediaViewer. An extension for the MediaWiki platform which enables video and audio playback on MediaWiki web pages.
 
-OO: stands for Object Oriented. A methodology (some say development philosophy) which dictates that any function put into code must be part of an object and adhere to the scope of that object in order to function within modular frameworks most smoothly.
+OO: stands for Object Oriented. A methodology or philosophy which dictates that any function must be part of an object and adhere to a defined scope.
 
-Patch Set: a unit of code, mostly the list of changes to be made in a codebase, which may be approved or rejected for inclusion in the codebase at a reviewer's or group of reviewers' discretion.
+Patch Set: a unit of code which may be approved or rejected for inclusion in a codebase.
 
-Phabricator: a web-based software development platform created by Phacility, Inc. It has a suite of tools which allow for bug tracking and reporting, change monitoring, and repository browsing among other functions.
+Phabricator: a web-based software development platform created by Phacility, Inc.
 
 PHPUnit: a unit testing framework for the PHP programming language.
 
-Placeholder: text or another object which effectively "holds a place" for another item.
+Placeholder: text or objects which effectively "hold a place" for other items.
 
-Semantic: this is in reference to semantic HTML, a usage of HTML to reinforce the meaning of certain web content or applications rather than its look when presented to users.
+Semantic: a usage of HTML to reinforce meaning of content rather than its look.
 
-Tags: annotations which reference a certain element of a web page to put content in.
+Tags: annotations which reference elements of a web page to put content in.
 
-UI: stands for User Interface. The visual representation of an application and its parts.
+UI: stands for User Interface. A visual representation of an application and its parts.
 
-W3C: stands for the World Wide Web Consortium. An organization which concerns itself with appropriate, web-based development regulations that include: data transfer protocols, HTML coding standards which we used, and accessible web development guidelines we used.
+W3C: stands for the World Wide Web Consortium. An organization which concerns itself with appropriate, web-based development regulations and guidelines.
 
-WCAG: stands for Web Content Accessibility Guidelines. A set of suggested practices put forth by the W3C which attempt to facilitate more comfortable interaction between all individuals and web pages, including proper color contrast.
+WCAG: stands for Web Content Accessibility Guidelines. A set of suggested practices put forth by the W3C which attempt to facilitate comfortable interaction between people and the web.
 
-Widget: a small application or extension created to provide specific information or functions as well as fit within a specific (often small) space of a UI.
+Widget: a small application or extension created to provide specific information or functions.
 
-Workboard: a centralized list or forum from which new issues (usually bug reports) may be collected and upon which relevant issues may be posted by users.
+Workboard: a forum on which new tasks may be posted by users and maintainers.
