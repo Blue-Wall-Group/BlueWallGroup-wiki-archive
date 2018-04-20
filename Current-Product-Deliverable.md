@@ -44,7 +44,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 
 #### Work performed:
 * Focused on the interactive button-like elements that were mentioned in the issue on Phabricator.
-* Interactive button elements that were not `<button>`s were converted to `<button>`s.
+* Interactive button elements that were not `<button>`'s were converted to `<button>`'s.
 * Elements that were button-like in appearance but functioned as a link were not converted. 
 * The `<div>` in `permission.js` was converted to a `<button>`. 
 * The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. 
