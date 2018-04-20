@@ -199,7 +199,7 @@ This issue spanned nearly the whole semester. There was a total of 13 patchsets 
 [Issue T161612 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/408577/)
 
 ***
-### Addition of label to the input field in Visual Editor Categories page
+### Addition of label to input field in Visual Editor Categories page
 
 #### Contributors:
 * Jaziel Pauda
