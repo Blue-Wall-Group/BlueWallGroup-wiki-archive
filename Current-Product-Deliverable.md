@@ -728,8 +728,8 @@ This contribution was merged on 4/20/2018 after four patch sets.
 The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
  
 #### Work performed:
-* Set searchbar `type` to "search" rather than text.
-* Ensured leading zero was present in decimal numbers.
+* Set searchbar `type` attribute to "search" rather than text.
+* Ensured leading zero was present in all CSS attributes that have decimal number values.
 * Tab-indented CSS in accordance with MediaWiki's linter.
 * Added linter-highlighted spaces/newlines where missing.
 * Corrected `border-radius` to MediaWiki's standard of `2px`.
@@ -942,8 +942,8 @@ The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requir
 ``` 
 
 #### Links: 
-* Phabricator Issue: https://phabricator.wikimedia.org/T185533
-* Gerrit Submission Link: https://gerrit.wikimedia.org/r/#/c/426848/
+* [Phabricator task](https://phabricator.wikimedia.org/T185533)
+* [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426848/)
 
 ***
 
