@@ -33,8 +33,7 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 * This contribution was merged on 4/16/18 after 13 patch sets, and deployd on 4/17/18.
 
 #### Description:
-* When interactive elements are coded improperly, their functionality is not apparent to certain accessility hardware agents. This can lead to confusion and a poor experience for users with accessibility needs. Semantic HTML proposes writng DOM elements to give the user clear content on purpose and functionality.
-* Specific interactive elements within the MultiMedia Viewer extension codebase needed to be changed to reflect their funtion.
+Interactive HTML elements that are not tagged correctly prevent accessibility hardware from communicating the functionality of the element to the user. This can lead to confusion and a poor experience for users with accessibility needs. Semantic HTML proposes writing DOM elements to give the user clear content on purpose and functionality. Some interactive `<button>` elements in the codebase for MultiMedia Viewer extension  were fixed reflect their funtionality.
 
 #### Visuals:
 * Images showing button elements that were fixed:
