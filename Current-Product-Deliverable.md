@@ -619,6 +619,7 @@ This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 #### Description:
 * Footer area text and links lacked contrast with the footer background.
 * Text with the "subdued" class lacked contrast with their backgrounds.
+* Links in the footer area were difficult to differentiate from surrounding non-link text, and underlines were needed.
 
 #### Visuals:
 * Before contrast changes:
