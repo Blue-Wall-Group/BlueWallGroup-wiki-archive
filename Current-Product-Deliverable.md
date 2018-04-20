@@ -718,15 +718,15 @@ This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 #### Status:  
 This contribution was merged on 4/20/2018 after four patch sets.
 
+#### Description:
+The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
+
 #### Results 
 * Before contrast modification:
 ![](https://i.imgur.com/yf7RVhO.png)  
  
 * After contrast modification:
 ![](https://i.imgur.com/ztt7vnJ.png) 
-
-#### Description:
-The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
  
 #### Work performed:
 * Set searchbar `type` attribute to "search" rather than text.
