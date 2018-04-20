@@ -30,7 +30,7 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 * Jesse Buck
 
 #### Status:
-* This contribution was merged on 4/16/18 after 13 patch sets, and deployd on 4/17/18.
+* This contribution was merged on 4/16/18 after 13 patch sets, and deployed on 4/17/18.
 
 #### Description:
 Interactive HTML elements that are not tagged correctly prevent accessibility hardware from communicating the functionality of the element to the user. This can lead to confusion and a poor experience for users with accessibility needs. Semantic HTML proposes writing DOM elements to give the user clear content on purpose and functionality. Some interactive `<button>` elements in the codebase for MultiMedia Viewer extension  were fixed reflect their funtionality.
@@ -43,8 +43,8 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 ![](images/CopyButton-ShareDialog.png) 
 
 #### Work performed:
-* Focused on the interactive button-like elemenst that were mentioned in the Issue on Phabricator.
-* Interactive button elements that were not `<button>s` were converted to `<button>s`.
+* Focused on the interactive button-like elements that were mentioned in the issue on Phabricator.
+* Interactive button elements that were not `<button>`s were converted to `<button>`s.
 * Elements that were button-like in appearance but functioned as a link were not converted. 
 * The `<div>` in `permission.js` was converted to a `<button>`. 
 * The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. 
@@ -217,6 +217,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 This contribution was merged on 4/17/2018 after three patch sets and was deployed on 4/24/2018.
 
 #### Description:
+In order to facilitate screen reader use with a web page, 
 This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfil user tasks. Furthermore, this addition was necessary to improve the experience of a user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
 #### Visuals:
