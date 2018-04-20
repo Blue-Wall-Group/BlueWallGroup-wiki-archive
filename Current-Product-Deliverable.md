@@ -317,6 +317,9 @@ This issue revolved the improvement of the "Categories" dialog page in the Media
 #### Status:
 This contribution was accepted and merged on 2/21/2018 and deployed on 2/27/2018.
 
+#### Results:
+Since this improvement only involved semantics changes, the UI of the software did not change and thus results are not applicable.
+
 #### Description:
 Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN HTML standards.
 
@@ -407,6 +410,9 @@ Within the MediaWiki Flow extension, several `<div>` elements needed to be chang
 
 #### Status:
 As of 4/19/2018 this contribution is awaiting further review so that it can be accepted and merged.
+
+#### Results:
+Since this improvement only involved semantics changes, the UI of the software did not change and thus results not applicable.
 
 #### Description:
 In the QuizGame extension, several `<h1>` elements were present on a single page of the extension. For accessibility and semantics reasons, all of these `<h1>` tags needed to be changed into `<h2>`'s.
@@ -590,6 +596,7 @@ In the QuizGame extension, several `<h1>` elements were present on a single page
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/416887/)
 
 As of 4/20/2018 this contribution is still awaiting further approval and has not been merged.
+
 ***
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area) 
