@@ -17,7 +17,7 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 - [Correcting `<div>` tags to `<article>` tags in Flow extension to comply with W3 and MDN HTML standards](#correcting-div-tags-to-article-tags-in-flow-extension-to-comply-with-w3-and-mdn-html-standards)
 - [Correcting HTML heading structure in QuizGame to address accessibility and sematic concerns](#correcting-html-heading-structure-in-quizgame-to-address-accessibility-and-sematic-concerns)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-1-subdued-classes-and-footer-area)
-- [Resolving WikiStats2 searchbar placeholder contrast and linting issues](#resolving-wikistats2-searchbar-placeholder-contrast-and-linting-issues)
+- [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-2.0-searchbar-placeholder-contrast-and-linting-issues)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-3-remaining-concerns)
 
 ***
