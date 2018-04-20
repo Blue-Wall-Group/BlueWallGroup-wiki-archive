@@ -47,9 +47,9 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 * Interactive button elements that were not `<button>`'s were converted to `<button>`'s.
 * Elements that were button-like in appearance but functioned as a link were not converted. 
 * The `<div>` in `permission.js` was converted to a `<button>`. 
-* The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. 
-* Any associated CSS files were edited to keep the button-like elements styling the same as it was prior to converting the tags. 
-* In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
+* The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a CSS class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. 
+* Any CSS files associated with elements that were changed were edited to keep the button-like element styling the same as it was prior to converting the tags. 
+* In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` element to make it focusable by the keyboard for accessibility needs.
 
 #### Changes:
 * resources/mmv/mmv.bootstrap.less:
@@ -217,7 +217,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 This contribution was merged on 4/17/2018 after three patch sets and was deployed on 4/24/2018.
 
 #### Description:
-In order to facilitate screen reader use with a web page, 
+In order to facilitate screen reader use with a web page, and improve the interaction experience of users with visual and cognitive disabilities, it is best practice to utilize `<label>` elements for all `<input>` elements in a page. 
 This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfil user tasks. Furthermore, this addition was necessary to improve the experience of a user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
 #### Visuals:
