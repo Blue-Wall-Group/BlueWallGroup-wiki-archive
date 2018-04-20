@@ -739,7 +739,7 @@ The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requir
 * Set `placeholder` color to meet contrast requirements.
  
 #### Code Changes:
-* src/components/TopicExplorer.vue:
+* `src/components/TopicExplorer.vue`:
 ```diff
 @@ -18,7 +18,7 @@
  
