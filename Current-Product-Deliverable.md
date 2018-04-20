@@ -208,15 +208,15 @@ This issue spanned nearly the whole semester. There was a total of 13 patchsets 
 #### Status:
 This contribution was accepted and merged on 4/17/2018 and was deployed on 4/24/2018.
 
-#### Results:
+#### Description:
+This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfil user tasks. Furthermore, this addition was necessary to improve the experience of a user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
+
+#### Visuals:
 * Before adding category label:
 ![](https://i.imgur.com/xEQpOnm.png) 
 
 * After adding category label:
 ![](https://i.imgur.com/uxBiVlM.png)
-
-#### Description:
-This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfil user tasks. Furthermore, this addition was necessary to improve the experience of a user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
 #### Work performed:
 - The work performed began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension.
@@ -315,13 +315,13 @@ This issue revolved the improvement of the "Categories" dialog page in the Media
 * Jaziel Pauda
 
 #### Status:
-This contribution was accepted and merged on 2/21/2018 and deployed on 2/27/2018.
-
-#### Results:
-Since this improvement only involved semantics changes, the UI of the software did not change and thus results are not applicable.
+This contribution was merged on 2/21/2018 after one patch set and was deployed on 2/27/2018.
 
 #### Description:
 Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN HTML standards.
+
+#### Visuals:
+Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
 
 #### Work performed:
 - Verified, through W3 and MDN HTML standard specifications, that the correct semantic HTML tag for forum posts and comments are indeed `<article>` tags.
@@ -409,13 +409,13 @@ Within the MediaWiki Flow extension, several `<div>` elements needed to be chang
 * Jaziel Pauda
 
 #### Status:
-As of 4/19/2018 this contribution is awaiting further review so that it can be accepted and merged.
-
-#### Results:
-Since this improvement only involved semantics changes, the UI of the software did not change and thus results not applicable.
+This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 #### Description:
 In the QuizGame extension, several `<h1>` elements were present on a single page of the extension. For accessibility and semantics reasons, all of these `<h1>` tags needed to be changed into `<h2>`'s.
+
+#### Visuals:
+Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
 
 #### Work performed:
 - The work performed started with determining if the home page of the QuizGame extension was indeed structured with multiple `<h1>` headings.
