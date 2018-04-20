@@ -756,7 +756,7 @@ Replaced "4 space" indentation with tab indentation as identified by the styleli
 +	margin: 0;
 +	width: 163px;
 +	height: 40px;
-+	border-radius: 0 0 3px 0;
++	border-radius: 0 0 2px 0;
 +	background-color: #72777d;
 +	cursor: pointer;
  
@@ -765,7 +765,7 @@ Replaced "4 space" indentation with tab indentation as identified by the styleli
 -    font-weight: 900;
 -    text-align: left;
 -    color: #ffffff;
-+	font-family: 'Lato';
++	font-family: 'Lato', sans-serif;
 +	font-size: 16px;
 +	font-weight: 900;
 +	text-align: left;
@@ -794,16 +794,16 @@ Replaced "4 space" indentation with tab indentation as identified by the styleli
 +	color: #fff;
 +}
 +
-+.ui.search .ui.input input::-webkit-input-placeholder {
-+	color: #555;
++.ui.search .ui.input ::-webkit-input-placeholder {
++	color: #54595d;
 +}
 +
-+.ui.search .ui.input input::-ms-input-placeholder {
-+	color: #555;
++.ui.search .ui.input ::-ms-input-placeholder {
++	color: #54595d;
 +}
 +
-+.ui.search .ui.input input::-moz-placeholder {
-+	color: #555;
++.ui.search .ui.input ::-moz-placeholder {
++	color: #54595d;
 +	opacity: 1;
  }
  
@@ -825,7 +825,7 @@ Replaced "4 space" indentation with tab indentation as identified by the styleli
 -    height: 35px;
 -    border-radius: 0.28571429rem;
 +	height: 35px;
-+	border-radius: 0.28571429rem;
++	border-radius: 2px;
  }
  
 -.dropdown.button { width: 70%; margin-left: 10px; }
