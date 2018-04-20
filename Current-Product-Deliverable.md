@@ -12,13 +12,13 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 
 
 #### Contents:
-- [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
+- [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
 - [Addition of label to input field in Visual Editor Categories page](#addition-of-label-to-input-field-in-visual-editor-categories-page)
 - [Correcting `<div>` tags to `<article>` tags in Flow extension to comply with W3 and MDN HTML standards](#correcting-div-tags-to-article-tags-in-flow-extension-to-comply-with-w3-and-mdn-html-standards)
-- [Correcting HTML heading structure in QuizGame to address accessibility and sematic concerns](#correcting-html-heading-structure-in-quizgame-to-address-accessibility-and-sematic-concerns)
-- [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-1-subdued-classes-and-footer-area)
-- [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-2.0-searchbar-placeholder-contrast-and-linting-issues)
-- [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 3: Remaining Concerns)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-3-remaining-concerns)
+- [Correcting HTML heading structure in QuizGame to address accessibility and semantic concerns](#correcting-html-heading-structure-in-quizgame-to-address-accessibility-and-semantic-concerns)
+- [Changing Wikistats 2.0 text and footer to use MediaWiki color palette and meet accessibility standards](#changing-wikistats-20-text-and-footer-to-use-mediawiki-color-palette-and-meet-accessibility-standards)
+- [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
+- [Correcting minor markup issues in Wikistats 2.0](#correcting-minor-markup-issues-in-wikistats-20)
 
 ***
 
