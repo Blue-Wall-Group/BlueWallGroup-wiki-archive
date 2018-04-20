@@ -689,7 +689,7 @@ Changed several elements to use colors from the WikimediaUI Base color palette. 
 * Michael Cornacchio  
 
 #### Status:  
-This change was been accepted and merged 4/20/2018, and is awaiting deployment.
+This contribution was merged on 4/20/2018 after four patch sets.
 
 #### Results 
 * Before contrast modification:
@@ -702,7 +702,14 @@ This change was been accepted and merged 4/20/2018, and is awaiting deployment.
 The WikiStats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
  
 #### Work performed:
-Replaced "4 space" indentation with tab indentation as identified by the stylelinter.  Used class hierarchy to identify placeholder rather than unique identifier.  As well as various other slight formatting changes.
+* Set searchbar `type` to "search" rather than text.
+* Ensured leading zero was present in decimal numbers.
+* Tab-indented CSS in accordance with MediaWiki's linter.
+* Added linter-highlighted spaces/newlines where missing.
+* Corrected `border-radius` to MediaWiki's standard of `2px`.
+* Added `sans-serif` as generic backup font to `Lato`.
+* Shortened hex color format to three digits where applicable.
+* Set `placeholder` color to meet contrast requirements.
  
 #### Code Changes:
 * src/components/TopicExplorer.vue:
