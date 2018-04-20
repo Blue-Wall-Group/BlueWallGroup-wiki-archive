@@ -675,7 +675,7 @@ Changed several elements to use colors from the WikimediaUI Base color palette. 
 * Michael Cornacchio  
 
 #### Status:  
-This change has been accepted.
+This change was been accepted and merged 4/20/2018, and is awaiting deployment.
 
 #### Results 
 * Before contrast modification:
