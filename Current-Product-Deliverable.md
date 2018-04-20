@@ -619,17 +619,32 @@ As of 4/20/2018 this contribution is still awaiting further approval and has not
 
 ***
 
-### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area) 
+### Changing WikiStats 2.0 text and footer to use MediaWiki color palette and meet accessibility standards
 
 #### Contributors:
 * Jesse Buck
 
-#### Description: 
+#### Status:
+This contribution is awaiting feedback as of 4/20/2018 after two patch sets. 
+
+#### Description:
+* Footer area text and links lacked contrast with the footer background.
+* Text with the "subdued" class lacked contrast with their backgrounds.
+
+#### Visuals:
+* Before contrast changes:
+![WikiStats 2 page before contrast changes](images/Detail-Page-Before.png)
+* After contrast changes:
+![WikiStats 2 page after contrast changes](images/Detail-Page-After.png)
 
 #### Work performed:
-Changed several elements to use colors from the WikimediaUI Base color palette. Changed text using the "subdued" class, the color of text and links within the footer area, and the background color of the footer area. Although not explicitly mentioned in T185533, the metrics buttons within the Detail view was also changed.
+* Changed several elements to use colors from the WikimediaUI Base color palette.
+* Changed the color of text using the "subdued" class.
+* Changed the color of text and links within the footer area.
+* Changed the background color of the footer area.
+* Added underlines to links in the footer area.
 
-#### Changes:
+#### Code changes:
 * src/App.vue
 ```diff
 @@ -138,8 +138,8 @@
@@ -696,9 +711,11 @@ Changed several elements to use colors from the WikimediaUI Base color palette. 
  .graph.panel .ui.right.floated.buttons {
 ```
 
-[Issue T185533 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T185533)
+#### Links:
 
-[Issue T185533 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/419958/)
+[Phabricator task](https://phabricator.wikimedia.org/T185533)
+
+[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/419958/)
 
 
 ***
