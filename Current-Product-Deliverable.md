@@ -12,7 +12,7 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 
 
 #### Contents:
-- [Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
+- [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
 - [Addition of label to input field in Visual Editor Categories page](#addition-of-label-to-input-field-in-visual-editor-categories-page)
 - [Correcting `<div>` tags to `<article>` tags in Flow extension to comply with W3 and MDN HTML standards](#correcting-div-tags-to-article-tags-in-flow-extension-to-comply-with-w3-and-mdn-html-standards)
 - [Correcting HTML heading structure in QuizGame to address accessibility and sematic concerns](#correcting-html-heading-structure-in-quizgame-to-address-accessibility-and-sematic-concerns)
@@ -22,15 +22,20 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 
 ***
 
-### Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic 
+### Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension 
 
 #### Contributors:
 * Hunter Hobbs
 * Jaziel Pauda
 * Jesse Buck
 
+#### Status:
+* This contribution was merged on 4/16/18 after 13 patch sets, and deployd on 4/17/18.
+
 #### Description:
-Throughout the codebase of the MultiMedia Viewer extension, there are button-like interface elements that are tagged as `<div>` and `<a>` elements. This is not semantic and thus all button-like elements in MultiMedia Viewer need to be converted from `<div>` and `<a>` elements to `<button>` elements. As is, a screen reader will not receive any semantic content about the interactive element to provide to the user.
+* When interactive elements are coded improperly, their functionality is not apparent to certain accessility hardware agents. This can lead to confusion and a poor experience for users with accessibility needs. Semantic HTML proposes writng DOM elements to give the user clear content on purpose and functionality.
+* Specific interactive elements within the MultiMedia Viewer extension codebase needed to be changed to reflect their funtion.
+
 
 #### Results:
 ![Copy button in the download pane](images/CopyButton-Downlaod-Pane.png)
@@ -38,10 +43,25 @@ Throughout the codebase of the MultiMedia Viewer extension, there are button-lik
 ![Copy button in the share dialog](images/CopyButton-ShareDialog.png)
 
 #### Work performed:
+<<<<<<< HEAD
 We thoroughly inspected the codebase for all interactive button-like elements that were improperly tagged. The `<div>` in `permission.js` was easily converted to a `<button>`. The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labelling text so that it wouldn't interfere with the UI for users without accessibility needs. A message library was used for the label language translation. Some of the associated CSS files needed to be edited to keep the button-like elements styling the same as it was prior to converting the tags. In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
+=======
+* Focused on the interactive button-like elemenst that were mentioned in the Issue on Phabricator.
+* Interactive button elements that were not `<button>s` were converted to `<button>s`.
+* Elements that were button-like in appearance but functioned as a link were not converted. 
+* The `<div>` in `permission.js` was converted to a `<button>`. 
+* The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. 
+* Any associated CSS files were edited to keep the button-like elements styling the same as it was prior to converting the tags. 
+* In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
 
-#### Outcome:
-This issue spanned nearly the whole semester. There was a total of 13 patchsets developed to resolve this issue. It was merged and deployed on April 16, 2018.
+#### Visuals:
+* Images showing button elements that were fixed:
+
+![](images/CopyButton-Downlaod-Pane.png)
+![](images/CopyButton-EmbedDialog.png)
+![](images/CopyButton-ShareDialog.png) 
+>>>>>>> edited description and added images
+
 
 #### Changes:
 * resources/mmv/mmv.bootstrap.less:
