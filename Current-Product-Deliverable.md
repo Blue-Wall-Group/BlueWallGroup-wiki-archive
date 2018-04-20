@@ -608,7 +608,7 @@ As of 4/20/2018 this contribution is still awaiting further approval and has not
 
 ***
 
-### Changing WikiStats 2.0 text and footer to use MediaWiki color palette and meet accessibility standards
+### Changing Wikistats 2.0 text and footer to use MediaWiki color palette and meet accessibility standards
 
 #### Contributors:
 * Jesse Buck
@@ -623,9 +623,9 @@ This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 #### Visuals:
 * Before contrast changes:
-![WikiStats 2 page before contrast changes](images/Detail-Page-Before.png)
+![Wikistats 2.0 page before contrast changes](images/Detail-Page-Before.png)
 * After contrast changes:
-![WikiStats 2 page after contrast changes](images/Detail-Page-After.png)
+![Wikistats 2.0 page after contrast changes](images/Detail-Page-After.png)
 
 #### Work performed:
 * Changed several elements to use colors from the WikimediaUI Base color palette.
@@ -948,24 +948,27 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
 
 ***
 
-### Correcting minor markup issues in WikiStats2
+### Correcting minor markup issues in Wikistats 2.0
 
 #### Contributors:
 * Jesse Buck
 * Michael Cornacchio
 
-#### Description:  A number of accessibility/markup issues were identified in the WikiStats2 extension beyond those already mentioned.
+#### Status:
+This contribution is awaiting further work as of 4/16/2018 after one patch set.
+
+#### Description:
+A number of accessibility/markup issues were identified in the Wikistats 2.0 extension beyond those already mentioned.
 
 #### Work performed: 
-* Added lang attribute to html element.  
+* Added `lang` attribute to `html` element.
 * Added labels to topic search input and Wiki search input.
-* Added alt tag for Wikimedia logo.
-* Added main ARIA label in App.vue.
-* Changed search header to a div.       
+* Added `alt` tag for Wikimedia logo.
+* Added main ARIA label in `App.vue`.
+* Changed search header to a `div`.
 
-#### Changes:
-
-* TopNav.vue:
+#### Code changes:
+* src/components/TopNav/TopNav.vue:
 ```diff
 @@ -2,7 +2,7 @@
  <div>
@@ -978,7 +981,7 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
      </router-link>
 ```
 
-* TopicExplorer.vue:
+* src/components/TopicExplorer.vue:
 ```diff
 @@ -18,7 +18,8 @@
  
@@ -1002,7 +1005,7 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
  </style>
 ```
 
-* WikiSelector.vue:
+* src/components/WikiSelector.vue:
 ```diff
 @@ -2,7 +2,8 @@
  <div>
@@ -1026,7 +1029,7 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
  </style>
 ```
 
-* Dashboard.vue:
+* src/components/dashboard/Dashboard.vue:
 ```diff
 @@ -1,10 +1,10 @@
  <template>
@@ -1044,7 +1047,7 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
          v-for="a in areas"
 ```
 
-* index.html:
+* src/index.html:
 ```diff
 @@ -1,5 +1,5 @@
  <!DOCTYPE html>
@@ -1055,9 +1058,11 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
          <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 ```
 
-[Issue T185533 MediaWiki Phabricator Work board link](https://phabricator.wikimedia.org/T185533)
+#### Links:
+[Phabricator task](https://phabricator.wikimedia.org/T185533)
 
-[Issue T185533 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426848/)
+[Gerrit patch, submission, review and code diff](https://gerrit.wikimedia.org/r/#/c/426848/)
+
 ***
 
 #### Glossary:  
