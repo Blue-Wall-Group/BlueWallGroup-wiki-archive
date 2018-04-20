@@ -217,7 +217,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 This contribution was merged on 4/17/2018 after three patch sets and was deployed on 4/24/2018.
 
 #### Description:
-In order to facilitate screen reader use with a web page, and improve the interactive experience of users with visual and cognitive disabilities, it is best practice to label all `<input>` elements in a page. Previously, the input fields in the "Categories" section of the "Options" dialog in Visual Editor relied on the input widget placeholders to convey the necessary information to understand the UI and fulfill user tasks.   
+In order to facilitate screen reader use with a web page, and improve the interactive experience of users with visual and cognitive disabilities, it is best practice to label all `<input>` elements in a page. Previously, the input fields in the "Categories" section of the "Options" dialog in Visual Editor relied on the input widget placeholders to convey the necessary information.   
 
 This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfil user tasks. Furthermore, this addition was necessary to improve the experience of a user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
