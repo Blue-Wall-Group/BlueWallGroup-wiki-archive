@@ -409,7 +409,10 @@ As of 4/19/2018 this contribution is awaiting further review so that it can be a
 In the QuizGame extension, several `<h1>` elements were present on a single page of the extension. For accessibility and semantics reasons, all of these `<h1>` tags needed to be changed into `<h2>`'s.
 
 #### Work performed:
-The work started with determining if having multiple `<h2>` tags in one page was appropriate. After this, the specified heading tags were changed to `<h2>` tags and CSS classes with selectors for the `<h1>` tags were removed from the code base.
+- The work performed started with determining if the home page of the QuizGame extension was indeed structured with multiple `<h1>` headings.
+- After this verification, the intended layout of this page was examined to determine if any of the headings on the page were nested section headings or were headings for seperate sections.
+- After it was determined that each heading represented the introduction of new independent section of the home page, each of the `<h1>` headings was changed to a `<h2>` heading.
+- Finally, CSS classes that selected the various `<h1>` tags were removed from the code because the styling they applied to the headings were no longer needed with the new heading structure.
 
 #### Changes:
 
