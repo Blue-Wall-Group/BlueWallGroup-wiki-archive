@@ -39,7 +39,7 @@ The following is a list of behavior and accomplishments which we feel will resul
     * Rationale: The Sprint Planning, Retrospective, and Review are crucial activities any Scrum team must exercise in order to successfully develop valuable features, constantly improve performance, and ensure consistent Stakeholder awareness of product/feature development.
     * Measurement: Success for Sprint Planning, the Sprint Review, and Sprint retro must be individually measured.
         * A succesfull Sprint Planning sessio  will have produced two key artifacts: a Sprint Goal and a Sprint Backlog.
-          * Test     
+            * Test     
 * Acceptance Criteria
     * Definition:
     * Rationale:
