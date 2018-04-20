@@ -391,7 +391,7 @@ Within the MediaWiki Flow extension, several `<div>` elements needed to be chang
  	{{> flow_post_meta_actions}}
  	{{> flow_post_actions}}
 ```
-
+#### Links:
 [Phabricator issue ticket](https://phabricator.wikimedia.org/T175937)
 
 [Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/413091/)
@@ -584,7 +584,7 @@ In the QuizGame extension, several `<h1>` elements were present on a single page
  
  .quizgame-answer-number {
 ```
-
+#### Links:
 [Phabricator issue ticket](https://phabricator.wikimedia.org/T156450)
 
 [Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/416887/)
