@@ -51,7 +51,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 * Any CSS files associated with elements that were changed were edited to keep the button-like element styling the same as it was prior to converting the tags. 
 * In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` element to make it focusable by the keyboard for accessibility needs.
 
-#### Changes:
+#### Code Changes:
 * resources/mmv/mmv.bootstrap.less:
 ```diff
 @@ -58,3 +58,12 @@
@@ -128,7 +128,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
  				gravity: this.correctEW( 'se' )
 ```
 
-* resources/mmv/ui/mmv.ui.reuse.embed.less
+* resources/mmv/ui/mmv.ui.reuse.embed.less:
 ```diff
 @@ -37,10 +37,9 @@
  
@@ -202,9 +202,9 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
  	};
 ```
 
-[Issue T161612 MediaWiki Phabricator Workboard link](https://phabricator.wikimedia.org/T161612)
+[Phabricator task](https://phabricator.wikimedia.org/T161612)
 
-[Issue T161612 Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/408577/)
+[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/408577/)
 
 ***
 ### Addition of label to input field in Visual Editor Categories page
