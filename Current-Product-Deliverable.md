@@ -36,16 +36,14 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 * When interactive elements are coded improperly, their functionality is not apparent to certain accessility hardware agents. This can lead to confusion and a poor experience for users with accessibility needs. Semantic HTML proposes writng DOM elements to give the user clear content on purpose and functionality.
 * Specific interactive elements within the MultiMedia Viewer extension codebase needed to be changed to reflect their funtion.
 
+#### Visuals:
+* Images showing button elements that were fixed:
 
-#### Results:
-![Copy button in the download pane](images/CopyButton-Downlaod-Pane.png)
-![Copy button in the embed dialog](images/CopyButton-EmbedDialog.png)
-![Copy button in the share dialog](images/CopyButton-ShareDialog.png)
+![](images/CopyButton-Downlaod-Pane.png)
+![](images/CopyButton-EmbedDialog.png)
+![](images/CopyButton-ShareDialog.png) 
 
 #### Work performed:
-<<<<<<< HEAD
-We thoroughly inspected the codebase for all interactive button-like elements that were improperly tagged. The `<div>` in `permission.js` was easily converted to a `<button>`. The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labelling text so that it wouldn't interfere with the UI for users without accessibility needs. A message library was used for the label language translation. Some of the associated CSS files needed to be edited to keep the button-like elements styling the same as it was prior to converting the tags. In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
-=======
 * Focused on the interactive button-like elemenst that were mentioned in the Issue on Phabricator.
 * Interactive button elements that were not `<button>s` were converted to `<button>s`.
 * Elements that were button-like in appearance but functioned as a link were not converted. 
@@ -53,15 +51,6 @@ We thoroughly inspected the codebase for all interactive button-like elements th
 * The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. 
 * Any associated CSS files were edited to keep the button-like elements styling the same as it was prior to converting the tags. 
 * In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` elements to make it focusable by the keyboard for accessibility needs.
-
-#### Visuals:
-* Images showing button elements that were fixed:
-
-![](images/CopyButton-Downlaod-Pane.png)
-![](images/CopyButton-EmbedDialog.png)
-![](images/CopyButton-ShareDialog.png) 
->>>>>>> edited description and added images
-
 
 #### Changes:
 * resources/mmv/mmv.bootstrap.less:
