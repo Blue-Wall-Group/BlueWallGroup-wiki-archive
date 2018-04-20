@@ -303,9 +303,9 @@ This issue revolved the improvement of the "Categories" dialog page in the Media
 #### Links:
 [Phabricator issue ticket](https://phabricator.wikimedia.org/T185533)
 
-[Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/426139/)
+[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426139/)
 
-[Overview of merge on Phabricator](https://google.com)
+[Overview of merge](https://google.com)
 
 ***
 
@@ -392,15 +392,15 @@ Within the MediaWiki Flow extension, several `<div>` elements needed to be chang
  	{{> flow_post_actions}}
 ```
 #### Links:
-[Phabricator issue ticket](https://phabricator.wikimedia.org/T175937)
+[Phabricator task](https://phabricator.wikimedia.org/T175937)
 
-[Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/413091/)
+[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/413091/)
 
-[Overview of merge on Phabricator](https://phabricator.wikimedia.org/rEFLWa703662e1c62c251ad1e83bf0b84715dfb5ff437)
+[Overview of merge](https://phabricator.wikimedia.org/rEFLWa703662e1c62c251ad1e83bf0b84715dfb5ff437)
 
 ***
 
-### Correcting HTML heading structure in QuizGame to address accessibility and sematic concerns
+### Correcting HTML heading structure in QuizGame to address accessibility and semantic concerns
 
 #### Contributors:
 * Jaziel Pauda
@@ -585,10 +585,11 @@ In the QuizGame extension, several `<h1>` elements were present on a single page
  .quizgame-answer-number {
 ```
 #### Links:
-[Phabricator issue ticket](https://phabricator.wikimedia.org/T156450)
+[Phabricator task](https://phabricator.wikimedia.org/T156450)
 
-[Gerrit Patch Submission Review and Code Diff link](https://gerrit.wikimedia.org/r/#/c/416887/)
+[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/416887/)
 
+As of 4/20/2018 this contribution is still awaiting further approval and has not been merged.
 ***
 
 ### Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area) 
