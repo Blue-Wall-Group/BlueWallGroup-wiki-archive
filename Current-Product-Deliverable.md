@@ -318,7 +318,10 @@ This contribution was accepted and merged on 2/21/2018 and deployed on 2/27/2018
 Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to better follow semantic HTML conventions, specifically W3 and MDN HTML standards.
 
 #### Work performed:
-The work started with verifying the issue author was correct that the `<div>` tags specified should become `<article>` tags by going over W3 and MDN standards. After this, the `<div>` tags that needed to be changed were identified by searching for the tags that had the CSS classes "flow-post-content" and "mw-parser-output". Then, the identified tags were changed to `<article>` tags, templates were compiled, and finally the changes were tested using PHPUnit.
+- Verified, through W3 and MDN HTML standard specifications, that the correct semantic HTML tag for forum posts and comments are indeed `<article>` tags.
+- `<div>` tags that needed to be fixed were identified by searching for the HTML tags that had the CSS classes "flow-post-content" and "mw-parser-output" because those classes are the ones applied to elements that contain the content of the forum posts and comments created by users with the Flow extension.
+- Identified tags were changed to `<article>` tags.
+- All PHP templates were recompiled using the command "make compile-lightncandy".
 
 #### Changes:
 
