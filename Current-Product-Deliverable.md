@@ -206,7 +206,7 @@ This issue spanned nearly the whole semester. There was a total of 13 patchsets 
 * Hunter Hobbs
 
 #### Status:
-This contribution was accepted and merged on 4/17/2018 and was deployed on 4/24/2018.
+This contribution was merged on 4/17/2018 after three patch sets and was deployed on 4/24/2018.
 
 #### Description:
 This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfil user tasks. Furthermore, this addition was necessary to improve the experience of a user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
