@@ -37,7 +37,9 @@ The following is a list of behavior and accomplishments which we feel will resul
 * Planning/Review/Retro
     * Definition:  The Sprint Planning session is a time-constrained event (usually 1 hour per Sprint-week) where the Product Owner, Scrum Master, and the Scrum Team work together to define what product backlog items will be completed.  The Sprint Review is conducted at the end of each Sprint and is an event where the team has an opportunity too demo completed features as well as assess whether or not the Sprint Goal (determined in the Sprint Planning) has been successfully completed.  The Sprint Retrospective (Sprint Retro) represents an opportunity for the team to examine their performance and consider whether modified behavior might improve performance.  
     * Rationale: The Sprint Planning, Retrospective, and Review are crucial activities any Scrum team must exercise in order to successfully develop valuable features, constantly improve performance, and ensure consistent Stakeholder awareness of product/feature development.
-    * Measurement:
+    * Measurement: Success for Sprint Planning, the Sprint Review, and Sprint retro must be individually measured.
+        * A succesfull Sprint Planning sessio  will have produced two key artifacts: a Sprint Goal and a Sprint Backlog.
+          * Test     
 * Acceptance Criteria
     * Definition:
     * Rationale:
