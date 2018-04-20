@@ -14,7 +14,7 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 #### Contents:
 - [Issue T161612 - Buttons in MMV are not really buttons and are thus not semantic](#issue-t161612---buttons-in-mmv-are-not-really-buttons-and-are-thus-not-semantic)
 - [Addition of label to input field in Visual Editor Categories page](#addition-of-label-to-input-field-in-visual-editor-categories-page)
-- [Correcting `<div>` tags to `<article>` tags to comply with W3 and MDN HTML standards](#correcting-div-tags-to-article-tags-to-comply-with-w3-and-mdn-html-standards)
+- [Correcting `<div>` tags to `<article>` tags in Flow extension to comply with W3 and MDN HTML standards](#correcting-div-tags-to-article-tags-in-flow-extension-to-comply-with-w3-and-mdn-html-standards)
 - [Correcting HTML heading structure in QuizGame to address accessibility and sematic concerns](#correcting-html-heading-structure-in-quizgame-to-address-accessibility-and-sematic-concerns)
 - [Issue T185533 - Wikistats Beta: Fix accessibility/markup issues of Wikistats 2.0 (Part 1: .subdued classes and footer area)](#issue-t185533---wikistats-beta-fix-accessibilitymarkup-issues-of-wikistats-20-part-1-subdued-classes-and-footer-area)
 - [Resolving WikiStats2 searchbar placeholder contrast and linting issues](#resolving-wikistats2-searchbar-placeholder-contrast-and-linting-issues)
@@ -306,7 +306,7 @@ The work performed on this contribution began with the addition of the new label
 
 ***
 
-### Correcting `<div>` tags to `<article>` tags to comply with W3 and MDN HTML standards
+### Correcting `<div>` tags to `<article>` tags in Flow extension to comply with W3 and MDN HTML standards
 
 #### Contributors:
 * Jaziel Pauda
