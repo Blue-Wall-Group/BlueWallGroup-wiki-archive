@@ -42,26 +42,6 @@ The following is a list of behavior and accomplishments which we feel will resul
             * Sprint Goal: A successful Sprint Goal will represent both what the Product Owner and development team want out of the Sprint.  A quality Sprint Goal will be relatively short, in part so that the intention of the Sprint can be concisely conveyed to any curious stakeholders.
             * Sprint Backlog: The Sprint Backlog consists of the Product Backlog items that the team decides to work on during the upcoming Sprint.  A quality Sprint Backlog will consist of items whose completion drives the team towards achieving the Sprint Goal.  Additionally, the Sprint Backlog items will have a list of tasks (as well as estimates per task) that the team determines is necessary for delivery.
         * Sprint Retrospective: 
-* Acceptance Criteria
-    * Definition:
-    * Rationale:
-    * Measurement:
-* * 2 Reviewers other than developer
-* * Document acceptance tests
-* US prioritization (Rank) - documentation.
-    * Definition:
-    * Rationale:
-    * Measurement:
-* * Team definition of story point 
-* How US fo from BL -> SL
-    * Definition:
-    * Rationale:
-    * Measurement:
-* * current: what achieves sprint goal
-* Constant deliverable
-    * Definition:
-    * Rationale:
-    * Measurement:
 
 # Product Quality
 * Meet coding standards for MW 
