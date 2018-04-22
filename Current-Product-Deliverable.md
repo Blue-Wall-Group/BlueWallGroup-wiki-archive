@@ -1,6 +1,6 @@
 # MediaWiki Accessibility Product Deliverable
 
-#### The Blue Wall Group:  
+#### The Blue Wall Group:
     Jesse Buck  
     Daniel Collier  
     Michael Cornacchio  
@@ -8,8 +8,7 @@
     Jaziel Pauda  
 
 #### Abstract:
-The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.               
-
+The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.
 
 #### Contents:
 - [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
@@ -22,7 +21,7 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 
 ***
 
-### Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension 
+### Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension
 
 #### Contributors:
 * Hunter Hobbs
@@ -33,22 +32,22 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 * This contribution was merged on 4/16/18 after 13 patch sets, and deployed on 4/17/18.
 
 #### Description:
-Interactive HTML elements that are not tagged correctly prevent accessibility hardware from communicating the functionality of the element to the user. This can lead to confusion and a poor experience for users with accessibility needs. Semantic HTML proposes writing DOM elements to give the user clear content on purpose and functionality. Some interactive `<button>` elements in the codebase for MultiMedia Viewer extension  were fixed reflect their funtionality.
+Interactive HTML elements that are not tagged correctly prevent accessibility hardware from communicating the functionality of the element to the user. This can lead to confusion and a poor experience for users with accessibility needs. Semantic HTML proposes writing DOM elements to give the user clear content on purpose and functionality. Some interactive `<button>` elements in the codebase for MultiMedia Viewer extension  were fixed reflect their functionality.
 
 #### Visuals:
 * Images showing button elements that were fixed:
 
 ![](images/CopyButton-Downlaod-Pane.png)
 ![](images/CopyButton-EmbedDialog.png)
-![](images/CopyButton-ShareDialog.png) 
+![](images/CopyButton-ShareDialog.png)
 
 #### Work performed:
 * Focused on the interactive button-like elements that were mentioned in the issue on Phabricator.
 * Interactive button elements that were not `<button>`'s were converted to `<button>`'s.
-* Elements that were button-like in appearance but functioned as a link were not converted. 
-* The `<div>` in `permission.js` was converted to a `<button>`. 
-* The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a CSS class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs. 
-* Any CSS files associated with elements that were changed were edited to keep the button-like element styling the same as it was prior to converting the tags. 
+* Elements that were button-like in appearance but functioned as a link were not converted.
+* The `<div>` in `permission.js` was converted to a `<button>`.
+* The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a CSS class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs.
+* Any CSS files associated with elements that were changed were edited to keep the button-like element styling the same as it was prior to converting the tags.
 * In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` element to make it focusable by the keyboard for accessibility needs.
 
 #### Code Changes:
@@ -202,9 +201,12 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
  	};
 ```
 
+#### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T161612)
 
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/408577/)
+
+[Return to contents](#contents)
 
 ***
 ### Adding Label to Input Field in Visual Editor Categories page
@@ -223,7 +225,7 @@ This issue revolved the improvement of the "Categories" dialog page in the Media
 
 #### Visuals:
 * Before adding category label:
-![](https://i.imgur.com/xEQpOnm.png) 
+![](https://i.imgur.com/xEQpOnm.png)
 
 * After adding category label:
 ![](https://i.imgur.com/uxBiVlM.png)
@@ -310,12 +312,15 @@ This issue revolved the improvement of the "Categories" dialog page in the Media
  	this.$element.append( this.categoriesFieldset.$element, this.categoryOptionsFieldset.$element );
  };
 ```
+
 #### Links:
 [Phabricator issue ticket](https://phabricator.wikimedia.org/T185533)
 
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426139/)
 
 [Overview of merge](https://google.com)
+
+[Return to contents](#contents)
 
 ***
 
@@ -404,12 +409,15 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
  	{{> flow_post_meta_actions}}
  	{{> flow_post_actions}}
 ```
+
 #### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T175937)
 
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/413091/)
 
 [Overview of merge](https://phabricator.wikimedia.org/rEFLWa703662e1c62c251ad1e83bf0b84715dfb5ff437)
+
+[Return to contents](#contents)
 
 ***
 
@@ -429,7 +437,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 
 #### Work performed:
 - The work performed started with determining if the home page of the QuizGame extension was indeed structured with multiple `<h1>` headings.
-- After this verification, the intended layout of this page was examined to determine if any of the headings on the page were nested section headings or were headings for seperate sections.
+- After this verification, the intended layout of this page was examined to determine if any of the headings on the page were nested section headings or were headings for separate sections.
 - After it was determined that each heading represented the introduction of new independent section of the home page, each of the `<h1>` headings was changed to a `<h2>` heading.
 - Finally, CSS classes that selected the various `<h1>` tags were removed from the code because the styling they applied to the headings were no longer needed with the new heading structure.
 
@@ -600,12 +608,13 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
  
  .quizgame-answer-number {
 ```
+
 #### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T156450)
 
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/416887/)
 
-As of 4/20/2018 this contribution is still awaiting further approval and has not been merged.
+[Return to contents](#contents)
 
 ***
 
@@ -615,7 +624,7 @@ As of 4/20/2018 this contribution is still awaiting further approval and has not
 * Jesse Buck
 
 #### Status:
-This contribution is awaiting feedback as of 4/20/2018 after two patch sets. 
+This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 #### Description:
 * Footer area text and links lacked contrast with the footer background.
@@ -635,7 +644,7 @@ This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 * Changed the background color of the footer area.
 * Added underlines to links in the footer area.
 
-#### Code changes:
+#### Changes:
 * src/App.vue
 ```diff
 @@ -138,8 +138,8 @@
@@ -708,6 +717,7 @@ This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/419958/)
 
+[Return to contents](#contents)
 
 ***
 
@@ -722,12 +732,12 @@ This contribution was merged on 4/20/2018 after four patch sets.
 #### Description:
 The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
 
-#### Visuals 
+#### Visuals
 * Before contrast modification:
 ![](https://i.imgur.com/yf7RVhO.png)  
  
 * After contrast modification:
-![](https://i.imgur.com/ztt7vnJ.png) 
+![](https://i.imgur.com/ztt7vnJ.png)
  
 #### Work performed:
 * Set searchbar `type` attribute to "search" rather than text.
@@ -738,8 +748,8 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
 * Added `sans-serif` as generic backup font to `Lato`.
 * Shortened hex color format to three digits where applicable.
 * Set `placeholder` color to meet contrast requirements.
- 
-#### Code Changes:
+
+#### Changes:
 * src/components/TopicExplorer.vue:
 ```diff
 @@ -18,7 +18,7 @@
@@ -941,11 +951,14 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
 +	}
  }
  </style>
-``` 
+```
 
-#### Links: 
-* [Phabricator task](https://phabricator.wikimedia.org/T185533)
-* [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426848/)
+#### Links:
+[Phabricator task](https://phabricator.wikimedia.org/T185533)
+
+[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426848/)
+
+[Return to contents](#contents)
 
 ***
 
@@ -961,14 +974,14 @@ This contribution is awaiting further work as of 4/16/2018 after one patch set.
 #### Description:
 A number of accessibility/markup issues were identified in the Wikistats 2.0 extension beyond those already mentioned.
 
-#### Work performed: 
+#### Work performed:
 * Added `lang` attribute to `html` element.
 * Added labels to topic search input and Wiki search input.
 * Added `alt` tag for Wikimedia logo.
 * Added main ARIA label in `App.vue`.
 * Changed search header to a `div`.
 
-#### Code changes:
+#### Changes:
 * src/components/TopNav/TopNav.vue:
 ```diff
 @@ -2,7 +2,7 @@
@@ -1063,6 +1076,8 @@ A number of accessibility/markup issues were identified in the Wikistats 2.0 ext
 [Phabricator task](https://phabricator.wikimedia.org/T185533)
 
 [Gerrit patch, submission, review and code diff](https://gerrit.wikimedia.org/r/#/c/426848/)
+
+[Return to contents](#contents)
 
 ***
 
