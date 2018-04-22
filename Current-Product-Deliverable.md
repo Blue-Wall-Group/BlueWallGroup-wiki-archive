@@ -627,9 +627,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 #### Description:
-* Footer area text and links lacked contrast with the footer background.
-* Text with the "subdued" class lacked contrast with their backgrounds.
-* Links in the footer area were difficult to differentiate from surrounding non-link text, and underlines were needed.
+Page text which has low contrast with the background can be difficult to read, and presents an accessibility barrier. Wikistats 2.0 had several areas with poor contrast. In particular, its footer area and several text elements had inadequate contrast according to W3C standards. These colors needed to be changed to be WCAG compliant, using colors sourced from an existing MediaWiki color palette. Additionally, as a result of the color changes in the footer area, underlines needed to be added to the footer links to further distinguish them from surrounding text.
 
 #### Visuals:
 * Before contrast changes:
@@ -638,8 +636,7 @@ This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 ![Wikistats 2.0 page after contrast changes](images/Detail-Page-After.png)
 
 #### Work performed:
-* Changed several elements to use colors from the WikimediaUI Base color palette.
-* Changed the color of text using the "subdued" class.
+* Changed the color of several subdued text elements.
 * Changed the color of text and links within the footer area.
 * Changed the background color of the footer area.
 * Added underlines to links in the footer area.
