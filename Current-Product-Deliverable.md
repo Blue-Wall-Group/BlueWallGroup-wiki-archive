@@ -11,13 +11,13 @@
 The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.
 
 #### Contents:
-- [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
-- [Adding Label to Input Field in Visual Editor Categories page](#adding-label-to-input-field-in-visual-editor-categories-page)
-- [Correcting `<div>` tags to `<article>` tags in Flow Extension](#correcting-div-tags-to-article-tags-in-flow-extension)
-- [Correcting HTML Heading Structure in QuizGame Extension](#correcting-html-heading-structure-in-quizgame-extension)
-- [Integrating MediaWiki Color Palette into Wikistats 2.0](#integrating-mediawiki-color-palette-into-wikistats-20)
-- [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
-- [Correcting minor markup issues in Wikistats 2.0](#correcting-minor-markup-issues-in-wikistats-20)
+* [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
+* [Adding Label to Input Field in Visual Editor Categories page](#adding-label-to-input-field-in-visual-editor-categories-page)
+* [Correcting `<div>` tags to `<article>` tags in Flow Extension](#correcting-div-tags-to-article-tags-in-flow-extension)
+* [Correcting HTML Heading Structure in QuizGame Extension](#correcting-html-heading-structure-in-quizgame-extension)
+* [Integrating MediaWiki Color Palette into Wikistats 2.0](#integrating-mediawiki-color-palette-into-wikistats-20)
+* [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
+* [Correcting minor markup issues in Wikistats 2.0](#correcting-minor-markup-issues-in-wikistats-20)
 
 ***
 
@@ -219,7 +219,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 This contribution was merged on 4/17/2018 after three patch sets and was deployed on 4/24/2018.
 
 #### Description:
-In order to facilitate screen reader use with a web page, and improve the interactive experience of users with visual and cognitive disabilities, it is best practice to label all `<input>` elements in a page. Previously, the input fields in the "Categories" section of the "Options" dialog in Visual Editor relied on the input widget placeholders to convey the necessary information.   
+In order to facilitate screen reader use with a web page, and improve the interactive experience of users with visual and cognitive disabilities, it is best practice to label all `<input>` elements in a page. Previously, the input fields in the "Categories" section of the "Options" dialog in Visual Editor relied on the input widget placeholders to convey the necessary information.
 
 This issue revolved the improvement of the "Categories" dialog page in the MediaWiki Visual Editor extension. Specifically, it involved the addition of a 'label' element for the top input field of this page. This addition was necessary because the previous version of this page relied on user solely on input field placeholder text to inform the user of information necessary to understand the interface and fulfil user tasks. Furthermore, this addition was necessary to improve the experience of a user accessing the interface with a screen reader as well as users with visual and cognitive impairments.
 
@@ -231,10 +231,10 @@ This issue revolved the improvement of the "Categories" dialog page in the Media
 ![](https://i.imgur.com/uxBiVlM.png)
 
 #### Work performed:
-- The work performed began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension.
-- Next, the newly added message was defined by associating the label name with the English text that would be displayed to the user in the 'en.json' file of the code base.
-- The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports.
-- The final step in the coding process was utilizing MediaWiki's OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget to display the new elements together in the "Categories" page of the extension.
+* The work performed began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension.
+* Next, the newly added message was defined by associating the label name with the English text that would be displayed to the user in the 'en.json' file of the code base.
+* The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports.
+* The final step in the coding process was utilizing MediaWiki's OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget to display the new elements together in the "Categories" page of the extension.
 
 #### Changes:
 
@@ -339,10 +339,10 @@ Within the MediaWiki Flow extension, several `<div>` elements needed to be chang
 Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
 
 #### Work performed:
-- Verified, through W3 and MDN HTML standard specifications, that the correct semantic HTML tag for forum posts and comments are indeed `<article>` tags.
-- `<div>` tags that needed to be fixed were identified by searching for the HTML tags that had the CSS classes "flow-post-content" and "mw-parser-output" because those classes are the ones applied to elements that contain the content of the forum posts and comments created by users with the Flow extension.
-- Identified tags were changed to `<article>` tags.
-- All PHP templates were recompiled using the command "make compile-lightncandy".
+* Verified, through W3 and MDN HTML standard specifications, that the correct semantic HTML tag for forum posts and comments are indeed `<article>` tags.
+* `<div>` tags that needed to be fixed were identified by searching for the HTML tags that had the CSS classes "flow-post-content" and "mw-parser-output" because those classes are the ones applied to elements that contain the content of the forum posts and comments created by users with the Flow extension.
+* Identified tags were changed to `<article>` tags.
+* All PHP templates were recompiled using the command "make compile-lightncandy".
 
 #### Changes:
 
@@ -436,10 +436,10 @@ In the QuizGame extension, several `<h1>` elements were present on a single page
 Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
 
 #### Work performed:
-- The work performed started with determining if the home page of the QuizGame extension was indeed structured with multiple `<h1>` headings.
-- After this verification, the intended layout of this page was examined to determine if any of the headings on the page were nested section headings or were headings for separate sections.
-- After it was determined that each heading represented the introduction of new independent section of the home page, each of the `<h1>` headings was changed to a `<h2>` heading.
-- Finally, CSS classes that selected the various `<h1>` tags were removed from the code because the styling they applied to the headings were no longer needed with the new heading structure.
+* The work performed started with determining if the home page of the QuizGame extension was indeed structured with multiple `<h1>` headings.
+* After this verification, the intended layout of this page was examined to determine if any of the headings on the page were nested section headings or were headings for separate sections.
+* After it was determined that each heading represented the introduction of new independent section of the home page, each of the `<h1>` headings was changed to a `<h2>` heading.
+* Finally, CSS classes that selected the various `<h1>` tags were removed from the code because the styling they applied to the headings were no longer needed with the new heading structure.
 
 #### Changes:
 
@@ -721,7 +721,7 @@ This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 ***
 
-### Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues 
+### Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues
 
 #### Contributors:
 * Michael Cornacchio  
@@ -734,11 +734,11 @@ The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requir
 
 #### Visuals
 * Before contrast modification:
-![](https://i.imgur.com/yf7RVhO.png)  
- 
+![](https://i.imgur.com/yf7RVhO.png)
+
 * After contrast modification:
 ![](https://i.imgur.com/ztt7vnJ.png)
- 
+
 #### Work performed:
 * Set searchbar `type` attribute to "search" rather than text.
 * Ensured leading zero was present in all CSS attributes that have decimal number values.
