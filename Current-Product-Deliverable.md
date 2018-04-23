@@ -13,11 +13,11 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 #### Contents:
 * [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
 * [Adding Label to Input Field in Visual Editor Categories page](#adding-label-to-input-field-in-visual-editor-categories-page)
-* [Correcting `<div>` tags to `<article>` tags in Flow Extension](#correcting-div-tags-to-article-tags-in-flow-extension)
-* [Resolving Wikistats 2.0 Search Bar Placeholder Contrast and Linting Issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
+* [Correcting `<div>` Tags to `<article>` Tags in Flow Extension](#correcting-div-tags-to-article-tags-in-flow-extension)
+* [Resolving Wikistats 2.0 Search Bar Placeholder Contrast and Linting Issues](#resolving-wikistats-20-search-bar-placeholder-contrast-and-linting-issues)
 * [Correcting HTML Heading Structure in QuizGame Extension](#correcting-html-heading-structure-in-quizgame-extension)
 * [Integrating MediaWiki Color Palette into Wikistats 2.0](#integrating-mediawiki-color-palette-into-wikistats-20)
-* [Correcting minor markup issues in Wikistats 2.0](#correcting-minor-markup-issues-in-wikistats-20)
+* [Correcting Minor Markup Issues in Wikistats 2.0](#correcting-minor-markup-issues-in-wikistats-20)
 
 ***
 
