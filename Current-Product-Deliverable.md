@@ -14,9 +14,9 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 * [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
 * [Adding Label to Input Field in Visual Editor Categories page](#adding-label-to-input-field-in-visual-editor-categories-page)
 * [Correcting `<div>` tags to `<article>` tags in Flow Extension](#correcting-div-tags-to-article-tags-in-flow-extension)
+* [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
 * [Correcting HTML Heading Structure in QuizGame Extension](#correcting-html-heading-structure-in-quizgame-extension)
 * [Integrating MediaWiki Color Palette into Wikistats 2.0](#integrating-mediawiki-color-palette-into-wikistats-20)
-* [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
 * [Correcting minor markup issues in Wikistats 2.0](#correcting-minor-markup-issues-in-wikistats-20)
 
 ***
@@ -231,8 +231,8 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 #### Work Performed:
 * The name of the new label for the category input field was added into the `extension.json` file of the extension.
 * Next, the newly added message was defined by associating the label name with the English text that would be displayed to the user in the `en.json` file of the code base.
-* The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports.
-* The final step in the coding process was utilizing MediaWiki's OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget to display the new elements together in the "Categories" page of the extension.
+* The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the `qqq.json` file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports.
+* The final step in the coding process was utilizing MediaWiki's OO JS UI library to add a new FieldLayout to the `ve.ui.MWCategoriesPage.js` file that included the category input widget as well as the newly created label for that input widget to display the new elements together in the "Categories" page of the extension.
 
 #### Changes:
 
@@ -316,8 +316,6 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426139/)
 
-[Overview of merge](https://google.com)
-
 [Return to contents](#contents)
 
 ***
@@ -332,6 +330,7 @@ This contribution was merged on 2/21/2018 after one patch set and was deployed o
 
 #### Description:
 MDN and W3 specify HTML conventions that ensure semantic HTML. These standards specify that the `<article>` tag is for forum posts, blog posts, news stories and comments. Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to adhere to the above standards because they contained comments and forum posts.
+
 #### Visuals:
 Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
 
@@ -411,8 +410,6 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 [Phabricator task](https://phabricator.wikimedia.org/T175937)
 
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/413091/)
-
-[Overview of merge](https://phabricator.wikimedia.org/rEFLWa703662e1c62c251ad1e83bf0b84715dfb5ff437)
 
 [Return to contents](#contents)
 
