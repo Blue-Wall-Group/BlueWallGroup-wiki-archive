@@ -956,7 +956,7 @@ Low contrast between text and its background presents an accessibility barrier. 
 
 ***
 
-### Correcting minor markup issues in Wikistats 2.0
+### Correcting Minor Markup Issues in Wikistats 2.0
 
 #### Contributors:
 * Jesse Buck
@@ -968,14 +968,14 @@ This contribution is awaiting further work as of 4/16/2018 after one patch set.
 #### Description:
 Minor code changes can significantly increase a page's accessibility. Markup issues in the Wikistats 2.0 extension posed a variety of accessibility limiters. These included missing HTML attributes, labels, and tags, as well as inappropriate elements. These needed to be resolved with various small changes.
 
-#### Work performed:
+#### Work Performed:
 * Added `lang` attribute to `html` element.
 * Added labels to topic search input and Wiki search input.
 * Added `alt` tag for Wikimedia logo.
 * Added main ARIA label in `App.vue`.
 * Changed search header to a `div`.
 
-#### Changes:
+#### Code Changes:
 * src/components/TopNav/TopNav.vue:
 ```diff
 @@ -2,7 +2,7 @@
