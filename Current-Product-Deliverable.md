@@ -427,7 +427,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 #### Description:
-MediaWiki HTML standards specify that HTML there must not be more than one `<h1>` heading per page in order to facilitate accurate screen reader navigation of the page, to maintain a separation between navigation and content, and to maintain a logical heading structure. Previously, the home page of the MediaWiki QuizGame extension contained was structured entirely with `<h1>` headings. Thus, all those headings needed to be changed to `<h2>` elements in order to comply with the standards mentioned above, and remove this accessibility issue. 
+MediaWiki HTML standards specify that there must not be more than one `<h1>` heading per page. This specification facilitates accurate screen reader navigation, maintains a separation between navigation and content, and ensures a logical heading structure. Previously, the home page of the MediaWiki QuizGame extension was structured entirely with `<h1>` headings. Thus, all those headings needed to be changed to `<h2>` elements in order to comply with the mentioned accessibility standards. 
 
 #### Visuals:
 Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
