@@ -8,13 +8,13 @@
     Jaziel Pauda  
 
 #### Abstract:
-The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed accessibility concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.
+The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities."><abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr></abbr> concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.
 
 #### Contents:
 * [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
 * [Adding Label to Input Field in Visual Editor Categories page](#adding-label-to-input-field-in-visual-editor-categories-page)
 * [Correcting `<div>` tags to `<article>` tags in Flow Extension](#correcting-div-tags-to-article-tags-in-flow-extension)
-* [Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
+* [Resolving Wikistats 2.0 Search Bar Placeholder Contrast and Linting Issues](#resolving-wikistats-20-searchbar-placeholder-contrast-and-linting-issues)
 * [Correcting HTML Heading Structure in QuizGame Extension](#correcting-html-heading-structure-in-quizgame-extension)
 * [Integrating MediaWiki Color Palette into Wikistats 2.0](#integrating-mediawiki-color-palette-into-wikistats-20)
 * [Correcting minor markup issues in Wikistats 2.0](#correcting-minor-markup-issues-in-wikistats-20)
@@ -29,10 +29,10 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 * Jesse Buck
 
 #### Status:
-* This contribution was merged on 4/16/18 after 13 patch sets, and deployed on 4/17/18.
+* This contribution was <abbr title="Integrating a set of a changes into a different version of a codebase.">merged</abbr> on 4/16/18 after 13 <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr>, and <abbr title="Integrating new software into an existing codebase.">deployed</abbr> on 4/17/18.
 
 #### Description:
-Interactive HTML elements that are not tagged correctly prevent accessibility hardware from communicating the functionality of the element to the user. This can lead to confusion and a poor experience for users with accessibility needs. Semantic HTML proposes writing DOM elements to give the user clear content on purpose and functionality. Some interactive `<button>` elements in the codebase for MultiMedia Viewer extension  were fixed reflect their functionality.
+Interactive <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> elements that are not tagged correctly prevent <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> hardware from communicating the functionality of the element to the user. This can lead to confusion and a poor experience for users with <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> needs. <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">Semantic HTML</abbr> proposes writing <abbr title="Document Object Model (DOM) is an Application Programming Interface (API) for valid HTML and well-formed XML documents.">DOM</abbr> ,, to give the user clear content on purpose and functionality. Some interactive `<button>` elements in the <abbr title="A collection of source code that is used to build a particular software system, application, or software component.">codebase</abbr> for MultiMedia Viewer extension  were fixed reflect their functionality.
 
 #### Visuals:
 * Images showing button elements that were fixed:
@@ -42,13 +42,13 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 ![](images/CopyButton-ShareDialog.png)
 
 #### Work Performed:
-* Focused on the interactive button-like elements that were mentioned in the issue on Phabricator.
+* Focused on the interactive button-like elements that were mentioned in the issue on <abbr title="A a web-based platform used by MediaWiki to track tasks.">Phabricator</abbr>.
 * Interactive button elements that were not `<button>`'s were converted to `<button>`'s.
 * Elements that were button-like in appearance but functioned as a link were not converted.
 * The `<div>` in `permission.js` was converted to a `<button>`.
-* The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a CSS class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the UI for users without accessibility needs.
-* Any CSS files associated with elements that were changed were edited to keep the button-like element styling the same as it was prior to converting the tags.
-* In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` attribute was added to the `StripeButton.js` `<a>` element to make it focusable by the keyboard for accessibility needs.
+* The `copyButton` in `download.pane.js` and `reuse.embed.js` needed a <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> class (`bootstrap.less`) to offset some labeling text so that it wouldn't interfere with the <abbr title="User Interface (UI) is the visual representation of a web application.">UI</abbr> for users without <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> needs.
+* Any <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> files associated with elements that were changed were edited to keep the button-like element styling the same as it was prior to converting the <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr>.
+* In addition to converting the elements, there was an `<a>`-button-like element in `StripeButtons.js` that was a link. This was not converted because it is a link and the rationale is that `<a>`-link elements are used to go from `page1` to `page2` while buttons are used as an interactive interface within the page. A `tabindex` <abbr title="An HTML element modifier.">attribute</abbr> was added to the `StripeButton.js` `<a>` element to make it <abbr title="The quality of an HTML element that allows it to be navigated to, selected, and highlighted via keyboard and mouse.">focusable</abbr> by the keyboard for <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> needs.
 
 #### Code Changes:
 * resources/mmv/mmv.bootstrap.less:
@@ -204,7 +204,7 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 #### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T161612)
 
-[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/408577/)
+[Gerrit patch submission, review, and code changes](https://gerrit.wikimedia.org/r/#/c/408577/)
 
 [Return to contents](#contents)
 
@@ -216,10 +216,10 @@ Interactive HTML elements that are not tagged correctly prevent accessibility ha
 * Hunter Hobbs
 
 #### Status:
-This contribution was merged on 4/17/2018 after three patch sets and was deployed on 4/24/2018.
+This contribution was <abbr title="Integrating a set of a changes into a different version of a codebase.">merged</abbr> on 4/17/2018 after three <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr> and was <abbr title="Integrating new software into an existing codebase.">deployed</abbr> on 4/24/2018.
 
 #### Description:
-Labeling all `<input>` elements in a page improves the interactive experience of users with visual and cognitive disabilities. Furthermore, input labels provide additional content to assistive technologies. Previously, the input fields in the "Categories" section of the "Options" dialog page in Visual Editor relied on the input widget placeholders and user intuition to convey the necessary information  to understand the user interface and fulfill user tasks. An input label was added to the first input filed in the "Categories" page to fix this issue.
+Labeling all `<input>` elements in a page improves the interactive experience of users with visual and cognitive disabilities. Furthermore, input labels provide additional content to <abbr title="Specialty tools or hardware that people with accessibility needs use to access web content.">assistive technologies</abbr>. Previously, the input fields in the "Categories" section of the "Options" dialog page in Visual Editor relied on the input <abbr title="A control and interaction mechanism for web pages.">widget</abbr> <abbr title="A short hint that describes the expected value of an input field.">placeholders</abbr> and user intuition to convey the necessary information  to understand the user interface and fulfill user tasks. An input label was added to the first input filed in the "Categories" page to fix this issue.
 
 #### Visuals:
 * Before adding category label:
@@ -230,9 +230,9 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 
 #### Work Performed:
 * The name of the new label for the category input field was added into the `extension.json` file of the extension.
-* Next, the newly added message was defined by associating the label name with the English text that would be displayed to the user in the `en.json` file of the code base.
-* The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the `qqq.json` file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports.
-* The final step in the coding process was utilizing MediaWiki's OO JS UI library to add a new FieldLayout to the `ve.ui.MWCategoriesPage.js` file that included the category input widget as well as the newly created label for that input widget to display the new elements together in the "Categories" page of the extension.
+* Next, the newly added message was defined by associating the label name with the English text that would be displayed to the user in the `en.json` file of the <abbr title="A collection of source code that is used to build a particular software system, application, or software component.">codebase</abbr>.
+* The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports.
+* The final step in the coding process was utilizing MediaWiki's OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input <abbr title="A control and interaction mechanism for web pages.">widget</abbr> as well as the newly created label for that input <abbr title="A control and interaction mechanism for web pages.">widget</abbr> to display the new elements together in the "Categories" page of the extension.
 
 #### Changes:
 
@@ -314,7 +314,7 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 #### Links:
 [Phabricator issue ticket](https://phabricator.wikimedia.org/T146966)
 
-[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426139/)
+[Gerrit patch submission, review, and code changes](https://gerrit.wikimedia.org/r/#/c/426139/)
 
 [Return to contents](#contents)
 
@@ -326,18 +326,17 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 * Jaziel Pauda
 
 #### Status:
-This contribution was merged on 2/21/2018 after one patch set and was deployed on 2/27/2018.
+This contribution was <abbr title="Integrating a set of a changes into a different version of a codebase.">merged</abbr> on 2/21/2018 after one <abbr title="A set of changes intended to improve a codebase.">patch set</abbr> and was <abbr title="Integrating new software into an existing codebase.">deployed</abbr> on 2/27/2018.
 
 #### Description:
-MDN and W3 specify HTML conventions that ensure semantic HTML. These standards specify that the `<article>` tag is for forum posts, blog posts, news stories and comments. Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to adhere to the above standards because they contained comments and forum posts.
-
+<abbr title="Mozilla Developer Network (MDN).">MDN</abbr> and W3 specify <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> conventions that ensure <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">semantic HTML</abbr>. These standards specify that the `<article>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tag</abbr> is for forum posts, blog posts, news stories and comments. Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to adhere to the above standards because they contained comments and forum posts.
 #### Visuals:
-Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
+Since this improvement consisted of only <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">semantic HTML</abbr> changes it involved no visual changes or representation.
 
 #### Work performed:
-* Verified, through W3 and MDN HTML standard specifications, that the correct semantic HTML tag for forum posts and comments are indeed `<article>` tags.
-* `<div>` tags that needed to be fixed were identified by searching for the HTML tags that had the CSS classes "flow-post-content" and "mw-parser-output" because those classes are the ones applied to elements that contain the content of the forum posts and comments created by users with the Flow extension.
-* Identified tags were changed to `<article>` tags.
+* Verified, through W3 and <abbr title="Mozilla Developer Network (MDN).">MDN</abbr> <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> standard specifications, that the correct <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">semantic HTML</abbr> tag for forum posts and comments are indeed `<article>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr>.
+* `<div>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr> that needed to be fixed were identified by searching for the <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr> that had the <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> classes "flow-post-content" and "mw-parser-output" because those classes are the ones applied to elements that contain the content of the forum posts and comments created by users with the Flow extension.
+* Identified <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr> were changed to `<article>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr>.
 * All PHP templates were recompiled using the command "make compile-lightncandy".
 
 #### Code Changes:
@@ -409,22 +408,22 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 #### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T175937)
 
-[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/413091/)
+[Gerrit patch submission, review, and code changes](https://gerrit.wikimedia.org/r/#/c/413091/)
 
 [Return to contents](#contents)
 
 ***
 
-### Resolving Wikistats 2.0 Searchbar Placeholder Contrast and Linting Issues
+### Resolving Wikistats 2.0 Search Bar Placeholder Contrast and Linting Issues
 
 #### Contributors:
 * Michael Cornacchio  
 
 #### Status:  
-This contribution was merged on 4/20/2018 after four patch sets.
+This contribution was <abbr title="Integrating a set of a changes into a different version of a codebase.">merged</abbr> on 4/20/2018 after four <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr>.
 
 #### Description:
-WCAG establishes contrast requirements to ensure text readability.  Additionally, MediaWiki uses WikiMedia’s stylelint configuration to ensure quality CSS code. The Wikistats 2.0 searchbar placeholder did not meet WCAG contrast requirements.  Also, stylelint identified errors in the file containing the aforementioned placeholder. The placeholder needed to be changed to a color that met contrast requirements and was also consistent with the Wikistats 2.0 color palette.
+<abbr title="Web Content Accessibility Guidelines (WCAG) is a set of practices published by the W3C that facilitate web interaction and usage.">WCAG</abbr> establishes contrast requirements to ensure text readability.  Additionally, MediaWiki uses WikiMedia’s stylelint configuration to ensure quality <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> code. The Wikistats 2.0 serach bar <abbr title="A short hint that describes the expected value of an input field.">placeholder</abbr> did not meet <abbr title="Web Content Accessibility Guidelines (WCAG) is a set of practices published by the W3C that facilitate web interaction and usage.">WCAG</abbr> contrast requirements.  Also, stylelint identified errors in the file containing the aforementioned <abbr title="A short hint that describes the expected value of an input field.">placeholder</abbr>. The <abbr title="A short hint that describes the expected value of an input field.">placeholder</abbr> needed to be changed to a color that met contrast requirements and was also consistent with the Wikistats 2.0 color palette.
 
 #### Visuals:
 * Before contrast modification:
@@ -434,9 +433,9 @@ WCAG establishes contrast requirements to ensure text readability.  Additionally
 ![](https://i.imgur.com/ztt7vnJ.png)
 
 #### Work Performed:
-* Set searchbar `type` attribute to "search" rather than text.
-* Ensured leading zero was present in all CSS attributes that have decimal number values.
-* Tab-indented CSS in accordance with MediaWiki's linter.
+* Set serach bar `type` <abbr title="An HTML element modifier.">attribute</abbr> to "search" rather than text.
+* Ensured leading zero was present in all <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> <abbr title="An HTML element modifier.">attributes</abbr> that have decimal number values.
+* Tab-indented <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> in accordance with MediaWiki's linter.
 * Added linter-highlighted spaces/newlines where missing.
 * Corrected `border-radius` to MediaWiki's standard of `2px`.
 * Added `sans-serif` as generic backup font to `Lato`.
@@ -650,7 +649,7 @@ WCAG establishes contrast requirements to ensure text readability.  Additionally
 #### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T185533)
 
-[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426848/)
+[Gerrit patch submission, review, and code changes](https://gerrit.wikimedia.org/r/#/c/426848/)
 
 [Return to contents](#contents)
 
@@ -662,19 +661,19 @@ WCAG establishes contrast requirements to ensure text readability.  Additionally
 * Jaziel Pauda
 
 #### Status:
-This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
+This contribution is awaiting feedback as of 4/20/2018 after two <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr>.
 
 #### Description:
-MediaWiki HTML standards specify that there must not be more than one `<h1>` heading per page. This specification facilitates accurate screen reader navigation, maintains a separation between navigation and content, and ensures a logical heading structure. The home page of the MediaWiki QuizGame extension was structured entirely with `<h1>` headings. All those headings needed to be changed to `<h2>` elements in order to comply with the mentioned accessibility standards. 
+MediaWiki <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> standards specify that there must not be more than one `<h1>` heading per page. This specification facilitates accurate screen reader navigation, maintains a separation between navigation and content, and ensures a logical heading structure. The home page of the MediaWiki QuizGame extension was structured entirely with `<h1>` headings. All those headings needed to be changed to `<h2>` elements in order to comply with the mentioned <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> standards. 
 
 #### Visuals:
-Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
+Since this improvement consisted of only <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">semantic HTML</abbr> changes it involved no visual changes or representation.
 
 #### Work performed:
 * The work performed started with determining if the home page of the QuizGame extension was indeed structured with multiple `<h1>` headings.
 * After this verification, the intended layout of this page was examined to determine if any of the headings on the page were nested section headings or were headings for separate sections.
 * After it was determined that each heading represented the introduction of new independent section of the home page, each of the `<h1>` headings was changed to a `<h2>` heading.
-* Finally, CSS classes that selected the various `<h1>` tags were removed from the code because the styling they applied to the headings were no longer needed with the new heading structure.
+* Finally, <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> classes that selected the various `<h1>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr> were removed from the code because the styling they applied to the headings were no longer needed with the new heading structure.
 
 #### Changes:
 
@@ -847,7 +846,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 #### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T156450)
 
-[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/416887/)
+[Gerrit patch submission, review, and code changes](https://gerrit.wikimedia.org/r/#/c/416887/)
 
 [Return to contents](#contents)
 
@@ -859,10 +858,10 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 * Jesse Buck
 
 #### Status:
-This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
+This contribution is awaiting feedback as of 4/20/2018 after two <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr>.
 
 #### Description:
-Low contrast between text and its background presents an accessibility barrier. Wikistats 2.0 had several areas with poor contrast. In particular, its footer area and several text elements had inadequate contrast according to W3C standards. These colors needed to be changed to be WCAG compliant, using colors sourced from an existing MediaWiki color palette. Additionally, as a result of the color changes in the footer area, underlines needed to be added to the footer links to further distinguish them from surrounding text.
+Low contrast between text and its background presents an <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> barrier. Wikistats 2.0 had several areas with poor contrast. In particular, its footer area and several text elements had inadequate contrast according to <abbr title="The World Wide Web Consortium (W3C) is an organization that establishes HTML and CSS standards.">W3C</abbr> standards. These colors needed to be changed to be <abbr title="Web Content Accessibility Guidelines (WCAG) is a set of practices published by the W3C that facilitate web interaction and usage.">WCAG</abbr> compliant, using colors sourced from an existing MediaWiki color palette. Additionally, as a result of the color changes in the footer area, underlines needed to be added to the footer links to further distinguish them from surrounding text.
 
 #### Visuals:
 * Before contrast changes:
@@ -947,7 +946,7 @@ Low contrast between text and its background presents an accessibility barrier. 
 
 [Phabricator task](https://phabricator.wikimedia.org/T185533)
 
-[Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/419958/)
+[Gerrit patch submission, review, and code changes](https://gerrit.wikimedia.org/r/#/c/419958/)
 
 [Return to contents](#contents)
 
@@ -960,16 +959,16 @@ Low contrast between text and its background presents an accessibility barrier. 
 * Michael Cornacchio
 
 #### Status:
-This contribution is awaiting further work as of 4/16/2018 after one patch set.
+This contribution is awaiting further work as of 4/16/2018 after one <abbr title="A set of changes intended to improve a codebase.">patch set</abbr>.
 
 #### Description:
-Minor code changes can significantly increase a page's accessibility. Markup issues in the Wikistats 2.0 extension posed a variety of accessibility limiters. These included missing HTML attributes, labels, and tags, as well as inappropriate elements. These needed to be resolved with various small changes.
+Minor code changes can significantly increase a page's <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr>. <abbr title="A way of annotating a document in such a way that syntax is clearly distinguishable from content.">Markup</abbr> issues in the Wikistats 2.0 extension posed a variety of <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> limiters. These included missing <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> <abbr title="An HTML element modifier.">attributes</abbr>, labels, and <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr>, as well as inappropriate elements. These needed to be resolved with various small changes.
 
-#### Work Performed:
-* Added `lang` attribute to `html` element.
+#### Work performed:
+* Added `lang` <abbr title="An HTML element modifier.">attribute</abbr> to `html` element.
 * Added labels to topic search input and Wiki search input.
-* Added `alt` tag for Wikimedia logo.
-* Added main ARIA label in `App.vue`.
+* Added `alt` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tag</abbr> for Wikimedia logo.
+* Added main <abbr title="Accessible Rich Internet Applications (ARIA) are HTML attributes that define <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> adjustments for web content and applications.">ARIA</abbr> label in `App.vue`.
 * Changed search header to a `div`.
 
 #### Code Changes:
@@ -1066,7 +1065,7 @@ Minor code changes can significantly increase a page's accessibility. Markup iss
 #### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T185533)
 
-[Gerrit patch, submission, review and code diff](https://gerrit.wikimedia.org/r/#/c/426848/)
+[Gerrit patch, submission, review and code changes](https://gerrit.wikimedia.org/r/#/c/426848/)
 
 [Return to contents](#contents)
 
