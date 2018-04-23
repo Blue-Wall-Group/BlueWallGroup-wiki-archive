@@ -228,9 +228,9 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 * After adding category label:
 ![](https://i.imgur.com/uxBiVlM.png)
 
-#### Work performed:
-* The work performed began with the addition of the new label name into the messages namespace of the Visual Editor extension. This was accomplished by adding the name of the label into the 'extension.json' file of the extension.
-* Next, the newly added message was defined by associating the label name with the English text that would be displayed to the user in the 'en.json' file of the code base.
+#### Work Performed:
+* The name of the new label for the category input field was added into the `extension.json` file of the extension.
+* Next, the newly added message was defined by associating the label name with the English text that would be displayed to the user in the `en.json` file of the code base.
 * The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports.
 * The final step in the coding process was utilizing MediaWiki's OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input widget as well as the newly created label for that input widget to display the new elements together in the "Categories" page of the extension.
 
