@@ -331,7 +331,7 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 This contribution was merged on 2/21/2018 after one patch set and was deployed on 2/27/2018.
 
 #### Description:
-MDN and W3 specify HTML conventions that ensure semantic HTML. These standards specify that the `<article>` tag is for forum posts, blog posts, news stories and comments. Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to adhere to the above standard because they contained comments and forum posts.
+MDN and W3 specify HTML conventions that ensure semantic HTML. These standards specify that the `<article>` tag is for forum posts, blog posts, news stories and comments. Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to adhere to the above standards because they contained comments and forum posts.
 #### Visuals:
 Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
 
