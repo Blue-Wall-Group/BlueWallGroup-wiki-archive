@@ -314,7 +314,7 @@ This issue revolved the improvement of the "Categories" dialog page in the Media
 ```
 
 #### Links:
-[Phabricator issue ticket](https://phabricator.wikimedia.org/T185533)
+[Phabricator issue ticket](https://phabricator.wikimedia.org/T146966)
 
 [Gerrit patch submission, review, and code diff](https://gerrit.wikimedia.org/r/#/c/426139/)
 
