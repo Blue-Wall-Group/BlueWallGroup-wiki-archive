@@ -36,7 +36,7 @@ Contribute to the MediaWiki Accessibility project in a way that enhances the acc
 **MediaWiki developers & maintainers:** Receive contributions that meet coding standards, behave correctly, and that can be integrated into the existing project.  
 
 ## Current Product Deliverable
-Our current product deliverable can be accessed [here](https://github.com/Blue-Wall-Group/mediawiki/wiki/Current-Product-Deliverable).
+Our product deliverable can be accessed [here](https://github.com/Blue-Wall-Group/mediawiki/wiki/Product-Deliverable).
 
 ## Team Organization
 **Software Development Life-cycle Model:** *Scrum Agile*  
