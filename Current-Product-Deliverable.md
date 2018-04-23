@@ -956,8 +956,6 @@ Page text which has low contrast with the background can be difficult to read, a
 
 ***
 
-***
-
 ### Correcting minor markup issues in Wikistats 2.0
 
 #### Contributors:
