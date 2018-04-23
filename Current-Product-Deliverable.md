@@ -865,7 +865,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 #### Description:
-Page text which has low contrast with the background can be difficult to read, and presents an accessibility barrier. Wikistats 2.0 had several areas with poor contrast. In particular, its footer area and several text elements had inadequate contrast according to W3C standards. These colors needed to be changed to be WCAG compliant, using colors sourced from an existing MediaWiki color palette. Additionally, as a result of the color changes in the footer area, underlines needed to be added to the footer links to further distinguish them from surrounding text.
+Low contrast between text and its background presents an accessibility barrier. Wikistats 2.0 had several areas with poor contrast. In particular, its footer area and several text elements had inadequate contrast according to W3C standards. These colors needed to be changed to be WCAG compliant, using colors sourced from an existing MediaWiki color palette. Additionally, as a result of the color changes in the footer area, underlines needed to be added to the footer links to further distinguish them from surrounding text.
 
 #### Visuals:
 * Before contrast changes:
