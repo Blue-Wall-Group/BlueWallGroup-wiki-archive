@@ -418,7 +418,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 
 ***
 
-### Resolving Wikistats 2.0 searchbar placeholder contrast and linting issues
+### Resolving Wikistats 2.0 Searchbar Placeholder Contrast and Linting Issues
 
 #### Contributors:
 * Michael Cornacchio  
@@ -429,14 +429,14 @@ This contribution was merged on 4/20/2018 after four patch sets.
 #### Description:
 WCAG establishes contrast requirements to ensure text readability.  Additionally, MediaWiki uses WikiMedia’s stylelint configuration to ensure quality CSS code. The Wikistats 2.0 searchbar placeholder did not meet WCAG contrast requirements.  Also, stylelint identified errors in the file containing the aforementioned placeholder. The placeholder needed to be changed to a color that met contrast requirements and was also consistent with the Wikistats 2.0 color palette.
 
-#### Visuals
+#### Visuals:
 * Before contrast modification:
 ![](https://i.imgur.com/yf7RVhO.png)
 
 * After contrast modification:
 ![](https://i.imgur.com/ztt7vnJ.png)
 
-#### Work performed:
+#### Work Performed:
 * Set searchbar `type` attribute to "search" rather than text.
 * Ensured leading zero was present in all CSS attributes that have decimal number values.
 * Tab-indented CSS in accordance with MediaWiki's linter.
@@ -446,7 +446,7 @@ WCAG establishes contrast requirements to ensure text readability.  Additionally
 * Shortened hex color format to three digits where applicable.
 * Set `placeholder` color to meet contrast requirements.
 
-#### Changes:
+#### Code Changes:
 * src/components/TopicExplorer.vue:
 ```diff
 @@ -18,7 +18,7 @@
