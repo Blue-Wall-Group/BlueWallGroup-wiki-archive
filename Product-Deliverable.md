@@ -224,10 +224,10 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 
 #### Visuals:
 * Before adding category label:
-![](https://i.imgur.com/xEQpOnm.png)
+![](images/Before-Label.png)
 
 * After adding category label:
-![](https://i.imgur.com/uxBiVlM.png)
+![](images/After-Label.png)
 
 #### Work Performed:
 * The name of the new label for the category input field was added into the `extension.json` file of the extension.
@@ -429,10 +429,10 @@ This contribution was <abbr title="Integrating a set of a changes into a differe
 
 #### Visuals:
 * Before contrast modification:
-![](https://i.imgur.com/yf7RVhO.png)
+![](images/Placeholder-Before.png)
 
 * After contrast modification:
-![](https://i.imgur.com/ztt7vnJ.png)
+![](images/Placeholder-After.png)
 
 #### Work Performed:
 * Set search bar `type` <abbr title="An HTML element modifier.">attribute</abbr> to "search" rather than text.
