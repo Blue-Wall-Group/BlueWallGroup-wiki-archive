@@ -23,9 +23,7 @@ Contribute to the MediaWiki Accessibility project in a way that enhances the acc
 ## Stakeholders & Objectives
 **The team:** To grow in effectiveness and familiarity in software engineering processes and practices.  
 
-**Individual team members:**  Transition from students to professional software engineers. And contribute the community of an HFOSS project in a positive way.  
-  
-**Dr. Jody Paul:** \<PROBABLY ABOUT PROCESS AND QUALITY ASK HIM AND FINALIZE THIS\>    
+**Individual team members:**  Transition from students to professional software engineers. And contribute the community of an HFOSS project in a positive way.     
 
 **Future contributors joining the project:** Obtain a project that includes quality documentation and onboarding materials that make it easy to join the project and start contributing quickly.  
   
