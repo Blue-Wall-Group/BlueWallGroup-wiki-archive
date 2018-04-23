@@ -32,7 +32,7 @@ The following document is a summary of the improvements we (Blue Wall Group) hav
 * This contribution was <abbr title="Integrating a set of a changes into a different version of a codebase.">merged</abbr> on 4/16/18 after 13 <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr> and was <abbr title="Integrating new software into an existing codebase.">deployed</abbr> on 4/17/18.
 
 #### Description:
-Interactive <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> elements that are not tagged correctly prevent <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> hardware from communicating the functionality of the element to the user. This can lead to confusion and a poor experience for users with <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> needs. <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">Semantic HTML</abbr> proposes writing <abbr title="Document Object Model (DOM) is an Application Programming Interface (API) for valid HTML and well-formed XML documents.">DOM</abbr>, to give the user clear content on purpose and functionality. Some interactive `<button>` elements in the <abbr title="A collection of source code that is used to build a particular software system, application, or software component.">codebase</abbr> for MultiMedia Viewer extension  were fixed reflect their functionality.
+Interactive <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> elements that are not tagged correctly prevent <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> hardware from communicating the functionality of the element to the user. This can lead to confusion and a poor experience for users with <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> needs. <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">Semantic HTML</abbr> proposes writing <abbr title="Document Object Model (DOM) is an Application Programming Interface (API) for valid HTML and well-formed XML documents.">DOM</abbr>, to give the user clear content on purpose and functionality. Some interactive `<button>` elements in the <abbr title="A collection of source code that is used to build a particular software system, application, or software component.">codebase</abbr> for MultiMedia Viewer extension  were fixed to reflect their functionality.
 
 #### Visuals:
 * Images showing button elements that were fixed:
@@ -209,7 +209,8 @@ Interactive <abbr title="Hypertext Markup Language (HTML) is the standard markup
 [Return to contents](#contents)
 
 ***
-### Adding Label to Input Field in Visual Editor Categories page
+
+### Adding Label to Input Field in Visual Editor Categories Page
 
 #### Contributors:
 * Jaziel Pauda
@@ -234,7 +235,7 @@ Labeling all `<input>` elements in a page improves the interactive experience of
 * The final step in adding this new label to the messages namespace of the extension was adding a description of the new message in the 'qqq.json' file that described the purpose of the label as well as the information it conveyed to the user so that this new label could be translated accurately into the different languages MediaWiki supports.
 * The final step in the coding process was utilizing MediaWiki's OO JS UI library to add a new FieldLayout to the 've.ui.MWCategoriesPage.js' file that included the category input <abbr title="A control and interaction mechanism for web pages.">widget</abbr> as well as the newly created label for that input <abbr title="A control and interaction mechanism for web pages.">widget</abbr> to display the new elements together in the "Categories" page of the extension.
 
-#### Changes:
+#### Code Changes:
 
 * extension.json:
 ```diff
@@ -330,10 +331,11 @@ This contribution was <abbr title="Integrating a set of a changes into a differe
 
 #### Description:
 <abbr title="Mozilla Developer Network (MDN).">MDN</abbr> and W3 specify <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> conventions that ensure <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">semantic HTML</abbr>. These standards specify that the `<article>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tag</abbr> is for forum posts, blog posts, news stories and comments. Within the MediaWiki Flow extension, several `<div>` elements needed to be changed into `<article>` elements in order to adhere to the above standards because they contained comments and forum posts.
+
 #### Visuals:
 Since this improvement consisted of only <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">semantic HTML</abbr> changes it involved no visual changes or representation.
 
-#### Work performed:
+#### Work Performed:
 * Verified, through W3 and <abbr title="Mozilla Developer Network (MDN).">MDN</abbr> <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> standard specifications, that the correct <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">semantic HTML</abbr> tag for forum posts and comments are indeed `<article>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr>.
 * `<div>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr> that needed to be fixed were identified by searching for the <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr> that had the <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> classes "flow-post-content" and "mw-parser-output" because those classes are the ones applied to elements that contain the content of the forum posts and comments created by users with the Flow extension.
 * Identified <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr> were changed to `<article>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr>.
@@ -433,7 +435,7 @@ This contribution was <abbr title="Integrating a set of a changes into a differe
 ![](https://i.imgur.com/ztt7vnJ.png)
 
 #### Work Performed:
-* Set serach bar `type` <abbr title="An HTML element modifier.">attribute</abbr> to "search" rather than text.
+* Set search bar `type` <abbr title="An HTML element modifier.">attribute</abbr> to "search" rather than text.
 * Ensured leading zero was present in all <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> <abbr title="An HTML element modifier.">attributes</abbr> that have decimal number values.
 * Tab-indented <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> in accordance with MediaWiki's linter.
 * Added linter-highlighted spaces/newlines where missing.
@@ -661,7 +663,7 @@ This contribution was <abbr title="Integrating a set of a changes into a differe
 * Jaziel Pauda
 
 #### Status:
-This contribution is awaiting feedback as of 4/20/2018 after two <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr>.
+This contribution is awaiting feedback as of 4/25/2018 after two <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr>.
 
 #### Description:
 MediaWiki <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> standards specify that there must not be more than one `<h1>` heading per page. This specification facilitates accurate screen reader navigation, maintains a separation between navigation and content, and ensures a logical heading structure. The home page of the MediaWiki QuizGame extension was structured entirely with `<h1>` headings. All those headings needed to be changed to `<h2>` elements in order to comply with the mentioned <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> standards. 
@@ -669,13 +671,13 @@ MediaWiki <abbr title="Hypertext Markup Language (HTML) is the standard markup l
 #### Visuals:
 Since this improvement consisted of only <abbr title="The use of HTML markup to reinforce the semantics, or meaning, of information in web pages.">semantic HTML</abbr> changes it involved no visual changes or representation.
 
-#### Work performed:
+#### Work Performed:
 * The work performed started with determining if the home page of the QuizGame extension was indeed structured with multiple `<h1>` headings.
 * After this verification, the intended layout of this page was examined to determine if any of the headings on the page were nested section headings or were headings for separate sections.
-* After it was determined that each heading represented the introduction of new independent section of the home page, each of the `<h1>` headings was changed to a `<h2>` heading.
+* After it was determined that each heading represented the introduction of a new independent section of the home page, each of the `<h1>` headings was changed to a `<h2>` heading.
 * Finally, <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.">CSS</abbr> classes that selected the various `<h1>` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr> were removed from the code because the styling they applied to the headings were no longer needed with the new heading structure.
 
-#### Changes:
+#### Code Changes:
 
 * includes/specials/SpecialQuizGameHome.php:
 ```diff
@@ -856,9 +858,10 @@ Since this improvement consisted of only <abbr title="The use of HTML markup to 
 
 #### Contributors:
 * Jesse Buck
+* Daniel Collier
 
 #### Status:
-This contribution is awaiting feedback as of 4/20/2018 after two <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr>.
+This contribution is awaiting feedback as of 4/23/2018 after two <abbr title="A set of changes intended to improve a codebase.">patch sets</abbr>.
 
 #### Description:
 Low contrast between text and its background presents an <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> barrier. Wikistats 2.0 had several areas with poor contrast. In particular, its footer area and several text elements had inadequate contrast according to <abbr title="The World Wide Web Consortium (W3C) is an organization that establishes HTML and CSS standards.">W3C</abbr> standards. These colors needed to be changed to be <abbr title="Web Content Accessibility Guidelines (WCAG) is a set of practices published by the W3C that facilitate web interaction and usage.">WCAG</abbr> compliant, using colors sourced from an existing MediaWiki color palette. Additionally, as a result of the color changes in the footer area, underlines needed to be added to the footer links to further distinguish them from surrounding text.
@@ -869,14 +872,14 @@ Low contrast between text and its background presents an <abbr title="The inclus
 * After contrast changes:
 ![Wikistats 2.0 page after contrast changes](images/Detail-Page-After.png)
 
-#### Work performed:
+#### Work Performed:
 * Changed the color of several subdued text elements.
 * Changed the color of text and links within the footer area.
 * Changed the background color of the footer area.
 * Added underlines to links in the footer area.
 
-#### Changes:
-* src/App.vue
+#### Code Changes:
+* src/App.vue:
 ```diff
 @@ -138,8 +138,8 @@
      border-bottom: none;
@@ -964,10 +967,10 @@ This contribution is awaiting further work as of 4/16/2018 after one <abbr title
 #### Description:
 Minor code changes can significantly increase a page's <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr>. <abbr title="A way of annotating a document in such a way that syntax is clearly distinguishable from content.">Markup</abbr> issues in the Wikistats 2.0 extension posed a variety of <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> limiters. These included missing <abbr title="Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.">HTML</abbr> <abbr title="An HTML element modifier.">attributes</abbr>, labels, and <abbr title="Keywords within a web page that define how a web browser must format and display content.">tags</abbr>, as well as inappropriate elements. These needed to be resolved with various small changes.
 
-#### Work performed:
+#### Work Performed:
 * Added `lang` <abbr title="An HTML element modifier.">attribute</abbr> to `html` element.
 * Added labels to topic search input and Wiki search input.
-* Added `alt` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tag</abbr> for Wikimedia logo.
+* Added `alt` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tag</abbr> for WikiMedia logo.
 * Added main <abbr title="Accessible Rich Internet Applications (ARIA) are HTML attributes that define <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> adjustments for web content and applications.">ARIA</abbr> label in `App.vue`.
 * Changed search header to a `div`.
 
@@ -1070,5 +1073,3 @@ Minor code changes can significantly increase a page's <abbr title="The inclusiv
 [Return to contents](#contents)
 
 ***
-
-**End of document**
