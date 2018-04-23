@@ -341,7 +341,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 * Identified tags were changed to `<article>` tags.
 * All PHP templates were recompiled using the command "make compile-lightncandy".
 
-#### Changes:
+#### Code Changes:
 
 * handlebars/compiled/flow_block_topic_moderate_post.handlebars.php:
 ```diff
@@ -427,7 +427,7 @@ Since this improvement consisted of only semantic HTML changes it involved no vi
 This contribution is awaiting feedback as of 4/20/2018 after two patch sets.
 
 #### Description:
-In the QuizGame extension, several `<h1>` elements were present on a single page of the extension. For accessibility and semantics reasons, all of these `<h1>` tags needed to be changed into `<h2>`'s.
+MediaWiki HTML standards specify that HTML there must not be more than one `<h1>` heading per page in order to facilitate accurate screen reader navigation of the page, to maintain a separation between navigation and content, and to maintain a logical heading structure. Previously, the home page of the MediaWiki QuizGame extension contained was structured entirely with `<h1>` headings. Thus, all those headings needed to be changed to `<h2>` elements in order to comply with the standards mentioned above, and remove this accessibility issue. 
 
 #### Visuals:
 Since this improvement consisted of only semantic HTML changes it involved no visual changes or representation.
