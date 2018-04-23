@@ -966,7 +966,7 @@ Low contrast between text and its background presents an accessibility barrier. 
 This contribution is awaiting further work as of 4/16/2018 after one patch set.
 
 #### Description:
-A number of accessibility/markup issues were identified in the Wikistats 2.0 extension beyond those already mentioned.
+Minor code changes can significantly increase a page's accessibility. Markup issues in the Wikistats 2.0 extension posed a variety of accessibility limiters. These included missing HTML attributes, labels, and tags, as well as inappropriate elements. These needed to be resolved with various small changes.
 
 #### Work performed:
 * Added `lang` attribute to `html` element.
