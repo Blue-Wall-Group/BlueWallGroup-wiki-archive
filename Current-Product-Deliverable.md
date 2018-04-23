@@ -724,6 +724,9 @@ Page text which has low contrast with the background can be difficult to read, a
 This contribution was merged on 4/20/2018 after four patch sets.
 
 #### Description:
+WCAG establishes contrast requirements to ensure text readability.  Additionally, MediaWiki adopts WikiMedia’s stylelint configuration to standardize their CSS code under a clean format.  The Wikistats 2.0 searchbar placeholder did not meet WCAG contrast requirements.  Also, stylelint identified errors in the file containing the aforementioned placeholder: `TopicExplorer.vue.` The placeholder needed to be changed to a a color that met contrast requirements and was also consistent with the WikiStats 2.0 color palette.
+
+
 The Wikistats 2.0 search placeholder did not comply with WCAG AA contrast requirements.  Additionally, the MediaWiki reviewers advocated for the use of their stylelinter.  The stylelinter identified numerous issues that required adjustment.
 
 #### Visuals
