@@ -8,7 +8,7 @@
     Jaziel Pauda  
 
 #### Abstract:
-The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities."><abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr></abbr> concerns existing within the MediaWiki core and its extensions. Three of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.
+The following document is a summary of the improvements we (Blue Wall Group) have made to the MediaWiki free open source software project. Our improvements addressed <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities."><abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr></abbr> concerns existing within the MediaWiki core and its extensions. Four of our contributions have been integrated into the current version of the MediaWiki software. Furthermore, we have contributed four additional changes that are awaiting acceptance from project reviewers. These contributions were part of our senior capstone project during the Spring 2018 semester at Metropolitan State University of Denver.
 
 #### Contents:
 * [Fixing Interactive `<button>` Elements in the Multimedia Viewer Extension](#fixing-interactive-button-elements-in-the-multimedia-viewer-extension)
@@ -1068,7 +1068,7 @@ Minor code changes can significantly increase a page's <abbr title="The inclusiv
 #### Links:
 [Phabricator task](https://phabricator.wikimedia.org/T185533)
 
-[Gerrit patch, submission, review and code changes](https://gerrit.wikimedia.org/r/#/c/426848/)
+[Gerrit patch, submission, review and code changes](https://gerrit.wikimedia.org/r/#/c/425925/)
 
 [Return to contents](#contents)
 
