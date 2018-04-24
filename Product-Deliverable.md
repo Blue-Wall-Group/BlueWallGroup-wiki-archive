@@ -971,7 +971,7 @@ Minor code changes can significantly increase a page's <abbr title="The inclusiv
 * Added `lang` <abbr title="An HTML element modifier.">attribute</abbr> to `html` element.
 * Added labels to topic search input and Wiki search input.
 * Added `alt` <abbr title="Keywords within a web page that define how a web browser must format and display content.">tag</abbr> for WikiMedia logo.
-* Added main <abbr title="Accessible Rich Internet Applications (ARIA) are HTML attributes that define <abbr title="The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities.">accessibility</abbr> adjustments for web content and applications.">ARIA</abbr> label in `App.vue`.
+* Added main <abbr title="Accessible Rich Internet Applications (ARIA) are HTML attributes that define accessibility adjustments for web content and applications.">ARIA</abbr> label in `App.vue`.
 * Changed search header to a `div`.
 
 #### Code Changes:
