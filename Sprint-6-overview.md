@@ -25,8 +25,11 @@ None
 - Completed and accepted US133, US134, & US136.
 
 ### Metrics
-![](http://chickencheetos.coffee/Pictures/Sprint6_IterationBurndown.png)
-![](http://chickencheetos.coffee/Pictures/Sprint6_CumulativeFlow.png)
+Burndown chart:
+![](images/Sprint6_IterationBurndown.png)
+
+Iterative flow chart:
+![](images/Sprint6_CumulativeFlow.png)
 
 ### What we did vs. what we planned to do
 - We selected good user stories that were in alignment with our sprint goal, and we completed and accepted those user stories.
