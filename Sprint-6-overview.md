@@ -29,7 +29,8 @@ None
 ![](http://chickencheetos.coffee/Pictures/Sprint6_CumulativeFlow.png)
 
 ### What we did vs. what we planned to do
-- We selected good user stories that were in alignment with our sprint goal and we completed/accepted those US'.
+- We selected good user stories that were in alignment with our sprint goal, and we completed and accepted those user stories.
+
 ## Retrospective
 
 ### What went well
